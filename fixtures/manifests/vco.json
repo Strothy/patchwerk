@@ -1,0 +1,145 @@
+{
+  "module_type": "vco",
+  "category": "Generator",
+  "input_ports": [
+    {
+      "name": "cv",
+      "signal_kind": "signal",
+      "default": 50.0
+    },
+    {
+      "name": "fm",
+      "signal_kind": "signal",
+      "default": 50.0
+    },
+    {
+      "name": "sync",
+      "signal_kind": "trigger",
+      "default": 0.0
+    }
+  ],
+  "output_ports": [
+    {
+      "name": "sin",
+      "signal_kind": "signal",
+      "default": 0.0
+    },
+    {
+      "name": "tri",
+      "signal_kind": "signal",
+      "default": 0.0
+    },
+    {
+      "name": "saw",
+      "signal_kind": "signal",
+      "default": 0.0
+    },
+    {
+      "name": "sqr",
+      "signal_kind": "signal",
+      "default": 0.0
+    }
+  ],
+  "param_defaults": {
+    "tune": 1.0,
+    "fm_amt": 0.5,
+    "pw": 50.0,
+    "polarity": "unipolar",
+    "cv_center": "50"
+  },
+  "controls": [
+    {
+      "key": "tune",
+      "label": "tune hz",
+      "control_type": "knob",
+      "value_source": "param",
+      "default": 1.0,
+      "minimum": 0.05,
+      "maximum": 20.0,
+      "decimals": 2,
+      "options": [],
+      "units_key": null,
+      "units_options": [],
+      "show_on_node": true,
+      "advanced_only": false,
+      "secondary_key": null,
+      "position_port": null,
+      "row": null,
+      "col": null,
+      "momentary": false
+    },
+    {
+      "key": "fm_amt",
+      "label": "fm amt",
+      "control_type": "knob",
+      "value_source": "param",
+      "default": 0.5,
+      "minimum": 0.0,
+      "maximum": 10.0,
+      "decimals": 2,
+      "options": [],
+      "units_key": null,
+      "units_options": [],
+      "show_on_node": true,
+      "advanced_only": false,
+      "secondary_key": null,
+      "position_port": null,
+      "row": null,
+      "col": null,
+      "momentary": false
+    },
+    {
+      "key": "pw",
+      "label": "pw %",
+      "control_type": "knob",
+      "value_source": "param",
+      "default": 50.0,
+      "minimum": 0.0,
+      "maximum": 100.0,
+      "decimals": 1,
+      "options": [],
+      "units_key": null,
+      "units_options": [],
+      "show_on_node": true,
+      "advanced_only": false,
+      "secondary_key": null,
+      "position_port": null,
+      "row": null,
+      "col": null,
+      "momentary": false
+    },
+    {
+      "key": "polarity",
+      "label": "polarity",
+      "control_type": "selector",
+      "value_source": "param",
+      "default": "unipolar",
+      "minimum": 0.0,
+      "maximum": 100.0,
+      "decimals": 2,
+      "options": [
+        "unipolar",
+        "bipolar"
+      ],
+      "units_key": null,
+      "units_options": [],
+      "show_on_node": true,
+      "advanced_only": false,
+      "secondary_key": null,
+      "position_port": null,
+      "row": null,
+      "col": null,
+      "momentary": false
+    }
+  ],
+  "port_groups": [],
+  "state_only_params": [
+    "cv_center"
+  ],
+  "internal_outputs": [],
+  "layout": {
+    "Uw": 2,
+    "Ur": 1,
+    "profile": "unknown"
+  }
+}

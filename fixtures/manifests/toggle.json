@@ -1,0 +1,135 @@
+{
+  "module_type": "toggle",
+  "category": "Sequencer",
+  "input_ports": [
+    {
+      "name": "trig",
+      "signal_kind": "trigger",
+      "default": 0.0
+    },
+    {
+      "name": "reset",
+      "signal_kind": "trigger",
+      "default": 0.0
+    }
+  ],
+  "output_ports": [
+    {
+      "name": "q",
+      "signal_kind": "gate",
+      "default": 0.0
+    },
+    {
+      "name": "nq",
+      "signal_kind": "gate",
+      "default": 0.0
+    }
+  ],
+  "param_defaults": {
+    "init_state": "off"
+  },
+  "controls": [
+    {
+      "key": "init_state",
+      "label": "init",
+      "control_type": "selector",
+      "value_source": "param",
+      "default": "off",
+      "minimum": 0.0,
+      "maximum": 100.0,
+      "decimals": 2,
+      "options": [
+        "off",
+        "on"
+      ],
+      "units_key": null,
+      "units_options": [],
+      "show_on_node": true,
+      "advanced_only": false,
+      "secondary_key": null,
+      "position_port": null,
+      "row": null,
+      "col": null,
+      "momentary": false
+    },
+    {
+      "key": "q_led",
+      "label": "Q",
+      "control_type": "led",
+      "value_source": "auto",
+      "default": 0.0,
+      "minimum": 0.0,
+      "maximum": 100.0,
+      "decimals": 2,
+      "options": [],
+      "units_key": null,
+      "units_options": [],
+      "show_on_node": true,
+      "advanced_only": false,
+      "secondary_key": null,
+      "position_port": null,
+      "row": null,
+      "col": null,
+      "momentary": false
+    },
+    {
+      "key": "nq_led",
+      "label": "NQ",
+      "control_type": "led",
+      "value_source": "auto",
+      "default": 100.0,
+      "minimum": 0.0,
+      "maximum": 100.0,
+      "decimals": 2,
+      "options": [],
+      "units_key": null,
+      "units_options": [],
+      "show_on_node": true,
+      "advanced_only": false,
+      "secondary_key": null,
+      "position_port": null,
+      "row": null,
+      "col": null,
+      "momentary": false
+    }
+  ],
+  "port_groups": [
+    {
+      "name": "IN",
+      "ports": [],
+      "layout": "vertical",
+      "rows": [
+        {
+          "left": [
+            "trig"
+          ],
+          "right": [
+            "reset"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "OUT",
+      "ports": [],
+      "layout": "vertical",
+      "rows": [
+        {
+          "left": [
+            "q"
+          ],
+          "right": [
+            "nq"
+          ]
+        }
+      ]
+    }
+  ],
+  "state_only_params": [],
+  "internal_outputs": [],
+  "layout": {
+    "Uw": 3,
+    "Ur": 1,
+    "profile": "unknown"
+  }
+}

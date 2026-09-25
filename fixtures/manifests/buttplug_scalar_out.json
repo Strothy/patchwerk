@@ -1,0 +1,239 @@
+{
+  "module_type": "buttplug_scalar_out",
+  "category": "Output",
+  "input_ports": [
+    {
+      "name": "in",
+      "signal_kind": "signal",
+      "default": 0.0
+    },
+    {
+      "name": "min",
+      "signal_kind": "signal",
+      "default": 0.0
+    },
+    {
+      "name": "max",
+      "signal_kind": "signal",
+      "default": 100.0
+    }
+  ],
+  "output_ports": [
+    {
+      "name": "out",
+      "signal_kind": "signal",
+      "default": 0.0
+    }
+  ],
+  "param_defaults": {
+    "profile": "buttplug_main",
+    "enabled": "on",
+    "invert": "off",
+    "neutral": 0.0,
+    "device_name": "",
+    "output_index": 0
+  },
+  "controls": [
+    {
+      "key": "profile",
+      "label": "profile",
+      "control_type": "selector",
+      "value_source": "param",
+      "default": "buttplug_main",
+      "minimum": 0.0,
+      "maximum": 100.0,
+      "decimals": 2,
+      "options": [
+        "buttplug_main",
+        "buttplug_aux_1",
+        "buttplug_aux_2"
+      ],
+      "units_key": null,
+      "units_options": [],
+      "show_on_node": true,
+      "advanced_only": false,
+      "secondary_key": null,
+      "position_port": null,
+      "row": null,
+      "col": null,
+      "momentary": false
+    },
+    {
+      "key": "enabled",
+      "label": "enabled",
+      "control_type": "button",
+      "value_source": "param",
+      "default": "on",
+      "minimum": 0.0,
+      "maximum": 100.0,
+      "decimals": 2,
+      "options": [
+        "on",
+        "off"
+      ],
+      "units_key": null,
+      "units_options": [],
+      "show_on_node": true,
+      "advanced_only": false,
+      "secondary_key": null,
+      "position_port": null,
+      "row": null,
+      "col": null,
+      "momentary": false
+    },
+    {
+      "key": "invert",
+      "label": "invert",
+      "control_type": "button",
+      "value_source": "param",
+      "default": "off",
+      "minimum": 0.0,
+      "maximum": 100.0,
+      "decimals": 2,
+      "options": [
+        "off",
+        "on"
+      ],
+      "units_key": null,
+      "units_options": [],
+      "show_on_node": true,
+      "advanced_only": false,
+      "secondary_key": null,
+      "position_port": null,
+      "row": null,
+      "col": null,
+      "momentary": false
+    },
+    {
+      "key": "min",
+      "label": "min",
+      "control_type": "knob",
+      "value_source": "input",
+      "default": 0.0,
+      "minimum": 0.0,
+      "maximum": 100.0,
+      "decimals": 2,
+      "options": [],
+      "units_key": null,
+      "units_options": [],
+      "show_on_node": true,
+      "advanced_only": false,
+      "secondary_key": null,
+      "position_port": null,
+      "row": null,
+      "col": null,
+      "momentary": false
+    },
+    {
+      "key": "max",
+      "label": "max",
+      "control_type": "knob",
+      "value_source": "input",
+      "default": 100.0,
+      "minimum": 0.0,
+      "maximum": 100.0,
+      "decimals": 2,
+      "options": [],
+      "units_key": null,
+      "units_options": [],
+      "show_on_node": true,
+      "advanced_only": false,
+      "secondary_key": null,
+      "position_port": null,
+      "row": null,
+      "col": null,
+      "momentary": false
+    },
+    {
+      "key": "neutral",
+      "label": "neutral",
+      "control_type": "knob",
+      "value_source": "param",
+      "default": 0.0,
+      "minimum": 0.0,
+      "maximum": 100.0,
+      "decimals": 2,
+      "options": [],
+      "units_key": null,
+      "units_options": [],
+      "show_on_node": true,
+      "advanced_only": false,
+      "secondary_key": null,
+      "position_port": null,
+      "row": null,
+      "col": null,
+      "momentary": false
+    },
+    {
+      "key": "connected_led",
+      "label": "conn",
+      "control_type": "led",
+      "value_source": "auto",
+      "default": 0.0,
+      "minimum": 0.0,
+      "maximum": 100.0,
+      "decimals": 2,
+      "options": [],
+      "units_key": null,
+      "units_options": [],
+      "show_on_node": true,
+      "advanced_only": false,
+      "secondary_key": null,
+      "position_port": null,
+      "row": null,
+      "col": null,
+      "momentary": false
+    },
+    {
+      "key": "active_led",
+      "label": "act",
+      "control_type": "led",
+      "value_source": "auto",
+      "default": 0.0,
+      "minimum": 0.0,
+      "maximum": 100.0,
+      "decimals": 2,
+      "options": [],
+      "units_key": null,
+      "units_options": [],
+      "show_on_node": true,
+      "advanced_only": false,
+      "secondary_key": null,
+      "position_port": null,
+      "row": null,
+      "col": null,
+      "momentary": false
+    },
+    {
+      "key": "value_disp",
+      "label": "val",
+      "control_type": "display",
+      "value_source": "auto",
+      "default": 0.0,
+      "minimum": 0.0,
+      "maximum": 100.0,
+      "decimals": 2,
+      "options": [],
+      "units_key": null,
+      "units_options": [],
+      "show_on_node": true,
+      "advanced_only": false,
+      "secondary_key": null,
+      "position_port": null,
+      "row": null,
+      "col": null,
+      "momentary": false
+    }
+  ],
+  "port_groups": [],
+  "state_only_params": [
+    "device_name",
+    "output_index"
+  ],
+  "internal_outputs": [],
+  "layout": {
+    "Uw": 4,
+    "Ur": 1,
+    "profile": "unknown"
+  }
+}

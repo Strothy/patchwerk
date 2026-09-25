@@ -1,0 +1,222 @@
+{
+  "module_type": "toggle_4",
+  "category": "Sequencer",
+  "input_ports": [
+    {
+      "name": "trig1",
+      "signal_kind": "trigger",
+      "default": 0.0
+    },
+    {
+      "name": "trig2",
+      "signal_kind": "trigger",
+      "default": 0.0
+    },
+    {
+      "name": "trig3",
+      "signal_kind": "trigger",
+      "default": 0.0
+    },
+    {
+      "name": "trig4",
+      "signal_kind": "trigger",
+      "default": 0.0
+    },
+    {
+      "name": "reset",
+      "signal_kind": "trigger",
+      "default": 0.0
+    }
+  ],
+  "output_ports": [
+    {
+      "name": "q1",
+      "signal_kind": "gate",
+      "default": 0.0
+    },
+    {
+      "name": "q2",
+      "signal_kind": "gate",
+      "default": 0.0
+    },
+    {
+      "name": "q3",
+      "signal_kind": "gate",
+      "default": 0.0
+    },
+    {
+      "name": "q4",
+      "signal_kind": "gate",
+      "default": 0.0
+    }
+  ],
+  "param_defaults": {
+    "init_state": "off"
+  },
+  "controls": [
+    {
+      "key": "init_state",
+      "label": "init",
+      "control_type": "selector",
+      "value_source": "param",
+      "default": "off",
+      "minimum": 0.0,
+      "maximum": 100.0,
+      "decimals": 2,
+      "options": [
+        "off",
+        "on"
+      ],
+      "units_key": null,
+      "units_options": [],
+      "show_on_node": true,
+      "advanced_only": false,
+      "secondary_key": null,
+      "position_port": null,
+      "row": null,
+      "col": null,
+      "momentary": false
+    },
+    {
+      "key": "q1_led",
+      "label": "Q1",
+      "control_type": "led",
+      "value_source": "auto",
+      "default": 0.0,
+      "minimum": 0.0,
+      "maximum": 100.0,
+      "decimals": 2,
+      "options": [],
+      "units_key": null,
+      "units_options": [],
+      "show_on_node": true,
+      "advanced_only": false,
+      "secondary_key": null,
+      "position_port": null,
+      "row": null,
+      "col": null,
+      "momentary": false
+    },
+    {
+      "key": "q2_led",
+      "label": "Q2",
+      "control_type": "led",
+      "value_source": "auto",
+      "default": 0.0,
+      "minimum": 0.0,
+      "maximum": 100.0,
+      "decimals": 2,
+      "options": [],
+      "units_key": null,
+      "units_options": [],
+      "show_on_node": true,
+      "advanced_only": false,
+      "secondary_key": null,
+      "position_port": null,
+      "row": null,
+      "col": null,
+      "momentary": false
+    },
+    {
+      "key": "q3_led",
+      "label": "Q3",
+      "control_type": "led",
+      "value_source": "auto",
+      "default": 0.0,
+      "minimum": 0.0,
+      "maximum": 100.0,
+      "decimals": 2,
+      "options": [],
+      "units_key": null,
+      "units_options": [],
+      "show_on_node": true,
+      "advanced_only": false,
+      "secondary_key": null,
+      "position_port": null,
+      "row": null,
+      "col": null,
+      "momentary": false
+    },
+    {
+      "key": "q4_led",
+      "label": "Q4",
+      "control_type": "led",
+      "value_source": "auto",
+      "default": 0.0,
+      "minimum": 0.0,
+      "maximum": 100.0,
+      "decimals": 2,
+      "options": [],
+      "units_key": null,
+      "units_options": [],
+      "show_on_node": true,
+      "advanced_only": false,
+      "secondary_key": null,
+      "position_port": null,
+      "row": null,
+      "col": null,
+      "momentary": false
+    }
+  ],
+  "port_groups": [
+    {
+      "name": "TRIG",
+      "ports": [],
+      "layout": "vertical",
+      "rows": [
+        {
+          "left": [
+            "trig1"
+          ],
+          "right": [
+            "trig2"
+          ]
+        },
+        {
+          "left": [
+            "trig3"
+          ],
+          "right": [
+            "trig4"
+          ]
+        },
+        {
+          "left": [
+            "reset"
+          ],
+          "right": []
+        }
+      ]
+    },
+    {
+      "name": "OUT",
+      "ports": [],
+      "layout": "vertical",
+      "rows": [
+        {
+          "left": [
+            "q1"
+          ],
+          "right": [
+            "q2"
+          ]
+        },
+        {
+          "left": [
+            "q3"
+          ],
+          "right": [
+            "q4"
+          ]
+        }
+      ]
+    }
+  ],
+  "state_only_params": [],
+  "internal_outputs": [],
+  "layout": {
+    "Uw": 3,
+    "Ur": 1,
+    "profile": "unknown"
+  }
+}

@@ -1,0 +1,129 @@
+{
+  "module_type": "mixer4",
+  "category": "Utility",
+  "input_ports": [
+    {
+      "name": "a",
+      "signal_kind": "signal",
+      "default": 0.0
+    },
+    {
+      "name": "b",
+      "signal_kind": "signal",
+      "default": 0.0
+    },
+    {
+      "name": "c",
+      "signal_kind": "signal",
+      "default": 0.0
+    },
+    {
+      "name": "d",
+      "signal_kind": "signal",
+      "default": 0.0
+    }
+  ],
+  "output_ports": [
+    {
+      "name": "out",
+      "signal_kind": "signal",
+      "default": 0.0
+    }
+  ],
+  "param_defaults": {
+    "level_a": 100.0,
+    "level_b": 100.0,
+    "level_c": 100.0,
+    "level_d": 100.0
+  },
+  "controls": [
+    {
+      "key": "level_a",
+      "label": "A",
+      "control_type": "slider",
+      "value_source": "param",
+      "default": 100.0,
+      "minimum": 0.0,
+      "maximum": 100.0,
+      "decimals": 1,
+      "options": [],
+      "units_key": null,
+      "units_options": [],
+      "show_on_node": true,
+      "advanced_only": false,
+      "secondary_key": null,
+      "position_port": null,
+      "row": null,
+      "col": null,
+      "momentary": false
+    },
+    {
+      "key": "level_b",
+      "label": "B",
+      "control_type": "slider",
+      "value_source": "param",
+      "default": 100.0,
+      "minimum": 0.0,
+      "maximum": 100.0,
+      "decimals": 1,
+      "options": [],
+      "units_key": null,
+      "units_options": [],
+      "show_on_node": true,
+      "advanced_only": false,
+      "secondary_key": null,
+      "position_port": null,
+      "row": null,
+      "col": null,
+      "momentary": false
+    },
+    {
+      "key": "level_c",
+      "label": "C",
+      "control_type": "slider",
+      "value_source": "param",
+      "default": 100.0,
+      "minimum": 0.0,
+      "maximum": 100.0,
+      "decimals": 1,
+      "options": [],
+      "units_key": null,
+      "units_options": [],
+      "show_on_node": true,
+      "advanced_only": false,
+      "secondary_key": null,
+      "position_port": null,
+      "row": null,
+      "col": null,
+      "momentary": false
+    },
+    {
+      "key": "level_d",
+      "label": "D",
+      "control_type": "slider",
+      "value_source": "param",
+      "default": 100.0,
+      "minimum": 0.0,
+      "maximum": 100.0,
+      "decimals": 1,
+      "options": [],
+      "units_key": null,
+      "units_options": [],
+      "show_on_node": true,
+      "advanced_only": false,
+      "secondary_key": null,
+      "position_port": null,
+      "row": null,
+      "col": null,
+      "momentary": false
+    }
+  ],
+  "port_groups": [],
+  "state_only_params": [],
+  "internal_outputs": [],
+  "layout": {
+    "Uw": 3,
+    "Ur": 1,
+    "profile": "unknown"
+  }
+}

@@ -1,0 +1,523 @@
+{
+  "module_type": "midi_lfo",
+  "category": "Midi",
+  "input_ports": [
+    {
+      "name": "rate",
+      "signal_kind": "signal",
+      "default": 0.5
+    },
+    {
+      "name": "amp",
+      "signal_kind": "signal",
+      "default": 25.0
+    },
+    {
+      "name": "offset",
+      "signal_kind": "signal",
+      "default": 0.0
+    },
+    {
+      "name": "phase",
+      "signal_kind": "signal",
+      "default": 0.0
+    }
+  ],
+  "output_ports": [
+    {
+      "name": "out",
+      "signal_kind": "signal",
+      "default": 0.0
+    },
+    {
+      "name": "lfo_out",
+      "signal_kind": "signal",
+      "default": 0.0
+    }
+  ],
+  "param_defaults": {
+    "enabled": "on",
+    "device": "(any)",
+    "channel": "any",
+    "mode": "latest",
+    "learn": "off",
+    "cc": 1.0,
+    "center_min": 0.0,
+    "center_max": 100.0,
+    "shape": "sine",
+    "polarity": "bipolar",
+    "response": "raw",
+    "smooth": 0.15,
+    "invert": "off"
+  },
+  "controls": [
+    {
+      "key": "shape",
+      "label": "shape",
+      "control_type": "selector",
+      "value_source": "param",
+      "default": "sine",
+      "minimum": 0.0,
+      "maximum": 100.0,
+      "decimals": 2,
+      "options": [
+        "sine",
+        "triangle",
+        "saw",
+        "square"
+      ],
+      "units_key": null,
+      "units_options": [],
+      "show_on_node": true,
+      "advanced_only": false,
+      "secondary_key": null,
+      "position_port": null,
+      "row": null,
+      "col": null,
+      "momentary": false
+    },
+    {
+      "key": "polarity",
+      "label": "polarity",
+      "control_type": "selector",
+      "value_source": "param",
+      "default": "bipolar",
+      "minimum": 0.0,
+      "maximum": 100.0,
+      "decimals": 2,
+      "options": [
+        "bipolar",
+        "unipolar"
+      ],
+      "units_key": null,
+      "units_options": [],
+      "show_on_node": true,
+      "advanced_only": false,
+      "secondary_key": null,
+      "position_port": null,
+      "row": null,
+      "col": null,
+      "momentary": false
+    },
+    {
+      "key": "rate",
+      "label": "rate",
+      "control_type": "knob",
+      "value_source": "input",
+      "default": 0.5,
+      "minimum": 0.0,
+      "maximum": 20.0,
+      "decimals": 2,
+      "options": [],
+      "units_key": "rate_unit",
+      "units_options": [
+        "hz",
+        "seconds"
+      ],
+      "show_on_node": true,
+      "advanced_only": false,
+      "secondary_key": null,
+      "position_port": null,
+      "row": null,
+      "col": null,
+      "momentary": false
+    },
+    {
+      "key": "amp",
+      "label": "amp",
+      "control_type": "knob",
+      "value_source": "input",
+      "default": 25.0,
+      "minimum": 0.0,
+      "maximum": 100.0,
+      "decimals": 2,
+      "options": [],
+      "units_key": null,
+      "units_options": [],
+      "show_on_node": true,
+      "advanced_only": false,
+      "secondary_key": null,
+      "position_port": null,
+      "row": null,
+      "col": null,
+      "momentary": false
+    },
+    {
+      "key": "offset",
+      "label": "offset",
+      "control_type": "knob",
+      "value_source": "input",
+      "default": 0.0,
+      "minimum": -100.0,
+      "maximum": 100.0,
+      "decimals": 2,
+      "options": [],
+      "units_key": null,
+      "units_options": [],
+      "show_on_node": true,
+      "advanced_only": false,
+      "secondary_key": null,
+      "position_port": null,
+      "row": null,
+      "col": null,
+      "momentary": false
+    },
+    {
+      "key": "phase",
+      "label": "phase",
+      "control_type": "knob",
+      "value_source": "input",
+      "default": 0.0,
+      "minimum": 0.0,
+      "maximum": 360.0,
+      "decimals": 1,
+      "options": [],
+      "units_key": null,
+      "units_options": [],
+      "show_on_node": true,
+      "advanced_only": false,
+      "secondary_key": null,
+      "position_port": null,
+      "row": null,
+      "col": null,
+      "momentary": false
+    },
+    {
+      "key": "enabled",
+      "label": "enabled",
+      "control_type": "button",
+      "value_source": "param",
+      "default": "on",
+      "minimum": 0.0,
+      "maximum": 100.0,
+      "decimals": 2,
+      "options": [
+        "on",
+        "off"
+      ],
+      "units_key": null,
+      "units_options": [],
+      "show_on_node": true,
+      "advanced_only": false,
+      "secondary_key": null,
+      "position_port": null,
+      "row": null,
+      "col": null,
+      "momentary": false
+    },
+    {
+      "key": "device",
+      "label": "device",
+      "control_type": "selector",
+      "value_source": "param",
+      "default": "(any)",
+      "minimum": 0.0,
+      "maximum": 100.0,
+      "decimals": 2,
+      "options": [
+        "(any)",
+        "MIDI Mix 0"
+      ],
+      "units_key": null,
+      "units_options": [],
+      "show_on_node": false,
+      "advanced_only": true,
+      "secondary_key": null,
+      "position_port": null,
+      "row": null,
+      "col": null,
+      "momentary": false
+    },
+    {
+      "key": "channel",
+      "label": "channel",
+      "control_type": "selector",
+      "value_source": "param",
+      "default": "any",
+      "minimum": 0.0,
+      "maximum": 100.0,
+      "decimals": 2,
+      "options": [
+        "any",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16"
+      ],
+      "units_key": null,
+      "units_options": [],
+      "show_on_node": true,
+      "advanced_only": false,
+      "secondary_key": null,
+      "position_port": null,
+      "row": null,
+      "col": null,
+      "momentary": false
+    },
+    {
+      "key": "mode",
+      "label": "mode",
+      "control_type": "selector",
+      "value_source": "param",
+      "default": "latest",
+      "minimum": 0.0,
+      "maximum": 100.0,
+      "decimals": 2,
+      "options": [
+        "latest",
+        "fixed"
+      ],
+      "units_key": null,
+      "units_options": [],
+      "show_on_node": false,
+      "advanced_only": true,
+      "secondary_key": null,
+      "position_port": null,
+      "row": null,
+      "col": null,
+      "momentary": false
+    },
+    {
+      "key": "learn",
+      "label": "learn",
+      "control_type": "button",
+      "value_source": "param",
+      "default": "off",
+      "minimum": 0.0,
+      "maximum": 100.0,
+      "decimals": 2,
+      "options": [
+        "off",
+        "on"
+      ],
+      "units_key": null,
+      "units_options": [],
+      "show_on_node": false,
+      "advanced_only": true,
+      "secondary_key": null,
+      "position_port": null,
+      "row": null,
+      "col": null,
+      "momentary": false
+    },
+    {
+      "key": "cc",
+      "label": "cc",
+      "control_type": "knob",
+      "value_source": "param",
+      "default": 1.0,
+      "minimum": 0.0,
+      "maximum": 127.0,
+      "decimals": 0,
+      "options": [],
+      "units_key": null,
+      "units_options": [],
+      "show_on_node": true,
+      "advanced_only": false,
+      "secondary_key": null,
+      "position_port": null,
+      "row": null,
+      "col": null,
+      "momentary": false
+    },
+    {
+      "key": "center_min",
+      "label": "ctr min",
+      "control_type": "knob",
+      "value_source": "param",
+      "default": 0.0,
+      "minimum": 0.0,
+      "maximum": 100.0,
+      "decimals": 1,
+      "options": [],
+      "units_key": null,
+      "units_options": [],
+      "show_on_node": true,
+      "advanced_only": false,
+      "secondary_key": null,
+      "position_port": null,
+      "row": null,
+      "col": null,
+      "momentary": false
+    },
+    {
+      "key": "center_max",
+      "label": "ctr max",
+      "control_type": "knob",
+      "value_source": "param",
+      "default": 100.0,
+      "minimum": 0.0,
+      "maximum": 100.0,
+      "decimals": 1,
+      "options": [],
+      "units_key": null,
+      "units_options": [],
+      "show_on_node": true,
+      "advanced_only": false,
+      "secondary_key": null,
+      "position_port": null,
+      "row": null,
+      "col": null,
+      "momentary": false
+    },
+    {
+      "key": "response",
+      "label": "response",
+      "control_type": "selector",
+      "value_source": "param",
+      "default": "raw",
+      "minimum": 0.0,
+      "maximum": 100.0,
+      "decimals": 2,
+      "options": [
+        "raw",
+        "smooth"
+      ],
+      "units_key": null,
+      "units_options": [],
+      "show_on_node": false,
+      "advanced_only": true,
+      "secondary_key": null,
+      "position_port": null,
+      "row": null,
+      "col": null,
+      "momentary": false
+    },
+    {
+      "key": "smooth",
+      "label": "smooth",
+      "control_type": "knob",
+      "value_source": "param",
+      "default": 0.15,
+      "minimum": 0.0,
+      "maximum": 0.95,
+      "decimals": 2,
+      "options": [],
+      "units_key": null,
+      "units_options": [],
+      "show_on_node": false,
+      "advanced_only": true,
+      "secondary_key": null,
+      "position_port": null,
+      "row": null,
+      "col": null,
+      "momentary": false
+    },
+    {
+      "key": "invert",
+      "label": "invert",
+      "control_type": "button",
+      "value_source": "param",
+      "default": "off",
+      "minimum": 0.0,
+      "maximum": 100.0,
+      "decimals": 2,
+      "options": [
+        "off",
+        "on"
+      ],
+      "units_key": null,
+      "units_options": [],
+      "show_on_node": true,
+      "advanced_only": false,
+      "secondary_key": null,
+      "position_port": null,
+      "row": null,
+      "col": null,
+      "momentary": false
+    },
+    {
+      "key": "activity_led",
+      "label": "rx",
+      "control_type": "led",
+      "value_source": "auto",
+      "default": 0.0,
+      "minimum": 0.0,
+      "maximum": 100.0,
+      "decimals": 2,
+      "options": [],
+      "units_key": null,
+      "units_options": [],
+      "show_on_node": true,
+      "advanced_only": false,
+      "secondary_key": null,
+      "position_port": null,
+      "row": null,
+      "col": null,
+      "momentary": false
+    },
+    {
+      "key": "value_disp",
+      "label": "value",
+      "control_type": "display",
+      "value_source": "auto",
+      "default": 0.0,
+      "minimum": 0.0,
+      "maximum": 100.0,
+      "decimals": 2,
+      "options": [],
+      "units_key": null,
+      "units_options": [],
+      "show_on_node": true,
+      "advanced_only": false,
+      "secondary_key": null,
+      "position_port": null,
+      "row": null,
+      "col": null,
+      "momentary": false
+    }
+  ],
+  "port_groups": [
+    {
+      "name": "IN",
+      "ports": [],
+      "layout": "vertical",
+      "rows": [
+        {
+          "left": [
+            "rate",
+            "amp"
+          ],
+          "right": [
+            "offset",
+            "phase"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "OUT",
+      "ports": [],
+      "layout": "vertical",
+      "rows": [
+        {
+          "left": [
+            "out"
+          ],
+          "right": [
+            "lfo_out"
+          ]
+        }
+      ]
+    }
+  ],
+  "state_only_params": [],
+  "internal_outputs": [],
+  "layout": {
+    "Uw": 5,
+    "Ur": 1,
+    "profile": "unknown"
+  }
+}

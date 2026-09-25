@@ -1,0 +1,686 @@
+{
+ "source_repo": "SYB-Cable-Live",
+ "source_commit": "3a628b3a8f5c3a0e5e45cdb0f55f2c065372ac3a",
+ "dt": 0.016666666666666666,
+ "modules": {
+  "abs": {
+   "status": "ok",
+   "deterministic": true,
+   "reads_wall_clock": false,
+   "host_services": [],
+   "scenario_count": 3,
+   "scenario_errors": []
+  },
+  "add": {
+   "status": "ok",
+   "deterministic": true,
+   "reads_wall_clock": false,
+   "host_services": [],
+   "scenario_count": 3,
+   "scenario_errors": []
+  },
+  "arp": {
+   "status": "ok",
+   "deterministic": false,
+   "reads_wall_clock": false,
+   "host_services": [],
+   "scenario_count": 6,
+   "scenario_errors": []
+  },
+  "attenuverter": {
+   "status": "ok",
+   "deterministic": true,
+   "reads_wall_clock": false,
+   "host_services": [],
+   "scenario_count": 3,
+   "scenario_errors": []
+  },
+  "bernoulli_gate": {
+   "status": "ok",
+   "deterministic": false,
+   "reads_wall_clock": false,
+   "host_services": [],
+   "scenario_count": 3,
+   "scenario_errors": []
+  },
+  "burst_gen": {
+   "status": "ok",
+   "deterministic": true,
+   "reads_wall_clock": false,
+   "host_services": [],
+   "scenario_count": 3,
+   "scenario_errors": []
+  },
+  "buttplug_linear_out": {
+   "status": "ok",
+   "deterministic": true,
+   "reads_wall_clock": false,
+   "host_services": [
+    "output_service"
+   ],
+   "scenario_count": 12,
+   "scenario_errors": []
+  },
+  "buttplug_scalar_out": {
+   "status": "ok",
+   "deterministic": true,
+   "reads_wall_clock": false,
+   "host_services": [
+    "output_service"
+   ],
+   "scenario_count": 5,
+   "scenario_errors": []
+  },
+  "clamp": {
+   "status": "ok",
+   "deterministic": true,
+   "reads_wall_clock": false,
+   "host_services": [],
+   "scenario_count": 3,
+   "scenario_errors": []
+  },
+  "clock": {
+   "status": "ok",
+   "deterministic": true,
+   "reads_wall_clock": false,
+   "host_services": [
+    "clock_helpers"
+   ],
+   "scenario_count": 4,
+   "scenario_errors": []
+  },
+  "clock_divider": {
+   "status": "ok",
+   "deterministic": true,
+   "reads_wall_clock": false,
+   "host_services": [
+    "clock_helpers"
+   ],
+   "scenario_count": 3,
+   "scenario_errors": []
+  },
+  "clock_divider_stack": {
+   "status": "ok",
+   "deterministic": true,
+   "reads_wall_clock": false,
+   "host_services": [
+    "clock_helpers"
+   ],
+   "scenario_count": 62,
+   "scenario_errors": []
+  },
+  "comparator": {
+   "status": "ok",
+   "deterministic": true,
+   "reads_wall_clock": false,
+   "host_services": [],
+   "scenario_count": 3,
+   "scenario_errors": []
+  },
+  "constant": {
+   "status": "ok",
+   "deterministic": true,
+   "reads_wall_clock": false,
+   "host_services": [],
+   "scenario_count": 3,
+   "scenario_errors": []
+  },
+  "counter": {
+   "status": "ok",
+   "deterministic": true,
+   "reads_wall_clock": false,
+   "host_services": [],
+   "scenario_count": 3,
+   "scenario_errors": []
+  },
+  "crossfade": {
+   "status": "ok",
+   "deterministic": true,
+   "reads_wall_clock": false,
+   "host_services": [],
+   "scenario_count": 3,
+   "scenario_errors": []
+  },
+  "divide": {
+   "status": "ok",
+   "deterministic": true,
+   "reads_wall_clock": false,
+   "host_services": [],
+   "scenario_count": 3,
+   "scenario_errors": []
+  },
+  "edge_detector": {
+   "status": "ok",
+   "deterministic": true,
+   "reads_wall_clock": false,
+   "host_services": [],
+   "scenario_count": 5,
+   "scenario_errors": []
+  },
+  "edge_mode": {
+   "status": "ok",
+   "deterministic": true,
+   "reads_wall_clock": false,
+   "host_services": [
+    "hotkey_service"
+   ],
+   "scenario_count": 20,
+   "scenario_errors": []
+  },
+  "envelope_adsr": {
+   "status": "ok",
+   "deterministic": true,
+   "reads_wall_clock": false,
+   "host_services": [],
+   "scenario_count": 9,
+   "scenario_errors": []
+  },
+  "euclidean_seq": {
+   "status": "ok",
+   "deterministic": true,
+   "reads_wall_clock": false,
+   "host_services": [],
+   "scenario_count": 3,
+   "scenario_errors": []
+  },
+  "funscript_recorder": {
+   "status": "ok",
+   "deterministic": true,
+   "reads_wall_clock": true,
+   "host_services": [
+    "output_service"
+   ],
+   "scenario_count": 4,
+   "scenario_errors": []
+  },
+  "gate_delay": {
+   "status": "ok",
+   "deterministic": true,
+   "reads_wall_clock": false,
+   "host_services": [],
+   "scenario_count": 3,
+   "scenario_errors": []
+  },
+  "gravity_attractor": {
+   "status": "ok",
+   "deterministic": true,
+   "reads_wall_clock": false,
+   "host_services": [],
+   "scenario_count": 3,
+   "scenario_errors": []
+  },
+  "hotkey_trigger": {
+   "status": "ok",
+   "deterministic": true,
+   "reads_wall_clock": false,
+   "host_services": [
+    "hotkey_service"
+   ],
+   "scenario_count": 18,
+   "scenario_errors": []
+  },
+  "invert": {
+   "status": "ok",
+   "deterministic": true,
+   "reads_wall_clock": false,
+   "host_services": [],
+   "scenario_count": 3,
+   "scenario_errors": []
+  },
+  "lfo": {
+   "status": "ok",
+   "deterministic": true,
+   "reads_wall_clock": false,
+   "host_services": [],
+   "scenario_count": 7,
+   "scenario_errors": []
+  },
+  "logic_gate": {
+   "status": "ok",
+   "deterministic": true,
+   "reads_wall_clock": false,
+   "host_services": [],
+   "scenario_count": 8,
+   "scenario_errors": []
+  },
+  "manual_trigger_8": {
+   "status": "ok",
+   "deterministic": true,
+   "reads_wall_clock": false,
+   "host_services": [
+    "manual_trigger_service"
+   ],
+   "scenario_count": 3,
+   "scenario_errors": []
+  },
+  "max": {
+   "status": "ok",
+   "deterministic": true,
+   "reads_wall_clock": false,
+   "host_services": [],
+   "scenario_count": 3,
+   "scenario_errors": []
+  },
+  "midi_cc": {
+   "status": "ok",
+   "deterministic": true,
+   "reads_wall_clock": true,
+   "host_services": [
+    "midi_service"
+   ],
+   "scenario_count": 23,
+   "scenario_errors": []
+  },
+  "midi_cv": {
+   "status": "ok",
+   "deterministic": true,
+   "reads_wall_clock": true,
+   "host_services": [
+    "midi_service"
+   ],
+   "scenario_count": 23,
+   "scenario_errors": []
+  },
+  "midi_lfo": {
+   "status": "ok",
+   "deterministic": true,
+   "reads_wall_clock": true,
+   "host_services": [
+    "midi_service"
+   ],
+   "scenario_count": 26,
+   "scenario_errors": []
+  },
+  "midi_note_gate": {
+   "status": "ok",
+   "deterministic": true,
+   "reads_wall_clock": true,
+   "host_services": [
+    "midi_service"
+   ],
+   "scenario_count": 21,
+   "scenario_errors": []
+  },
+  "midi_out_8": {
+   "status": "ok",
+   "deterministic": true,
+   "reads_wall_clock": true,
+   "host_services": [
+    "midi_service"
+   ],
+   "scenario_count": 195,
+   "scenario_errors": []
+  },
+  "midi_rx_8": {
+   "status": "ok",
+   "deterministic": true,
+   "reads_wall_clock": false,
+   "host_services": [
+    "midi_service"
+   ],
+   "scenario_count": 187,
+   "scenario_errors": []
+  },
+  "min": {
+   "status": "ok",
+   "deterministic": true,
+   "reads_wall_clock": false,
+   "host_services": [],
+   "scenario_count": 3,
+   "scenario_errors": []
+  },
+  "mixer4": {
+   "status": "ok",
+   "deterministic": true,
+   "reads_wall_clock": false,
+   "host_services": [],
+   "scenario_count": 3,
+   "scenario_errors": []
+  },
+  "mult": {
+   "status": "ok",
+   "deterministic": true,
+   "reads_wall_clock": false,
+   "host_services": [],
+   "scenario_count": 3,
+   "scenario_errors": []
+  },
+  "mult_2x4": {
+   "status": "ok",
+   "deterministic": true,
+   "reads_wall_clock": false,
+   "host_services": [],
+   "scenario_count": 3,
+   "scenario_errors": []
+  },
+  "multiply": {
+   "status": "ok",
+   "deterministic": true,
+   "reads_wall_clock": false,
+   "host_services": [],
+   "scenario_count": 3,
+   "scenario_errors": []
+  },
+  "noise": {
+   "status": "ok",
+   "deterministic": false,
+   "reads_wall_clock": false,
+   "host_services": [],
+   "scenario_count": 6,
+   "scenario_errors": []
+  },
+  "oscillator": {
+   "status": "ok",
+   "deterministic": true,
+   "reads_wall_clock": false,
+   "host_services": [],
+   "scenario_count": 7,
+   "scenario_errors": []
+  },
+  "particle_noise": {
+   "status": "ok",
+   "deterministic": false,
+   "reads_wall_clock": false,
+   "host_services": [],
+   "scenario_count": 8,
+   "scenario_errors": []
+  },
+  "pattern_gate": {
+   "status": "ok",
+   "deterministic": true,
+   "reads_wall_clock": false,
+   "host_services": [],
+   "scenario_count": 3,
+   "scenario_errors": []
+  },
+  "pulse": {
+   "status": "ok",
+   "deterministic": true,
+   "reads_wall_clock": false,
+   "host_services": [],
+   "scenario_count": 3,
+   "scenario_errors": []
+  },
+  "quantize": {
+   "status": "ok",
+   "deterministic": true,
+   "reads_wall_clock": false,
+   "host_services": [],
+   "scenario_count": 3,
+   "scenario_errors": []
+  },
+  "quantizer": {
+   "status": "ok",
+   "deterministic": true,
+   "reads_wall_clock": false,
+   "host_services": [],
+   "scenario_count": 3,
+   "scenario_errors": []
+  },
+  "runtime_command_8": {
+   "status": "ok",
+   "deterministic": true,
+   "reads_wall_clock": false,
+   "host_services": [
+    "midi_service",
+    "runtime_command_service"
+   ],
+   "scenario_count": 315,
+   "scenario_errors": []
+  },
+  "sample_hold": {
+   "status": "ok",
+   "deterministic": true,
+   "reads_wall_clock": false,
+   "host_services": [],
+   "scenario_count": 3,
+   "scenario_errors": []
+  },
+  "scale_bias": {
+   "status": "ok",
+   "deterministic": true,
+   "reads_wall_clock": false,
+   "host_services": [],
+   "scenario_count": 3,
+   "scenario_errors": []
+  },
+  "scene_changer_8ch": {
+   "status": "ok",
+   "deterministic": true,
+   "reads_wall_clock": false,
+   "host_services": [],
+   "scenario_count": 6,
+   "scenario_errors": []
+  },
+  "scope_4ch": {
+   "status": "ok",
+   "deterministic": true,
+   "reads_wall_clock": false,
+   "host_services": [],
+   "scenario_count": 16,
+   "scenario_errors": []
+  },
+  "scope_tap": {
+   "status": "ok",
+   "deterministic": true,
+   "reads_wall_clock": false,
+   "host_services": [],
+   "scenario_count": 14,
+   "scenario_errors": []
+  },
+  "serial_axis_out": {
+   "status": "ok",
+   "deterministic": true,
+   "reads_wall_clock": false,
+   "host_services": [
+    "output_service"
+   ],
+   "scenario_count": 21,
+   "scenario_errors": []
+  },
+  "shift_reg_8": {
+   "status": "ok",
+   "deterministic": false,
+   "reads_wall_clock": false,
+   "host_services": [],
+   "scenario_count": 6,
+   "scenario_errors": []
+  },
+  "signal_gate": {
+   "status": "ok",
+   "deterministic": true,
+   "reads_wall_clock": false,
+   "host_services": [],
+   "scenario_count": 3,
+   "scenario_errors": []
+  },
+  "slew": {
+   "status": "ok",
+   "deterministic": true,
+   "reads_wall_clock": false,
+   "host_services": [],
+   "scenario_count": 4,
+   "scenario_errors": []
+  },
+  "slew_limiter": {
+   "status": "ok",
+   "deterministic": true,
+   "reads_wall_clock": false,
+   "host_services": [],
+   "scenario_count": 4,
+   "scenario_errors": []
+  },
+  "smooth_switch": {
+   "status": "ok",
+   "deterministic": true,
+   "reads_wall_clock": false,
+   "host_services": [],
+   "scenario_count": 4,
+   "scenario_errors": []
+  },
+  "spring_osc": {
+   "status": "ok",
+   "deterministic": true,
+   "reads_wall_clock": false,
+   "host_services": [],
+   "scenario_count": 3,
+   "scenario_errors": []
+  },
+  "sr6_multiaxis_out": {
+   "status": "ok",
+   "deterministic": true,
+   "reads_wall_clock": false,
+   "host_services": [
+    "output_service"
+   ],
+   "scenario_count": 6,
+   "scenario_errors": []
+  },
+  "sr6_sim": {
+   "status": "ok",
+   "deterministic": true,
+   "reads_wall_clock": false,
+   "host_services": [],
+   "scenario_count": 3,
+   "scenario_errors": []
+  },
+  "sr_latch": {
+   "status": "ok",
+   "deterministic": true,
+   "reads_wall_clock": false,
+   "host_services": [],
+   "scenario_count": 3,
+   "scenario_errors": []
+  },
+  "sr_latch_4": {
+   "status": "ok",
+   "deterministic": true,
+   "reads_wall_clock": false,
+   "host_services": [],
+   "scenario_count": 3,
+   "scenario_errors": []
+  },
+  "status_light_2": {
+   "status": "ok",
+   "deterministic": true,
+   "reads_wall_clock": false,
+   "host_services": [],
+   "scenario_count": 3,
+   "scenario_errors": []
+  },
+  "status_light_4": {
+   "status": "ok",
+   "deterministic": true,
+   "reads_wall_clock": false,
+   "host_services": [],
+   "scenario_count": 3,
+   "scenario_errors": []
+  },
+  "status_light_8": {
+   "status": "ok",
+   "deterministic": true,
+   "reads_wall_clock": false,
+   "host_services": [],
+   "scenario_count": 3,
+   "scenario_errors": []
+  },
+  "step_seq_16": {
+   "status": "ok",
+   "deterministic": false,
+   "reads_wall_clock": false,
+   "host_services": [],
+   "scenario_count": 10,
+   "scenario_errors": []
+  },
+  "step_seq_64": {
+   "status": "ok",
+   "deterministic": true,
+   "reads_wall_clock": false,
+   "host_services": [],
+   "scenario_count": 8,
+   "scenario_errors": []
+  },
+  "subtract": {
+   "status": "ok",
+   "deterministic": true,
+   "reads_wall_clock": false,
+   "host_services": [],
+   "scenario_count": 3,
+   "scenario_errors": []
+  },
+  "switch_4": {
+   "status": "ok",
+   "deterministic": true,
+   "reads_wall_clock": false,
+   "host_services": [],
+   "scenario_count": 6,
+   "scenario_errors": []
+  },
+  "toggle": {
+   "status": "ok",
+   "deterministic": true,
+   "reads_wall_clock": false,
+   "host_services": [],
+   "scenario_count": 4,
+   "scenario_errors": []
+  },
+  "toggle_4": {
+   "status": "ok",
+   "deterministic": true,
+   "reads_wall_clock": false,
+   "host_services": [],
+   "scenario_count": 4,
+   "scenario_errors": []
+  },
+  "track_hold": {
+   "status": "ok",
+   "deterministic": true,
+   "reads_wall_clock": false,
+   "host_services": [],
+   "scenario_count": 3,
+   "scenario_errors": []
+  },
+  "trigger_divider": {
+   "status": "ok",
+   "deterministic": true,
+   "reads_wall_clock": false,
+   "host_services": [
+    "clock_helpers"
+   ],
+   "scenario_count": 3,
+   "scenario_errors": []
+  },
+  "trigger_to_gate": {
+   "status": "ok",
+   "deterministic": true,
+   "reads_wall_clock": false,
+   "host_services": [],
+   "scenario_count": 3,
+   "scenario_errors": []
+  },
+  "vca": {
+   "status": "ok",
+   "deterministic": true,
+   "reads_wall_clock": false,
+   "host_services": [],
+   "scenario_count": 3,
+   "scenario_errors": []
+  },
+  "vco": {
+   "status": "ok",
+   "deterministic": true,
+   "reads_wall_clock": false,
+   "host_services": [],
+   "scenario_count": 4,
+   "scenario_errors": []
+  },
+  "waveshaper": {
+   "status": "ok",
+   "deterministic": true,
+   "reads_wall_clock": false,
+   "host_services": [],
+   "scenario_count": 15,
+   "scenario_errors": []
+  }
+ }
+}

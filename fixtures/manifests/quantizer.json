@@ -1,0 +1,51 @@
+{
+  "module_type": "quantizer",
+  "category": "Shaper",
+  "input_ports": [
+    {
+      "name": "in",
+      "signal_kind": "signal",
+      "default": 0.0
+    }
+  ],
+  "output_ports": [
+    {
+      "name": "out",
+      "signal_kind": "signal",
+      "default": 0.0
+    }
+  ],
+  "param_defaults": {
+    "steps": 8.0
+  },
+  "controls": [
+    {
+      "key": "steps",
+      "label": "steps",
+      "control_type": "knob",
+      "value_source": "param",
+      "default": 8.0,
+      "minimum": 2.0,
+      "maximum": 24.0,
+      "decimals": 0,
+      "options": [],
+      "units_key": null,
+      "units_options": [],
+      "show_on_node": true,
+      "advanced_only": false,
+      "secondary_key": null,
+      "position_port": null,
+      "row": null,
+      "col": null,
+      "momentary": false
+    }
+  ],
+  "port_groups": [],
+  "state_only_params": [],
+  "internal_outputs": [],
+  "layout": {
+    "Uw": 2,
+    "Ur": 1,
+    "profile": "unknown"
+  }
+}

@@ -1,0 +1,130 @@
+{
+  "module_type": "bernoulli_gate",
+  "category": "Utility",
+  "input_ports": [
+    {
+      "name": "trig",
+      "signal_kind": "trigger",
+      "default": 0.0
+    },
+    {
+      "name": "prob",
+      "signal_kind": "signal",
+      "default": 50.0
+    }
+  ],
+  "output_ports": [
+    {
+      "name": "a",
+      "signal_kind": "trigger",
+      "default": 0.0
+    },
+    {
+      "name": "b",
+      "signal_kind": "trigger",
+      "default": 0.0
+    }
+  ],
+  "param_defaults": {},
+  "controls": [
+    {
+      "key": "prob",
+      "label": "prob %",
+      "control_type": "knob",
+      "value_source": "input",
+      "default": 50.0,
+      "minimum": 0.0,
+      "maximum": 100.0,
+      "decimals": 1,
+      "options": [],
+      "units_key": null,
+      "units_options": [],
+      "show_on_node": true,
+      "advanced_only": false,
+      "secondary_key": null,
+      "position_port": null,
+      "row": null,
+      "col": null,
+      "momentary": false
+    },
+    {
+      "key": "a_led",
+      "label": "A",
+      "control_type": "led",
+      "value_source": "auto",
+      "default": 0.0,
+      "minimum": 0.0,
+      "maximum": 100.0,
+      "decimals": 2,
+      "options": [],
+      "units_key": null,
+      "units_options": [],
+      "show_on_node": true,
+      "advanced_only": false,
+      "secondary_key": null,
+      "position_port": null,
+      "row": null,
+      "col": null,
+      "momentary": false
+    },
+    {
+      "key": "b_led",
+      "label": "B",
+      "control_type": "led",
+      "value_source": "auto",
+      "default": 0.0,
+      "minimum": 0.0,
+      "maximum": 100.0,
+      "decimals": 2,
+      "options": [],
+      "units_key": null,
+      "units_options": [],
+      "show_on_node": true,
+      "advanced_only": false,
+      "secondary_key": null,
+      "position_port": null,
+      "row": null,
+      "col": null,
+      "momentary": false
+    }
+  ],
+  "port_groups": [
+    {
+      "name": "IN",
+      "ports": [],
+      "layout": "vertical",
+      "rows": [
+        {
+          "left": [
+            "trig"
+          ],
+          "right": [
+            "prob"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "OUT",
+      "ports": [],
+      "layout": "vertical",
+      "rows": [
+        {
+          "left": [
+            "a"
+          ],
+          "right": [
+            "b"
+          ]
+        }
+      ]
+    }
+  ],
+  "state_only_params": [],
+  "internal_outputs": [],
+  "layout": {
+    "Uw": 3,
+    "Ur": 1,
+    "profile": "unknown"
+  }
+}

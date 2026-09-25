@@ -1,0 +1,77 @@
+{
+  "module_type": "attenuverter",
+  "category": "Shaper",
+  "input_ports": [
+    {
+      "name": "in",
+      "signal_kind": "signal",
+      "default": 0.0
+    },
+    {
+      "name": "cv",
+      "signal_kind": "signal",
+      "default": 100.0
+    }
+  ],
+  "output_ports": [
+    {
+      "name": "out",
+      "signal_kind": "signal",
+      "default": 0.0
+    }
+  ],
+  "param_defaults": {
+    "scale": 100.0,
+    "offset": 0.0
+  },
+  "controls": [
+    {
+      "key": "scale",
+      "label": "scale %",
+      "control_type": "knob",
+      "value_source": "param",
+      "default": 100.0,
+      "minimum": -200.0,
+      "maximum": 200.0,
+      "decimals": 1,
+      "options": [],
+      "units_key": null,
+      "units_options": [],
+      "show_on_node": true,
+      "advanced_only": false,
+      "secondary_key": null,
+      "position_port": null,
+      "row": null,
+      "col": null,
+      "momentary": false
+    },
+    {
+      "key": "offset",
+      "label": "offset",
+      "control_type": "knob",
+      "value_source": "param",
+      "default": 0.0,
+      "minimum": -100.0,
+      "maximum": 100.0,
+      "decimals": 1,
+      "options": [],
+      "units_key": null,
+      "units_options": [],
+      "show_on_node": true,
+      "advanced_only": false,
+      "secondary_key": null,
+      "position_port": null,
+      "row": null,
+      "col": null,
+      "momentary": false
+    }
+  ],
+  "port_groups": [],
+  "state_only_params": [],
+  "internal_outputs": [],
+  "layout": {
+    "Uw": 3,
+    "Ur": 1,
+    "profile": "unknown"
+  }
+}

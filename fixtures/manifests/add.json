@@ -1,0 +1,84 @@
+{
+  "module_type": "add",
+  "category": "Math",
+  "input_ports": [
+    {
+      "name": "a"
+    },
+    {
+      "name": "b"
+    }
+  ],
+  "output_ports": [
+    {
+      "name": "out"
+    }
+  ],
+  "param_defaults": {},
+  "controls": [],
+  "port_groups": [],
+  "state_only_params": [],
+  "internal_outputs": [],
+  "layout": {
+    "Uw": 1,
+    "Ur": 1,
+    "profile": "unknown",
+    "schema": 1,
+    "grid": {
+      "cells_per_uw": 28,
+      "px": 5,
+      "show": true
+    },
+    "finish": "matte",
+    "elements": [
+      {
+        "id": "el_0001",
+        "kind": "jack",
+        "variant": "BEFACO_WASHER",
+        "tier": "M",
+        "x": 65.0,
+        "y": 240.0,
+        "bind": "a",
+        "bind_kind": "input_port",
+        "secondary": null,
+        "source": null,
+        "group": null,
+        "out": false,
+        "w": 0.0,
+        "h": 0.0
+      },
+      {
+        "id": "el_0002",
+        "kind": "jack",
+        "variant": "BEFACO_WASHER",
+        "tier": "M",
+        "x": 65.0,
+        "y": 150.0,
+        "bind": "b",
+        "bind_kind": "input_port",
+        "secondary": null,
+        "source": null,
+        "group": null,
+        "out": false,
+        "w": 0.0,
+        "h": 0.0
+      },
+      {
+        "id": "el_0003",
+        "kind": "jack",
+        "variant": "BEFACO_WASHER",
+        "tier": "M",
+        "x": 65.0,
+        "y": 665.0,
+        "bind": "out",
+        "bind_kind": "output_port",
+        "secondary": null,
+        "source": null,
+        "group": null,
+        "out": true,
+        "w": 0.0,
+        "h": 0.0
+      }
+    ]
+  }
+}

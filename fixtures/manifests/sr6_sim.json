@@ -1,0 +1,47 @@
+{
+  "module_type": "sr6_sim",
+  "category": "Output",
+  "input_ports": [
+    {
+      "name": "l0",
+      "signal_kind": "signal",
+      "default": 50.0
+    },
+    {
+      "name": "l1",
+      "signal_kind": "signal",
+      "default": 50.0
+    },
+    {
+      "name": "l2",
+      "signal_kind": "signal",
+      "default": 50.0
+    },
+    {
+      "name": "r0",
+      "signal_kind": "signal",
+      "default": 50.0
+    },
+    {
+      "name": "r1",
+      "signal_kind": "signal",
+      "default": 50.0
+    },
+    {
+      "name": "r2",
+      "signal_kind": "signal",
+      "default": 50.0
+    }
+  ],
+  "output_ports": [],
+  "param_defaults": {},
+  "controls": [],
+  "port_groups": [],
+  "state_only_params": [],
+  "internal_outputs": [],
+  "layout": {
+    "Uw": 6,
+    "Ur": 1,
+    "profile": "unknown"
+  }
+}

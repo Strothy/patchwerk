@@ -1,0 +1,1567 @@
+{
+  "name": "New Patch",
+  "modules": [
+    {
+      "id": "add_1",
+      "type": "add",
+      "name": "add 1",
+      "params": {},
+      "inputs": {
+        "a": 0.0,
+        "b": 0.0
+      },
+      "ui": {
+        "x": -5320.0,
+        "y": -750.0,
+        "control_ranges": {},
+        "control_mod_depths": {},
+        "control_units": {},
+        "panel_layout": "eurorack_v1",
+        "jack_layout": "bottom_compact_stack"
+      }
+    },
+    {
+      "id": "lfo_1",
+      "type": "lfo",
+      "name": "lfo 1",
+      "params": {
+        "shape": "sine",
+        "polarity": "bipolar"
+      },
+      "inputs": {
+        "rate": 0.1,
+        "amp": 10.0,
+        "offset": 0.0,
+        "phase": 0.0,
+        "reset": 0.0
+      },
+      "ui": {
+        "x": -5600.0,
+        "y": -750.0,
+        "control_ranges": {
+          "shape": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "polarity": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "rate": {
+            "min": 0.01,
+            "max": 2.0
+          },
+          "amp": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "offset": {
+            "min": -100.0,
+            "max": 100.0
+          },
+          "phase": {
+            "min": 0.0,
+            "max": 360.0
+          }
+        },
+        "control_mod_depths": {
+          "rate": 100.0,
+          "amp": 100.0,
+          "offset": 100.0,
+          "phase": 100.0
+        },
+        "control_units": {
+          "rate": "hz"
+        },
+        "panel_layout": "eurorack_v1",
+        "jack_layout": "bottom_split"
+      }
+    },
+    {
+      "id": "add_2",
+      "type": "add",
+      "name": "add 1",
+      "params": {},
+      "inputs": {
+        "a": 0.0,
+        "b": 0.0
+      },
+      "ui": {
+        "x": -4620.0,
+        "y": -750.0,
+        "control_ranges": {},
+        "control_mod_depths": {},
+        "control_units": {},
+        "panel_layout": "eurorack_v1",
+        "jack_layout": "bottom_compact_stack"
+      }
+    },
+    {
+      "id": "lfo_2",
+      "type": "lfo",
+      "name": "lfo 1",
+      "params": {
+        "shape": "sine",
+        "polarity": "bipolar"
+      },
+      "inputs": {
+        "rate": 0.1,
+        "amp": 10.0,
+        "offset": 0.0,
+        "phase": 0.0,
+        "reset": 0.0
+      },
+      "ui": {
+        "x": -4900.0,
+        "y": -750.0,
+        "control_ranges": {
+          "shape": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "polarity": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "rate": {
+            "min": 0.01,
+            "max": 2.0
+          },
+          "amp": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "offset": {
+            "min": -100.0,
+            "max": 100.0
+          },
+          "phase": {
+            "min": 0.0,
+            "max": 360.0
+          }
+        },
+        "control_mod_depths": {
+          "rate": 100.0,
+          "amp": 100.0,
+          "offset": 100.0,
+          "phase": 100.0
+        },
+        "control_units": {
+          "rate": "hz"
+        },
+        "panel_layout": "eurorack_v1",
+        "jack_layout": "bottom_split"
+      }
+    },
+    {
+      "id": "add_3",
+      "type": "add",
+      "name": "add 1",
+      "params": {},
+      "inputs": {
+        "a": 0.0,
+        "b": 0.0
+      },
+      "ui": {
+        "x": -5040.0,
+        "y": 0.0,
+        "control_ranges": {},
+        "control_mod_depths": {},
+        "control_units": {},
+        "panel_layout": "eurorack_v1",
+        "jack_layout": "bottom_compact_stack"
+      }
+    },
+    {
+      "id": "add_4",
+      "type": "add",
+      "name": "add 1",
+      "params": {},
+      "inputs": {
+        "a": 0.0,
+        "b": 0.0
+      },
+      "ui": {
+        "x": -4900.0,
+        "y": 0.0,
+        "control_ranges": {},
+        "control_mod_depths": {},
+        "control_units": {},
+        "panel_layout": "eurorack_v1",
+        "jack_layout": "bottom_compact_stack"
+      }
+    },
+    {
+      "id": "add_5",
+      "type": "add",
+      "name": "add 1",
+      "params": {},
+      "inputs": {
+        "a": 0.0,
+        "b": 0.0
+      },
+      "ui": {
+        "x": -4340.0,
+        "y": 0.0,
+        "control_ranges": {},
+        "control_mod_depths": {},
+        "control_units": {},
+        "panel_layout": "eurorack_v1",
+        "jack_layout": "bottom_compact_stack"
+      }
+    },
+    {
+      "id": "add_6",
+      "type": "add",
+      "name": "add 1",
+      "params": {},
+      "inputs": {
+        "a": 0.0,
+        "b": 0.0
+      },
+      "ui": {
+        "x": -3920.0,
+        "y": 0.0,
+        "control_ranges": {},
+        "control_mod_depths": {},
+        "control_units": {},
+        "panel_layout": "eurorack_v1",
+        "jack_layout": "bottom_compact_stack"
+      }
+    },
+    {
+      "id": "add_7",
+      "type": "add",
+      "name": "add 1",
+      "params": {},
+      "inputs": {
+        "a": 0.0,
+        "b": 0.0
+      },
+      "ui": {
+        "x": -3780.0,
+        "y": 0.0,
+        "control_ranges": {},
+        "control_mod_depths": {},
+        "control_units": {},
+        "panel_layout": "eurorack_v1",
+        "jack_layout": "bottom_compact_stack"
+      }
+    },
+    {
+      "id": "add_8",
+      "type": "add",
+      "name": "add 1",
+      "params": {},
+      "inputs": {
+        "a": 0.0,
+        "b": 0.0
+      },
+      "ui": {
+        "x": -3360.0,
+        "y": 0.0,
+        "control_ranges": {},
+        "control_mod_depths": {},
+        "control_units": {},
+        "panel_layout": "eurorack_v1",
+        "jack_layout": "bottom_compact_stack"
+      }
+    },
+    {
+      "id": "add_9",
+      "type": "add",
+      "name": "add 1",
+      "params": {},
+      "inputs": {
+        "a": 0.0,
+        "b": 0.0
+      },
+      "ui": {
+        "x": -3220.0,
+        "y": 0.0,
+        "control_ranges": {},
+        "control_mod_depths": {},
+        "control_units": {},
+        "panel_layout": "eurorack_v1",
+        "jack_layout": "bottom_compact_stack"
+      }
+    },
+    {
+      "id": "add_10",
+      "type": "add",
+      "name": "add 1",
+      "params": {},
+      "inputs": {
+        "a": 0.0,
+        "b": 0.0
+      },
+      "ui": {
+        "x": -2940.0,
+        "y": 0.0,
+        "control_ranges": {},
+        "control_mod_depths": {},
+        "control_units": {},
+        "panel_layout": "eurorack_v1",
+        "jack_layout": "bottom_compact_stack"
+      }
+    },
+    {
+      "id": "add_11",
+      "type": "add",
+      "name": "add 1",
+      "params": {},
+      "inputs": {
+        "a": 0.0,
+        "b": 0.0
+      },
+      "ui": {
+        "x": -2800.0,
+        "y": 0.0,
+        "control_ranges": {},
+        "control_mod_depths": {},
+        "control_units": {},
+        "panel_layout": "eurorack_v1",
+        "jack_layout": "bottom_compact_stack"
+      }
+    },
+    {
+      "id": "add_12",
+      "type": "add",
+      "name": "add 1",
+      "params": {},
+      "inputs": {
+        "a": 0.0,
+        "b": 0.0
+      },
+      "ui": {
+        "x": -2660.0,
+        "y": 0.0,
+        "control_ranges": {},
+        "control_mod_depths": {},
+        "control_units": {},
+        "panel_layout": "eurorack_v1",
+        "jack_layout": "bottom_compact_stack"
+      }
+    },
+    {
+      "id": "add_13",
+      "type": "add",
+      "name": "add 1",
+      "params": {},
+      "inputs": {
+        "a": 0.0,
+        "b": 0.0
+      },
+      "ui": {
+        "x": -2520.0,
+        "y": 0.0,
+        "control_ranges": {},
+        "control_mod_depths": {},
+        "control_units": {},
+        "panel_layout": "eurorack_v1",
+        "jack_layout": "bottom_compact_stack"
+      }
+    },
+    {
+      "id": "add_14",
+      "type": "add",
+      "name": "add 1",
+      "params": {},
+      "inputs": {
+        "a": 0.0,
+        "b": 0.0
+      },
+      "ui": {
+        "x": -2240.0,
+        "y": 750.0,
+        "control_ranges": {},
+        "control_mod_depths": {},
+        "control_units": {},
+        "panel_layout": "eurorack_v1",
+        "jack_layout": "bottom_compact_stack"
+      }
+    },
+    {
+      "id": "add_15",
+      "type": "add",
+      "name": "add 1",
+      "params": {},
+      "inputs": {
+        "a": 0.0,
+        "b": 0.0
+      },
+      "ui": {
+        "x": -2100.0,
+        "y": 750.0,
+        "control_ranges": {},
+        "control_mod_depths": {},
+        "control_units": {},
+        "panel_layout": "eurorack_v1",
+        "jack_layout": "bottom_compact_stack"
+      }
+    },
+    {
+      "id": "add_16",
+      "type": "add",
+      "name": "add 1",
+      "params": {},
+      "inputs": {
+        "a": 0.0,
+        "b": 0.0
+      },
+      "ui": {
+        "x": -1680.0,
+        "y": 0.0,
+        "control_ranges": {},
+        "control_mod_depths": {},
+        "control_units": {},
+        "panel_layout": "eurorack_v1",
+        "jack_layout": "bottom_compact_stack"
+      }
+    },
+    {
+      "id": "add_17",
+      "type": "add",
+      "name": "add 1",
+      "params": {},
+      "inputs": {
+        "a": 0.0,
+        "b": 0.0
+      },
+      "ui": {
+        "x": -1540.0,
+        "y": 0.0,
+        "control_ranges": {},
+        "control_mod_depths": {},
+        "control_units": {},
+        "panel_layout": "eurorack_v1",
+        "jack_layout": "bottom_compact_stack"
+      }
+    },
+    {
+      "id": "add_18",
+      "type": "add",
+      "name": "add 1",
+      "params": {},
+      "inputs": {
+        "a": 0.0,
+        "b": 0.0
+      },
+      "ui": {
+        "x": -1400.0,
+        "y": 0.0,
+        "control_ranges": {},
+        "control_mod_depths": {},
+        "control_units": {},
+        "panel_layout": "eurorack_v1",
+        "jack_layout": "bottom_compact_stack"
+      }
+    },
+    {
+      "id": "add_19",
+      "type": "add",
+      "name": "add 1",
+      "params": {},
+      "inputs": {
+        "a": 0.0,
+        "b": 0.0
+      },
+      "ui": {
+        "x": -1260.0,
+        "y": 0.0,
+        "control_ranges": {},
+        "control_mod_depths": {},
+        "control_units": {},
+        "panel_layout": "eurorack_v1",
+        "jack_layout": "bottom_compact_stack"
+      }
+    },
+    {
+      "id": "add_20",
+      "type": "add",
+      "name": "add 1",
+      "params": {},
+      "inputs": {
+        "a": 0.0,
+        "b": 0.0
+      },
+      "ui": {
+        "x": -1120.0,
+        "y": 0.0,
+        "control_ranges": {},
+        "control_mod_depths": {},
+        "control_units": {},
+        "panel_layout": "eurorack_v1",
+        "jack_layout": "bottom_compact_stack"
+      }
+    },
+    {
+      "id": "add_21",
+      "type": "add",
+      "name": "add 1",
+      "params": {},
+      "inputs": {
+        "a": 0.0,
+        "b": 0.0
+      },
+      "ui": {
+        "x": -980.0,
+        "y": 0.0,
+        "control_ranges": {},
+        "control_mod_depths": {},
+        "control_units": {},
+        "panel_layout": "eurorack_v1",
+        "jack_layout": "bottom_compact_stack"
+      }
+    },
+    {
+      "id": "add_22",
+      "type": "add",
+      "name": "add 1",
+      "params": {},
+      "inputs": {
+        "a": 0.0,
+        "b": 0.0
+      },
+      "ui": {
+        "x": 560.0,
+        "y": 750.0,
+        "control_ranges": {},
+        "control_mod_depths": {},
+        "control_units": {},
+        "panel_layout": "eurorack_v1",
+        "jack_layout": "bottom_compact_stack"
+      }
+    },
+    {
+      "id": "add_23",
+      "type": "add",
+      "name": "add 1",
+      "params": {},
+      "inputs": {
+        "a": 0.0,
+        "b": 0.0
+      },
+      "ui": {
+        "x": 700.0,
+        "y": 750.0,
+        "control_ranges": {},
+        "control_mod_depths": {},
+        "control_units": {},
+        "panel_layout": "eurorack_v1",
+        "jack_layout": "bottom_compact_stack"
+      }
+    },
+    {
+      "id": "add_24",
+      "type": "add",
+      "name": "add 1",
+      "params": {},
+      "inputs": {
+        "a": 0.0,
+        "b": 0.0
+      },
+      "ui": {
+        "x": -280.0,
+        "y": 0.0,
+        "control_ranges": {},
+        "control_mod_depths": {},
+        "control_units": {},
+        "panel_layout": "eurorack_v1",
+        "jack_layout": "bottom_compact_stack"
+      }
+    },
+    {
+      "id": "add_25",
+      "type": "add",
+      "name": "add 1",
+      "params": {},
+      "inputs": {
+        "a": 0.0,
+        "b": 0.0
+      },
+      "ui": {
+        "x": -140.0,
+        "y": 0.0,
+        "control_ranges": {},
+        "control_mod_depths": {},
+        "control_units": {},
+        "panel_layout": "eurorack_v1",
+        "jack_layout": "bottom_compact_stack"
+      }
+    },
+    {
+      "id": "add_26",
+      "type": "add",
+      "name": "add 1",
+      "params": {},
+      "inputs": {
+        "a": 0.0,
+        "b": 0.0
+      },
+      "ui": {
+        "x": 1820.0,
+        "y": 750.0,
+        "control_ranges": {},
+        "control_mod_depths": {},
+        "control_units": {},
+        "panel_layout": "eurorack_v1",
+        "jack_layout": "bottom_compact_stack"
+      }
+    },
+    {
+      "id": "add_27",
+      "type": "add",
+      "name": "add 1",
+      "params": {},
+      "inputs": {
+        "a": 0.0,
+        "b": 0.0
+      },
+      "ui": {
+        "x": 1960.0,
+        "y": 750.0,
+        "control_ranges": {},
+        "control_mod_depths": {},
+        "control_units": {},
+        "panel_layout": "eurorack_v1",
+        "jack_layout": "bottom_compact_stack"
+      }
+    },
+    {
+      "id": "add_28",
+      "type": "add",
+      "name": "add 1",
+      "params": {},
+      "inputs": {
+        "a": 0.0,
+        "b": 0.0
+      },
+      "ui": {
+        "x": 1260.0,
+        "y": 0.0,
+        "control_ranges": {},
+        "control_mod_depths": {},
+        "control_units": {},
+        "panel_layout": "eurorack_v1",
+        "jack_layout": "bottom_compact_stack"
+      }
+    },
+    {
+      "id": "add_29",
+      "type": "add",
+      "name": "add 1",
+      "params": {},
+      "inputs": {
+        "a": 0.0,
+        "b": 0.0
+      },
+      "ui": {
+        "x": 1400.0,
+        "y": 0.0,
+        "control_ranges": {},
+        "control_mod_depths": {},
+        "control_units": {},
+        "panel_layout": "eurorack_v1",
+        "jack_layout": "bottom_compact_stack"
+      }
+    },
+    {
+      "id": "add_30",
+      "type": "add",
+      "name": "add 1",
+      "params": {},
+      "inputs": {
+        "a": 0.0,
+        "b": 0.0
+      },
+      "ui": {
+        "x": 1540.0,
+        "y": -750.0,
+        "control_ranges": {},
+        "control_mod_depths": {},
+        "control_units": {},
+        "panel_layout": "eurorack_v1",
+        "jack_layout": "bottom_compact_stack"
+      }
+    },
+    {
+      "id": "add_31",
+      "type": "add",
+      "name": "add 1",
+      "params": {},
+      "inputs": {
+        "a": 0.0,
+        "b": 0.0
+      },
+      "ui": {
+        "x": 1680.0,
+        "y": -750.0,
+        "control_ranges": {},
+        "control_mod_depths": {},
+        "control_units": {},
+        "panel_layout": "eurorack_v1",
+        "jack_layout": "bottom_compact_stack"
+      }
+    },
+    {
+      "id": "add_32",
+      "type": "add",
+      "name": "add 1",
+      "params": {},
+      "inputs": {
+        "a": 0.0,
+        "b": 0.0
+      },
+      "ui": {
+        "x": -1400.0,
+        "y": 2250.0,
+        "control_ranges": {},
+        "control_mod_depths": {},
+        "control_units": {},
+        "panel_layout": "eurorack_v1",
+        "jack_layout": "bottom_compact_stack"
+      }
+    },
+    {
+      "id": "add_33",
+      "type": "add",
+      "name": "add 1",
+      "params": {},
+      "inputs": {
+        "a": 0.0,
+        "b": 0.0
+      },
+      "ui": {
+        "x": -1260.0,
+        "y": 2250.0,
+        "control_ranges": {},
+        "control_mod_depths": {},
+        "control_units": {},
+        "panel_layout": "eurorack_v1",
+        "jack_layout": "bottom_compact_stack"
+      }
+    },
+    {
+      "id": "add_34",
+      "type": "add",
+      "name": "add 1",
+      "params": {},
+      "inputs": {
+        "a": 0.0,
+        "b": 0.0
+      },
+      "ui": {
+        "x": -1120.0,
+        "y": 2250.0,
+        "control_ranges": {},
+        "control_mod_depths": {},
+        "control_units": {},
+        "panel_layout": "eurorack_v1",
+        "jack_layout": "bottom_compact_stack"
+      }
+    },
+    {
+      "id": "add_35",
+      "type": "add",
+      "name": "add 1",
+      "params": {},
+      "inputs": {
+        "a": 0.0,
+        "b": 0.0
+      },
+      "ui": {
+        "x": -980.0,
+        "y": 2250.0,
+        "control_ranges": {},
+        "control_mod_depths": {},
+        "control_units": {},
+        "panel_layout": "eurorack_v1",
+        "jack_layout": "bottom_compact_stack"
+      }
+    },
+    {
+      "id": "add_36",
+      "type": "add",
+      "name": "add 1",
+      "params": {},
+      "inputs": {
+        "a": 0.0,
+        "b": 0.0
+      },
+      "ui": {
+        "x": -840.0,
+        "y": 2250.0,
+        "control_ranges": {},
+        "control_mod_depths": {},
+        "control_units": {},
+        "panel_layout": "eurorack_v1",
+        "jack_layout": "bottom_compact_stack"
+      }
+    },
+    {
+      "id": "add_37",
+      "type": "add",
+      "name": "add 1",
+      "params": {},
+      "inputs": {
+        "a": 0.0,
+        "b": 0.0
+      },
+      "ui": {
+        "x": -700.0,
+        "y": 2250.0,
+        "control_ranges": {},
+        "control_mod_depths": {},
+        "control_units": {},
+        "panel_layout": "eurorack_v1",
+        "jack_layout": "bottom_compact_stack"
+      }
+    },
+    {
+      "id": "add_38",
+      "type": "add",
+      "name": "add 1",
+      "params": {},
+      "inputs": {
+        "a": 0.0,
+        "b": 0.0
+      },
+      "ui": {
+        "x": 0.0,
+        "y": 2250.0,
+        "control_ranges": {},
+        "control_mod_depths": {},
+        "control_units": {},
+        "panel_layout": "eurorack_v1",
+        "jack_layout": "bottom_compact_stack"
+      }
+    },
+    {
+      "id": "add_39",
+      "type": "add",
+      "name": "add 1",
+      "params": {},
+      "inputs": {
+        "a": 0.0,
+        "b": 0.0
+      },
+      "ui": {
+        "x": 140.0,
+        "y": 2250.0,
+        "control_ranges": {},
+        "control_mod_depths": {},
+        "control_units": {},
+        "panel_layout": "eurorack_v1",
+        "jack_layout": "bottom_compact_stack"
+      }
+    },
+    {
+      "id": "add_40",
+      "type": "add",
+      "name": "add 1",
+      "params": {},
+      "inputs": {
+        "a": 0.0,
+        "b": 0.0
+      },
+      "ui": {
+        "x": 280.0,
+        "y": 2250.0,
+        "control_ranges": {},
+        "control_mod_depths": {},
+        "control_units": {},
+        "panel_layout": "eurorack_v1",
+        "jack_layout": "bottom_compact_stack"
+      }
+    },
+    {
+      "id": "add_41",
+      "type": "add",
+      "name": "add 1",
+      "params": {},
+      "inputs": {
+        "a": 0.0,
+        "b": 0.0
+      },
+      "ui": {
+        "x": 420.0,
+        "y": 2250.0,
+        "control_ranges": {},
+        "control_mod_depths": {},
+        "control_units": {},
+        "panel_layout": "eurorack_v1",
+        "jack_layout": "bottom_compact_stack"
+      }
+    },
+    {
+      "id": "add_42",
+      "type": "add",
+      "name": "add 1",
+      "params": {},
+      "inputs": {
+        "a": 0.0,
+        "b": 0.0
+      },
+      "ui": {
+        "x": 560.0,
+        "y": 2250.0,
+        "control_ranges": {},
+        "control_mod_depths": {},
+        "control_units": {},
+        "panel_layout": "eurorack_v1",
+        "jack_layout": "bottom_compact_stack"
+      }
+    },
+    {
+      "id": "add_43",
+      "type": "add",
+      "name": "add 1",
+      "params": {},
+      "inputs": {
+        "a": 0.0,
+        "b": 0.0
+      },
+      "ui": {
+        "x": 700.0,
+        "y": 2250.0,
+        "control_ranges": {},
+        "control_mod_depths": {},
+        "control_units": {},
+        "panel_layout": "eurorack_v1",
+        "jack_layout": "bottom_compact_stack"
+      }
+    },
+    {
+      "id": "add_44",
+      "type": "add",
+      "name": "add 1",
+      "params": {},
+      "inputs": {
+        "a": 0.0,
+        "b": 0.0
+      },
+      "ui": {
+        "x": 840.0,
+        "y": 2250.0,
+        "control_ranges": {},
+        "control_mod_depths": {},
+        "control_units": {},
+        "panel_layout": "eurorack_v1",
+        "jack_layout": "bottom_compact_stack"
+      }
+    },
+    {
+      "id": "add_45",
+      "type": "add",
+      "name": "add 1",
+      "params": {},
+      "inputs": {
+        "a": 0.0,
+        "b": 0.0
+      },
+      "ui": {
+        "x": 980.0,
+        "y": 2250.0,
+        "control_ranges": {},
+        "control_mod_depths": {},
+        "control_units": {},
+        "panel_layout": "eurorack_v1",
+        "jack_layout": "bottom_compact_stack"
+      }
+    },
+    {
+      "id": "add_46",
+      "type": "add",
+      "name": "add 1",
+      "params": {},
+      "inputs": {
+        "a": 0.0,
+        "b": 0.0
+      },
+      "ui": {
+        "x": -1400.0,
+        "y": 3000.0,
+        "control_ranges": {},
+        "control_mod_depths": {},
+        "control_units": {},
+        "panel_layout": "eurorack_v1",
+        "jack_layout": "bottom_compact_stack"
+      }
+    },
+    {
+      "id": "add_47",
+      "type": "add",
+      "name": "add 1",
+      "params": {},
+      "inputs": {
+        "a": 0.0,
+        "b": 0.0
+      },
+      "ui": {
+        "x": -1260.0,
+        "y": 3000.0,
+        "control_ranges": {},
+        "control_mod_depths": {},
+        "control_units": {},
+        "panel_layout": "eurorack_v1",
+        "jack_layout": "bottom_compact_stack"
+      }
+    },
+    {
+      "id": "add_48",
+      "type": "add",
+      "name": "add 1",
+      "params": {},
+      "inputs": {
+        "a": 0.0,
+        "b": 0.0
+      },
+      "ui": {
+        "x": -980.0,
+        "y": 3750.0,
+        "control_ranges": {},
+        "control_mod_depths": {},
+        "control_units": {},
+        "panel_layout": "eurorack_v1",
+        "jack_layout": "bottom_compact_stack"
+      }
+    },
+    {
+      "id": "add_49",
+      "type": "add",
+      "name": "add 1",
+      "params": {},
+      "inputs": {
+        "a": 0.0,
+        "b": 0.0
+      },
+      "ui": {
+        "x": -840.0,
+        "y": 3750.0,
+        "control_ranges": {},
+        "control_mod_depths": {},
+        "control_units": {},
+        "panel_layout": "eurorack_v1",
+        "jack_layout": "bottom_compact_stack"
+      }
+    },
+    {
+      "id": "add_50",
+      "type": "add",
+      "name": "add 1",
+      "params": {},
+      "inputs": {
+        "a": 0.0,
+        "b": 0.0
+      },
+      "ui": {
+        "x": -420.0,
+        "y": 3000.0,
+        "control_ranges": {},
+        "control_mod_depths": {},
+        "control_units": {},
+        "panel_layout": "eurorack_v1",
+        "jack_layout": "bottom_compact_stack"
+      }
+    },
+    {
+      "id": "add_51",
+      "type": "add",
+      "name": "add 1",
+      "params": {},
+      "inputs": {
+        "a": 0.0,
+        "b": 0.0
+      },
+      "ui": {
+        "x": -280.0,
+        "y": 3000.0,
+        "control_ranges": {},
+        "control_mod_depths": {},
+        "control_units": {},
+        "panel_layout": "eurorack_v1",
+        "jack_layout": "bottom_compact_stack"
+      }
+    },
+    {
+      "id": "add_52",
+      "type": "add",
+      "name": "add 1",
+      "params": {},
+      "inputs": {
+        "a": 0.0,
+        "b": 0.0
+      },
+      "ui": {
+        "x": -280.0,
+        "y": 3750.0,
+        "control_ranges": {},
+        "control_mod_depths": {},
+        "control_units": {},
+        "panel_layout": "eurorack_v1",
+        "jack_layout": "bottom_compact_stack"
+      }
+    },
+    {
+      "id": "add_53",
+      "type": "add",
+      "name": "add 1",
+      "params": {},
+      "inputs": {
+        "a": 0.0,
+        "b": 0.0
+      },
+      "ui": {
+        "x": -140.0,
+        "y": 3750.0,
+        "control_ranges": {},
+        "control_mod_depths": {},
+        "control_units": {},
+        "panel_layout": "eurorack_v1",
+        "jack_layout": "bottom_compact_stack"
+      }
+    },
+    {
+      "id": "add_54",
+      "type": "add",
+      "name": "add 1",
+      "params": {},
+      "inputs": {
+        "a": 0.0,
+        "b": 0.0
+      },
+      "ui": {
+        "x": -980.0,
+        "y": 3000.0,
+        "control_ranges": {},
+        "control_mod_depths": {},
+        "control_units": {},
+        "panel_layout": "eurorack_v1",
+        "jack_layout": "bottom_compact_stack"
+      }
+    },
+    {
+      "id": "add_55",
+      "type": "add",
+      "name": "add 1",
+      "params": {},
+      "inputs": {
+        "a": 0.0,
+        "b": 0.0
+      },
+      "ui": {
+        "x": -840.0,
+        "y": 3000.0,
+        "control_ranges": {},
+        "control_mod_depths": {},
+        "control_units": {},
+        "panel_layout": "eurorack_v1",
+        "jack_layout": "bottom_compact_stack"
+      }
+    },
+    {
+      "id": "add_56",
+      "type": "add",
+      "name": "add 1",
+      "params": {},
+      "inputs": {
+        "a": 0.0,
+        "b": 0.0
+      },
+      "ui": {
+        "x": 420.0,
+        "y": 3000.0,
+        "control_ranges": {},
+        "control_mod_depths": {},
+        "control_units": {},
+        "panel_layout": "eurorack_v1",
+        "jack_layout": "bottom_compact_stack"
+      }
+    },
+    {
+      "id": "add_57",
+      "type": "add",
+      "name": "add 1",
+      "params": {},
+      "inputs": {
+        "a": 0.0,
+        "b": 0.0
+      },
+      "ui": {
+        "x": 560.0,
+        "y": 3000.0,
+        "control_ranges": {},
+        "control_mod_depths": {},
+        "control_units": {},
+        "panel_layout": "eurorack_v1",
+        "jack_layout": "bottom_compact_stack"
+      }
+    },
+    {
+      "id": "add_58",
+      "type": "add",
+      "name": "add 1",
+      "params": {},
+      "inputs": {
+        "a": 0.0,
+        "b": 0.0
+      },
+      "ui": {
+        "x": -700.0,
+        "y": 3000.0,
+        "control_ranges": {},
+        "control_mod_depths": {},
+        "control_units": {},
+        "panel_layout": "eurorack_v1",
+        "jack_layout": "bottom_compact_stack"
+      }
+    },
+    {
+      "id": "add_59",
+      "type": "add",
+      "name": "add 1",
+      "params": {},
+      "inputs": {
+        "a": 0.0,
+        "b": 0.0
+      },
+      "ui": {
+        "x": -560.0,
+        "y": 3000.0,
+        "control_ranges": {},
+        "control_mod_depths": {},
+        "control_units": {},
+        "panel_layout": "eurorack_v1",
+        "jack_layout": "bottom_compact_stack"
+      }
+    },
+    {
+      "id": "add_60",
+      "type": "add",
+      "name": "add 1",
+      "params": {},
+      "inputs": {
+        "a": 0.0,
+        "b": 0.0
+      },
+      "ui": {
+        "x": 0.0,
+        "y": 3000.0,
+        "control_ranges": {},
+        "control_mod_depths": {},
+        "control_units": {},
+        "panel_layout": "eurorack_v1",
+        "jack_layout": "bottom_compact_stack"
+      }
+    },
+    {
+      "id": "add_61",
+      "type": "add",
+      "name": "add 1",
+      "params": {},
+      "inputs": {
+        "a": 0.0,
+        "b": 0.0
+      },
+      "ui": {
+        "x": 420.0,
+        "y": 3000.0,
+        "control_ranges": {},
+        "control_mod_depths": {},
+        "control_units": {},
+        "panel_layout": "eurorack_v1",
+        "jack_layout": "bottom_compact_stack"
+      }
+    },
+    {
+      "id": "add_62",
+      "type": "add",
+      "name": "add 1",
+      "params": {},
+      "inputs": {
+        "a": 0.0,
+        "b": 0.0
+      },
+      "ui": {
+        "x": -840.0,
+        "y": 2250.0,
+        "control_ranges": {},
+        "control_mod_depths": {},
+        "control_units": {},
+        "panel_layout": "eurorack_v1",
+        "jack_layout": "bottom_compact_stack"
+      }
+    },
+    {
+      "id": "add_63",
+      "type": "add",
+      "name": "add 1",
+      "params": {},
+      "inputs": {
+        "a": 0.0,
+        "b": 0.0
+      },
+      "ui": {
+        "x": -700.0,
+        "y": 2250.0,
+        "control_ranges": {},
+        "control_mod_depths": {},
+        "control_units": {},
+        "panel_layout": "eurorack_v1",
+        "jack_layout": "bottom_compact_stack"
+      }
+    },
+    {
+      "id": "add_64",
+      "type": "add",
+      "name": "add 1",
+      "params": {},
+      "inputs": {
+        "a": 0.0,
+        "b": 0.0
+      },
+      "ui": {
+        "x": 0.0,
+        "y": 2250.0,
+        "control_ranges": {},
+        "control_mod_depths": {},
+        "control_units": {},
+        "panel_layout": "eurorack_v1",
+        "jack_layout": "bottom_compact_stack"
+      }
+    },
+    {
+      "id": "add_65",
+      "type": "add",
+      "name": "add 1",
+      "params": {},
+      "inputs": {
+        "a": 0.0,
+        "b": 0.0
+      },
+      "ui": {
+        "x": -560.0,
+        "y": 2250.0,
+        "control_ranges": {},
+        "control_mod_depths": {},
+        "control_units": {},
+        "panel_layout": "eurorack_v1",
+        "jack_layout": "bottom_compact_stack"
+      }
+    },
+    {
+      "id": "add_66",
+      "type": "add",
+      "name": "add 1",
+      "params": {},
+      "inputs": {
+        "a": 0.0,
+        "b": 0.0
+      },
+      "ui": {
+        "x": -420.0,
+        "y": 2250.0,
+        "control_ranges": {},
+        "control_mod_depths": {},
+        "control_units": {},
+        "panel_layout": "eurorack_v1",
+        "jack_layout": "bottom_compact_stack"
+      }
+    },
+    {
+      "id": "add_67",
+      "type": "add",
+      "name": "add 1",
+      "params": {},
+      "inputs": {
+        "a": 0.0,
+        "b": 0.0
+      },
+      "ui": {
+        "x": -560.0,
+        "y": 2250.0,
+        "control_ranges": {},
+        "control_mod_depths": {},
+        "control_units": {},
+        "panel_layout": "eurorack_v1",
+        "jack_layout": "bottom_compact_stack"
+      }
+    },
+    {
+      "id": "add_68",
+      "type": "add",
+      "name": "add 1",
+      "params": {},
+      "inputs": {
+        "a": 0.0,
+        "b": 0.0
+      },
+      "ui": {
+        "x": -420.0,
+        "y": 2250.0,
+        "control_ranges": {},
+        "control_mod_depths": {},
+        "control_units": {},
+        "panel_layout": "eurorack_v1",
+        "jack_layout": "bottom_compact_stack"
+      }
+    },
+    {
+      "id": "add_69",
+      "type": "add",
+      "name": "add 1",
+      "params": {},
+      "inputs": {
+        "a": 0.0,
+        "b": 0.0
+      },
+      "ui": {
+        "x": -280.0,
+        "y": 2250.0,
+        "control_ranges": {},
+        "control_mod_depths": {},
+        "control_units": {},
+        "panel_layout": "eurorack_v1",
+        "jack_layout": "bottom_compact_stack"
+      }
+    },
+    {
+      "id": "add_70",
+      "type": "add",
+      "name": "add 1",
+      "params": {},
+      "inputs": {
+        "a": 0.0,
+        "b": 0.0
+      },
+      "ui": {
+        "x": -140.0,
+        "y": 2250.0,
+        "control_ranges": {},
+        "control_mod_depths": {},
+        "control_units": {},
+        "panel_layout": "eurorack_v1",
+        "jack_layout": "bottom_compact_stack"
+      }
+    },
+    {
+      "id": "add_71",
+      "type": "add",
+      "name": "add 1",
+      "params": {},
+      "inputs": {
+        "a": 0.0,
+        "b": 0.0
+      },
+      "ui": {
+        "x": -280.0,
+        "y": 2250.0,
+        "control_ranges": {},
+        "control_mod_depths": {},
+        "control_units": {},
+        "panel_layout": "eurorack_v1",
+        "jack_layout": "bottom_compact_stack"
+      }
+    },
+    {
+      "id": "add_72",
+      "type": "add",
+      "name": "add 1",
+      "params": {},
+      "inputs": {
+        "a": 0.0,
+        "b": 0.0
+      },
+      "ui": {
+        "x": -140.0,
+        "y": 2250.0,
+        "control_ranges": {},
+        "control_mod_depths": {},
+        "control_units": {},
+        "panel_layout": "eurorack_v1",
+        "jack_layout": "bottom_compact_stack"
+      }
+    }
+  ],
+  "connections": [],
+  "annotations": [],
+  "module_groups": [],
+  "canvas_boxes": [],
+  "meta": {
+    "version": 1,
+    "output_profiles": {
+      "serial": {
+        "serial_main": {
+          "name": "serial_main",
+          "enabled": true,
+          "port": "",
+          "baud": 115200,
+          "interval_ms": 20,
+          "auto_connect": false,
+          "line_ending": "\n",
+          "protocol": "tcode_v0"
+        },
+        "serial_aux_1": {
+          "name": "serial_aux_1",
+          "enabled": true,
+          "port": "",
+          "baud": 115200,
+          "interval_ms": 20,
+          "auto_connect": false,
+          "line_ending": "\n",
+          "protocol": "tcode_v0"
+        },
+        "serial_aux_2": {
+          "name": "serial_aux_2",
+          "enabled": true,
+          "port": "",
+          "baud": 115200,
+          "interval_ms": 20,
+          "auto_connect": false,
+          "line_ending": "\n",
+          "protocol": "tcode_v0"
+        },
+        "serial_aux_3": {
+          "name": "serial_aux_3",
+          "enabled": true,
+          "port": "",
+          "baud": 115200,
+          "interval_ms": 20,
+          "auto_connect": false,
+          "line_ending": "\n",
+          "protocol": "tcode_v0"
+        }
+      },
+      "buttplug": {
+        "buttplug_main": {
+          "name": "buttplug_main",
+          "enabled": true,
+          "server_url": "ws://127.0.0.1:12345",
+          "auto_connect": false
+        },
+        "buttplug_aux_1": {
+          "name": "buttplug_aux_1",
+          "enabled": true,
+          "server_url": "ws://127.0.0.1:12345",
+          "auto_connect": false
+        },
+        "buttplug_aux_2": {
+          "name": "buttplug_aux_2",
+          "enabled": true,
+          "server_url": "ws://127.0.0.1:12345",
+          "auto_connect": false
+        }
+      }
+    },
+    "plugin_provenance": {
+      "external_module_types": [],
+      "modules": []
+    },
+    "camera": {
+      "zoom": 0.29846832951987634,
+      "cx": 1941.8958630403845,
+      "cy": 3028.1963288355146
+    }
+  }
+}

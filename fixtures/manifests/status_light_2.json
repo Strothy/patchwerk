@@ -1,0 +1,176 @@
+{
+  "module_type": "status_light_2",
+  "category": "Monitor",
+  "input_ports": [
+    {
+      "name": "in1",
+      "signal_kind": "signal",
+      "default": 0.0
+    },
+    {
+      "name": "in2",
+      "signal_kind": "signal",
+      "default": 0.0
+    }
+  ],
+  "output_ports": [],
+  "param_defaults": {
+    "size": "medium",
+    "hi_1": 100.0,
+    "lo_1": 0.0,
+    "hi_2": 100.0,
+    "lo_2": 0.0,
+    "color1": "green",
+    "color2": "green"
+  },
+  "controls": [
+    {
+      "key": "hi_1",
+      "label": "hi 1",
+      "control_type": "knob",
+      "value_source": "param",
+      "default": 100.0,
+      "minimum": 0.0,
+      "maximum": 100.0,
+      "decimals": 1,
+      "options": [],
+      "units_key": null,
+      "units_options": [],
+      "show_on_node": true,
+      "advanced_only": false,
+      "secondary_key": null,
+      "position_port": null,
+      "row": null,
+      "col": null,
+      "momentary": false
+    },
+    {
+      "key": "lo_1",
+      "label": "lo 1",
+      "control_type": "knob",
+      "value_source": "param",
+      "default": 0.0,
+      "minimum": 0.0,
+      "maximum": 100.0,
+      "decimals": 1,
+      "options": [],
+      "units_key": null,
+      "units_options": [],
+      "show_on_node": true,
+      "advanced_only": false,
+      "secondary_key": null,
+      "position_port": null,
+      "row": null,
+      "col": null,
+      "momentary": false
+    },
+    {
+      "key": "status_1",
+      "label": "S1",
+      "control_type": "led",
+      "value_source": "auto",
+      "default": 0.0,
+      "minimum": 0.0,
+      "maximum": 100.0,
+      "decimals": 2,
+      "options": [],
+      "units_key": null,
+      "units_options": [],
+      "show_on_node": true,
+      "advanced_only": false,
+      "secondary_key": null,
+      "position_port": null,
+      "row": null,
+      "col": null,
+      "momentary": false
+    },
+    {
+      "key": "hi_2",
+      "label": "hi 2",
+      "control_type": "knob",
+      "value_source": "param",
+      "default": 100.0,
+      "minimum": 0.0,
+      "maximum": 100.0,
+      "decimals": 1,
+      "options": [],
+      "units_key": null,
+      "units_options": [],
+      "show_on_node": true,
+      "advanced_only": false,
+      "secondary_key": null,
+      "position_port": null,
+      "row": null,
+      "col": null,
+      "momentary": false
+    },
+    {
+      "key": "lo_2",
+      "label": "lo 2",
+      "control_type": "knob",
+      "value_source": "param",
+      "default": 0.0,
+      "minimum": 0.0,
+      "maximum": 100.0,
+      "decimals": 1,
+      "options": [],
+      "units_key": null,
+      "units_options": [],
+      "show_on_node": true,
+      "advanced_only": false,
+      "secondary_key": null,
+      "position_port": null,
+      "row": null,
+      "col": null,
+      "momentary": false
+    },
+    {
+      "key": "status_2",
+      "label": "S2",
+      "control_type": "led",
+      "value_source": "auto",
+      "default": 0.0,
+      "minimum": 0.0,
+      "maximum": 100.0,
+      "decimals": 2,
+      "options": [],
+      "units_key": null,
+      "units_options": [],
+      "show_on_node": true,
+      "advanced_only": false,
+      "secondary_key": null,
+      "position_port": null,
+      "row": null,
+      "col": null,
+      "momentary": false
+    }
+  ],
+  "port_groups": [
+    {
+      "name": "IN",
+      "ports": [],
+      "layout": "vertical",
+      "rows": [
+        {
+          "left": [
+            "in1"
+          ],
+          "right": [
+            "in2"
+          ]
+        }
+      ]
+    }
+  ],
+  "state_only_params": [
+    "color1",
+    "color2",
+    "size"
+  ],
+  "internal_outputs": [],
+  "layout": {
+    "Uw": 3,
+    "Ur": 1,
+    "profile": "unknown"
+  }
+}

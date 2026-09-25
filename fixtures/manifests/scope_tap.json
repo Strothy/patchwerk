@@ -1,0 +1,92 @@
+{
+  "module_type": "scope_tap",
+  "category": "Monitor",
+  "input_ports": [
+    {
+      "name": "in",
+      "signal_kind": "signal",
+      "default": 0.0
+    }
+  ],
+  "output_ports": [
+    {
+      "name": "out",
+      "signal_kind": "signal",
+      "default": 0.0
+    }
+  ],
+  "param_defaults": {
+    "label": "tap",
+    "history_size": 256,
+    "y_range": "0-100",
+    "time_s": "5"
+  },
+  "controls": [
+    {
+      "key": "time_s",
+      "label": "time",
+      "control_type": "selector",
+      "value_source": "param",
+      "default": "5",
+      "minimum": 0.0,
+      "maximum": 100.0,
+      "decimals": 2,
+      "options": [
+        "0.1",
+        "0.5",
+        "1",
+        "2",
+        "5",
+        "10",
+        "20",
+        "30",
+        "60"
+      ],
+      "units_key": null,
+      "units_options": [],
+      "show_on_node": true,
+      "advanced_only": false,
+      "secondary_key": null,
+      "position_port": null,
+      "row": null,
+      "col": null,
+      "momentary": false
+    },
+    {
+      "key": "y_range",
+      "label": "range",
+      "control_type": "selector",
+      "value_source": "param",
+      "default": "0-100",
+      "minimum": 0.0,
+      "maximum": 100.0,
+      "decimals": 2,
+      "options": [
+        "0-100",
+        "-100-100",
+        "-50-150",
+        "0-200"
+      ],
+      "units_key": null,
+      "units_options": [],
+      "show_on_node": true,
+      "advanced_only": false,
+      "secondary_key": null,
+      "position_port": null,
+      "row": null,
+      "col": null,
+      "momentary": false
+    }
+  ],
+  "port_groups": [],
+  "state_only_params": [
+    "label",
+    "history_size"
+  ],
+  "internal_outputs": [],
+  "layout": {
+    "Uw": 2,
+    "Ur": 1,
+    "profile": "unknown"
+  }
+}

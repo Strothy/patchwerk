@@ -1,0 +1,252 @@
+{
+  "module_type": "arp",
+  "category": "Sequencer",
+  "input_ports": [
+    {
+      "name": "clock",
+      "signal_kind": "trigger",
+      "default": 0.0
+    },
+    {
+      "name": "reset",
+      "signal_kind": "trigger",
+      "default": 0.0
+    },
+    {
+      "name": "in1",
+      "signal_kind": "signal",
+      "default": 50.0
+    },
+    {
+      "name": "in2",
+      "signal_kind": "signal",
+      "default": 50.0
+    },
+    {
+      "name": "in3",
+      "signal_kind": "signal",
+      "default": 50.0
+    },
+    {
+      "name": "in4",
+      "signal_kind": "signal",
+      "default": 50.0
+    }
+  ],
+  "output_ports": [
+    {
+      "name": "out",
+      "signal_kind": "signal",
+      "default": 0.0
+    },
+    {
+      "name": "step",
+      "signal_kind": "signal",
+      "default": 0.0
+    },
+    {
+      "name": "gate",
+      "signal_kind": "gate",
+      "default": 0.0
+    },
+    {
+      "name": "trigger",
+      "signal_kind": "trigger",
+      "default": 0.0
+    }
+  ],
+  "param_defaults": {
+    "length": 4.0,
+    "direction": "forward"
+  },
+  "controls": [
+    {
+      "key": "length",
+      "label": "length",
+      "control_type": "knob",
+      "value_source": "param",
+      "default": 4.0,
+      "minimum": 1.0,
+      "maximum": 4.0,
+      "decimals": 0,
+      "options": [],
+      "units_key": null,
+      "units_options": [],
+      "show_on_node": true,
+      "advanced_only": false,
+      "secondary_key": null,
+      "position_port": null,
+      "row": null,
+      "col": null,
+      "momentary": false
+    },
+    {
+      "key": "direction",
+      "label": "dir",
+      "control_type": "selector",
+      "value_source": "param",
+      "default": "forward",
+      "minimum": 0.0,
+      "maximum": 100.0,
+      "decimals": 2,
+      "options": [
+        "forward",
+        "reverse",
+        "pingpong",
+        "random"
+      ],
+      "units_key": null,
+      "units_options": [],
+      "show_on_node": true,
+      "advanced_only": false,
+      "secondary_key": null,
+      "position_port": null,
+      "row": null,
+      "col": null,
+      "momentary": false
+    },
+    {
+      "key": "step1_led",
+      "label": "1",
+      "control_type": "led",
+      "value_source": "auto",
+      "default": 0.0,
+      "minimum": 0.0,
+      "maximum": 100.0,
+      "decimals": 2,
+      "options": [],
+      "units_key": null,
+      "units_options": [],
+      "show_on_node": true,
+      "advanced_only": false,
+      "secondary_key": null,
+      "position_port": null,
+      "row": null,
+      "col": null,
+      "momentary": false
+    },
+    {
+      "key": "step2_led",
+      "label": "2",
+      "control_type": "led",
+      "value_source": "auto",
+      "default": 0.0,
+      "minimum": 0.0,
+      "maximum": 100.0,
+      "decimals": 2,
+      "options": [],
+      "units_key": null,
+      "units_options": [],
+      "show_on_node": true,
+      "advanced_only": false,
+      "secondary_key": null,
+      "position_port": null,
+      "row": null,
+      "col": null,
+      "momentary": false
+    },
+    {
+      "key": "step3_led",
+      "label": "3",
+      "control_type": "led",
+      "value_source": "auto",
+      "default": 0.0,
+      "minimum": 0.0,
+      "maximum": 100.0,
+      "decimals": 2,
+      "options": [],
+      "units_key": null,
+      "units_options": [],
+      "show_on_node": true,
+      "advanced_only": false,
+      "secondary_key": null,
+      "position_port": null,
+      "row": null,
+      "col": null,
+      "momentary": false
+    },
+    {
+      "key": "step4_led",
+      "label": "4",
+      "control_type": "led",
+      "value_source": "auto",
+      "default": 0.0,
+      "minimum": 0.0,
+      "maximum": 100.0,
+      "decimals": 2,
+      "options": [],
+      "units_key": null,
+      "units_options": [],
+      "show_on_node": true,
+      "advanced_only": false,
+      "secondary_key": null,
+      "position_port": null,
+      "row": null,
+      "col": null,
+      "momentary": false
+    }
+  ],
+  "port_groups": [
+    {
+      "name": "IN",
+      "ports": [],
+      "layout": "vertical",
+      "rows": [
+        {
+          "left": [
+            "clock"
+          ],
+          "right": [
+            "reset"
+          ]
+        },
+        {
+          "left": [
+            "in1"
+          ],
+          "right": [
+            "in2"
+          ]
+        },
+        {
+          "left": [
+            "in3"
+          ],
+          "right": [
+            "in4"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "OUT",
+      "ports": [],
+      "layout": "vertical",
+      "rows": [
+        {
+          "left": [
+            "out"
+          ],
+          "right": [
+            "step"
+          ]
+        },
+        {
+          "left": [
+            "gate"
+          ],
+          "right": [
+            "trigger"
+          ]
+        }
+      ]
+    }
+  ],
+  "state_only_params": [],
+  "internal_outputs": [],
+  "layout": {
+    "Uw": 2,
+    "Ur": 1,
+    "profile": "unknown"
+  }
+}

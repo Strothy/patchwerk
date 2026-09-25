@@ -1,0 +1,115 @@
+{
+  "module_type": "hotkey_trigger",
+  "category": "Motion",
+  "input_ports": [],
+  "output_ports": [
+    {
+      "name": "trigger",
+      "signal_kind": "trigger",
+      "default": 0.0
+    },
+    {
+      "name": "gate",
+      "signal_kind": "gate",
+      "default": 0.0
+    },
+    {
+      "name": "out",
+      "signal_kind": "signal",
+      "default": 0.0
+    }
+  ],
+  "param_defaults": {
+    "enabled": "on",
+    "hotkey": "F8"
+  },
+  "controls": [
+    {
+      "key": "enabled",
+      "label": "enabled",
+      "control_type": "selector",
+      "value_source": "param",
+      "default": "on",
+      "minimum": 0.0,
+      "maximum": 100.0,
+      "decimals": 2,
+      "options": [
+        "on",
+        "off"
+      ],
+      "units_key": null,
+      "units_options": [],
+      "show_on_node": true,
+      "advanced_only": false,
+      "secondary_key": null,
+      "position_port": null,
+      "row": null,
+      "col": null,
+      "momentary": false
+    },
+    {
+      "key": "hotkey",
+      "label": "hotkey",
+      "control_type": "selector",
+      "value_source": "param",
+      "default": "F8",
+      "minimum": 0.0,
+      "maximum": 100.0,
+      "decimals": 2,
+      "options": [
+        "(none)",
+        "F8",
+        "F9",
+        "F10",
+        "F11",
+        "F12",
+        "Ctrl+1",
+        "Ctrl+2",
+        "Ctrl+3",
+        "Ctrl+4",
+        "Ctrl+5",
+        "Ctrl+6",
+        "Ctrl+7",
+        "Ctrl+8",
+        "Ctrl+9"
+      ],
+      "units_key": null,
+      "units_options": [],
+      "show_on_node": true,
+      "advanced_only": false,
+      "secondary_key": null,
+      "position_port": null,
+      "row": null,
+      "col": null,
+      "momentary": false
+    },
+    {
+      "key": "trig_led",
+      "label": "trig",
+      "control_type": "led",
+      "value_source": "auto",
+      "default": 0.0,
+      "minimum": 0.0,
+      "maximum": 100.0,
+      "decimals": 2,
+      "options": [],
+      "units_key": null,
+      "units_options": [],
+      "show_on_node": true,
+      "advanced_only": false,
+      "secondary_key": null,
+      "position_port": null,
+      "row": null,
+      "col": null,
+      "momentary": false
+    }
+  ],
+  "port_groups": [],
+  "state_only_params": [],
+  "internal_outputs": [],
+  "layout": {
+    "Uw": 3,
+    "Ur": 1,
+    "profile": "unknown"
+  }
+}

@@ -1,0 +1,140 @@
+{
+  "module_type": "particle_noise",
+  "category": "Generator",
+  "input_ports": [
+    {
+      "name": "chaos",
+      "signal_kind": "signal",
+      "default": 0.0
+    },
+    {
+      "name": "kick",
+      "signal_kind": "trigger",
+      "default": 0.0
+    },
+    {
+      "name": "reset",
+      "signal_kind": "trigger",
+      "default": 0.0
+    }
+  ],
+  "output_ports": [
+    {
+      "name": "out",
+      "signal_kind": "signal",
+      "default": 0.0
+    },
+    {
+      "name": "spread",
+      "signal_kind": "signal",
+      "default": 0.0
+    },
+    {
+      "name": "impact",
+      "signal_kind": "trigger",
+      "default": 0.0
+    }
+  ],
+  "param_defaults": {
+    "n_particles": "4",
+    "chaos": 30.0,
+    "speed": 50.0
+  },
+  "controls": [
+    {
+      "key": "n_particles",
+      "label": "count",
+      "control_type": "selector",
+      "value_source": "param",
+      "default": "4",
+      "minimum": 0.0,
+      "maximum": 100.0,
+      "decimals": 2,
+      "options": [
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "8"
+      ],
+      "units_key": null,
+      "units_options": [],
+      "show_on_node": true,
+      "advanced_only": false,
+      "secondary_key": null,
+      "position_port": null,
+      "row": null,
+      "col": null,
+      "momentary": false
+    },
+    {
+      "key": "chaos",
+      "label": "chaos",
+      "control_type": "knob",
+      "value_source": "input",
+      "default": 30.0,
+      "minimum": 0.0,
+      "maximum": 100.0,
+      "decimals": 1,
+      "options": [],
+      "units_key": null,
+      "units_options": [],
+      "show_on_node": true,
+      "advanced_only": false,
+      "secondary_key": null,
+      "position_port": null,
+      "row": null,
+      "col": null,
+      "momentary": false
+    },
+    {
+      "key": "speed",
+      "label": "speed",
+      "control_type": "knob",
+      "value_source": "param",
+      "default": 50.0,
+      "minimum": 5.0,
+      "maximum": 100.0,
+      "decimals": 1,
+      "options": [],
+      "units_key": null,
+      "units_options": [],
+      "show_on_node": true,
+      "advanced_only": false,
+      "secondary_key": null,
+      "position_port": null,
+      "row": null,
+      "col": null,
+      "momentary": false
+    },
+    {
+      "key": "out_disp",
+      "label": "out",
+      "control_type": "display",
+      "value_source": "auto",
+      "default": 50.0,
+      "minimum": 0.0,
+      "maximum": 100.0,
+      "decimals": 2,
+      "options": [],
+      "units_key": null,
+      "units_options": [],
+      "show_on_node": true,
+      "advanced_only": false,
+      "secondary_key": null,
+      "position_port": null,
+      "row": null,
+      "col": null,
+      "momentary": false
+    }
+  ],
+  "port_groups": [],
+  "state_only_params": [],
+  "internal_outputs": [],
+  "layout": {
+    "Uw": 3,
+    "Ur": 1,
+    "profile": "unknown"
+  }
+}

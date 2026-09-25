@@ -1,0 +1,712 @@
+{
+  "module_type": "scene_changer_8ch",
+  "category": "Sequencer",
+  "input_ports": [
+    {
+      "name": "in_1",
+      "signal_kind": "signal",
+      "default": 0.0
+    },
+    {
+      "name": "in_2",
+      "signal_kind": "signal",
+      "default": 0.0
+    },
+    {
+      "name": "in_3",
+      "signal_kind": "signal",
+      "default": 0.0
+    },
+    {
+      "name": "in_4",
+      "signal_kind": "signal",
+      "default": 0.0
+    },
+    {
+      "name": "in_5",
+      "signal_kind": "signal",
+      "default": 0.0
+    },
+    {
+      "name": "in_6",
+      "signal_kind": "signal",
+      "default": 0.0
+    },
+    {
+      "name": "in_7",
+      "signal_kind": "signal",
+      "default": 0.0
+    },
+    {
+      "name": "in_8",
+      "signal_kind": "signal",
+      "default": 0.0
+    },
+    {
+      "name": "ch_1_sel",
+      "signal_kind": "gate",
+      "default": 0.0
+    },
+    {
+      "name": "ch_2_sel",
+      "signal_kind": "gate",
+      "default": 0.0
+    },
+    {
+      "name": "ch_3_sel",
+      "signal_kind": "gate",
+      "default": 0.0
+    },
+    {
+      "name": "ch_4_sel",
+      "signal_kind": "gate",
+      "default": 0.0
+    },
+    {
+      "name": "ch_5_sel",
+      "signal_kind": "gate",
+      "default": 0.0
+    },
+    {
+      "name": "ch_6_sel",
+      "signal_kind": "gate",
+      "default": 0.0
+    },
+    {
+      "name": "ch_7_sel",
+      "signal_kind": "gate",
+      "default": 0.0
+    },
+    {
+      "name": "ch_8_sel",
+      "signal_kind": "gate",
+      "default": 0.0
+    },
+    {
+      "name": "clock_run",
+      "signal_kind": "gate",
+      "default": 0.0
+    },
+    {
+      "name": "clock_reset",
+      "signal_kind": "trigger",
+      "default": 0.0
+    },
+    {
+      "name": "clock_start",
+      "signal_kind": "trigger",
+      "default": 0.0
+    }
+  ],
+  "output_ports": [
+    {
+      "name": "out",
+      "signal_kind": "signal",
+      "default": 0.0
+    }
+  ],
+  "param_defaults": {
+    "mode": "trig_gate",
+    "ramp_s": 0.5,
+    "ch_1_time_s": 0.0,
+    "ch_2_time_s": 0.0,
+    "ch_3_time_s": 0.0,
+    "ch_4_time_s": 0.0,
+    "ch_5_time_s": 0.0,
+    "ch_6_time_s": 0.0,
+    "ch_7_time_s": 0.0,
+    "ch_8_time_s": 0.0,
+    "active_channel": 1.0,
+    "clock_seconds": 0.0,
+    "clock_running": 0.0,
+    "run_button": "off",
+    "reset_button": "off",
+    "start_button": "off"
+  },
+  "controls": [
+    {
+      "key": "mode",
+      "label": "mode",
+      "control_type": "selector",
+      "value_source": "param",
+      "default": "trig_gate",
+      "minimum": 0.0,
+      "maximum": 100.0,
+      "decimals": 2,
+      "options": [
+        "time",
+        "trig_gate"
+      ],
+      "units_key": null,
+      "units_options": [],
+      "show_on_node": true,
+      "advanced_only": false,
+      "secondary_key": null,
+      "position_port": null,
+      "row": null,
+      "col": null,
+      "momentary": false
+    },
+    {
+      "key": "ramp_s",
+      "label": "ramp s",
+      "control_type": "knob",
+      "value_source": "param",
+      "default": 0.5,
+      "minimum": 0.01,
+      "maximum": 10.0,
+      "decimals": 2,
+      "options": [],
+      "units_key": null,
+      "units_options": [],
+      "show_on_node": true,
+      "advanced_only": false,
+      "secondary_key": null,
+      "position_port": null,
+      "row": null,
+      "col": null,
+      "momentary": false
+    },
+    {
+      "key": "ch_1_time_s",
+      "label": "ch1 time",
+      "control_type": "display",
+      "value_source": "param",
+      "default": 0.0,
+      "minimum": 0.0,
+      "maximum": 359999.0,
+      "decimals": 0,
+      "options": [],
+      "units_key": null,
+      "units_options": [],
+      "show_on_node": true,
+      "advanced_only": false,
+      "secondary_key": null,
+      "position_port": null,
+      "row": null,
+      "col": null,
+      "momentary": false
+    },
+    {
+      "key": "ch_2_time_s",
+      "label": "ch2 time",
+      "control_type": "display",
+      "value_source": "param",
+      "default": 0.0,
+      "minimum": 0.0,
+      "maximum": 359999.0,
+      "decimals": 0,
+      "options": [],
+      "units_key": null,
+      "units_options": [],
+      "show_on_node": true,
+      "advanced_only": false,
+      "secondary_key": null,
+      "position_port": null,
+      "row": null,
+      "col": null,
+      "momentary": false
+    },
+    {
+      "key": "ch_3_time_s",
+      "label": "ch3 time",
+      "control_type": "display",
+      "value_source": "param",
+      "default": 0.0,
+      "minimum": 0.0,
+      "maximum": 359999.0,
+      "decimals": 0,
+      "options": [],
+      "units_key": null,
+      "units_options": [],
+      "show_on_node": true,
+      "advanced_only": false,
+      "secondary_key": null,
+      "position_port": null,
+      "row": null,
+      "col": null,
+      "momentary": false
+    },
+    {
+      "key": "ch_4_time_s",
+      "label": "ch4 time",
+      "control_type": "display",
+      "value_source": "param",
+      "default": 0.0,
+      "minimum": 0.0,
+      "maximum": 359999.0,
+      "decimals": 0,
+      "options": [],
+      "units_key": null,
+      "units_options": [],
+      "show_on_node": true,
+      "advanced_only": false,
+      "secondary_key": null,
+      "position_port": null,
+      "row": null,
+      "col": null,
+      "momentary": false
+    },
+    {
+      "key": "ch_5_time_s",
+      "label": "ch5 time",
+      "control_type": "display",
+      "value_source": "param",
+      "default": 0.0,
+      "minimum": 0.0,
+      "maximum": 359999.0,
+      "decimals": 0,
+      "options": [],
+      "units_key": null,
+      "units_options": [],
+      "show_on_node": true,
+      "advanced_only": false,
+      "secondary_key": null,
+      "position_port": null,
+      "row": null,
+      "col": null,
+      "momentary": false
+    },
+    {
+      "key": "ch_6_time_s",
+      "label": "ch6 time",
+      "control_type": "display",
+      "value_source": "param",
+      "default": 0.0,
+      "minimum": 0.0,
+      "maximum": 359999.0,
+      "decimals": 0,
+      "options": [],
+      "units_key": null,
+      "units_options": [],
+      "show_on_node": true,
+      "advanced_only": false,
+      "secondary_key": null,
+      "position_port": null,
+      "row": null,
+      "col": null,
+      "momentary": false
+    },
+    {
+      "key": "ch_7_time_s",
+      "label": "ch7 time",
+      "control_type": "display",
+      "value_source": "param",
+      "default": 0.0,
+      "minimum": 0.0,
+      "maximum": 359999.0,
+      "decimals": 0,
+      "options": [],
+      "units_key": null,
+      "units_options": [],
+      "show_on_node": true,
+      "advanced_only": false,
+      "secondary_key": null,
+      "position_port": null,
+      "row": null,
+      "col": null,
+      "momentary": false
+    },
+    {
+      "key": "ch_8_time_s",
+      "label": "ch8 time",
+      "control_type": "display",
+      "value_source": "param",
+      "default": 0.0,
+      "minimum": 0.0,
+      "maximum": 359999.0,
+      "decimals": 0,
+      "options": [],
+      "units_key": null,
+      "units_options": [],
+      "show_on_node": true,
+      "advanced_only": false,
+      "secondary_key": null,
+      "position_port": null,
+      "row": null,
+      "col": null,
+      "momentary": false
+    },
+    {
+      "key": "ch_1_active_led",
+      "label": "ch1",
+      "control_type": "led",
+      "value_source": "auto",
+      "default": 0.0,
+      "minimum": 0.0,
+      "maximum": 100.0,
+      "decimals": 2,
+      "options": [],
+      "units_key": null,
+      "units_options": [],
+      "show_on_node": true,
+      "advanced_only": false,
+      "secondary_key": null,
+      "position_port": null,
+      "row": null,
+      "col": null,
+      "momentary": false
+    },
+    {
+      "key": "ch_2_active_led",
+      "label": "ch2",
+      "control_type": "led",
+      "value_source": "auto",
+      "default": 0.0,
+      "minimum": 0.0,
+      "maximum": 100.0,
+      "decimals": 2,
+      "options": [],
+      "units_key": null,
+      "units_options": [],
+      "show_on_node": true,
+      "advanced_only": false,
+      "secondary_key": null,
+      "position_port": null,
+      "row": null,
+      "col": null,
+      "momentary": false
+    },
+    {
+      "key": "ch_3_active_led",
+      "label": "ch3",
+      "control_type": "led",
+      "value_source": "auto",
+      "default": 0.0,
+      "minimum": 0.0,
+      "maximum": 100.0,
+      "decimals": 2,
+      "options": [],
+      "units_key": null,
+      "units_options": [],
+      "show_on_node": true,
+      "advanced_only": false,
+      "secondary_key": null,
+      "position_port": null,
+      "row": null,
+      "col": null,
+      "momentary": false
+    },
+    {
+      "key": "ch_4_active_led",
+      "label": "ch4",
+      "control_type": "led",
+      "value_source": "auto",
+      "default": 0.0,
+      "minimum": 0.0,
+      "maximum": 100.0,
+      "decimals": 2,
+      "options": [],
+      "units_key": null,
+      "units_options": [],
+      "show_on_node": true,
+      "advanced_only": false,
+      "secondary_key": null,
+      "position_port": null,
+      "row": null,
+      "col": null,
+      "momentary": false
+    },
+    {
+      "key": "ch_5_active_led",
+      "label": "ch5",
+      "control_type": "led",
+      "value_source": "auto",
+      "default": 0.0,
+      "minimum": 0.0,
+      "maximum": 100.0,
+      "decimals": 2,
+      "options": [],
+      "units_key": null,
+      "units_options": [],
+      "show_on_node": true,
+      "advanced_only": false,
+      "secondary_key": null,
+      "position_port": null,
+      "row": null,
+      "col": null,
+      "momentary": false
+    },
+    {
+      "key": "ch_6_active_led",
+      "label": "ch6",
+      "control_type": "led",
+      "value_source": "auto",
+      "default": 0.0,
+      "minimum": 0.0,
+      "maximum": 100.0,
+      "decimals": 2,
+      "options": [],
+      "units_key": null,
+      "units_options": [],
+      "show_on_node": true,
+      "advanced_only": false,
+      "secondary_key": null,
+      "position_port": null,
+      "row": null,
+      "col": null,
+      "momentary": false
+    },
+    {
+      "key": "ch_7_active_led",
+      "label": "ch7",
+      "control_type": "led",
+      "value_source": "auto",
+      "default": 0.0,
+      "minimum": 0.0,
+      "maximum": 100.0,
+      "decimals": 2,
+      "options": [],
+      "units_key": null,
+      "units_options": [],
+      "show_on_node": true,
+      "advanced_only": false,
+      "secondary_key": null,
+      "position_port": null,
+      "row": null,
+      "col": null,
+      "momentary": false
+    },
+    {
+      "key": "ch_8_active_led",
+      "label": "ch8",
+      "control_type": "led",
+      "value_source": "auto",
+      "default": 0.0,
+      "minimum": 0.0,
+      "maximum": 100.0,
+      "decimals": 2,
+      "options": [],
+      "units_key": null,
+      "units_options": [],
+      "show_on_node": true,
+      "advanced_only": false,
+      "secondary_key": null,
+      "position_port": null,
+      "row": null,
+      "col": null,
+      "momentary": false
+    },
+    {
+      "key": "clock_display_hh",
+      "label": "HH",
+      "control_type": "display",
+      "value_source": "auto",
+      "default": 0.0,
+      "minimum": 0.0,
+      "maximum": 99.0,
+      "decimals": 0,
+      "options": [],
+      "units_key": null,
+      "units_options": [],
+      "show_on_node": true,
+      "advanced_only": false,
+      "secondary_key": null,
+      "position_port": null,
+      "row": null,
+      "col": null,
+      "momentary": false
+    },
+    {
+      "key": "clock_display_mmss",
+      "label": "MM:SS",
+      "control_type": "display",
+      "value_source": "auto",
+      "default": 0.0,
+      "minimum": 0.0,
+      "maximum": 5999.0,
+      "decimals": 0,
+      "options": [],
+      "units_key": null,
+      "units_options": [],
+      "show_on_node": true,
+      "advanced_only": false,
+      "secondary_key": null,
+      "position_port": null,
+      "row": null,
+      "col": null,
+      "momentary": false
+    },
+    {
+      "key": "run_button",
+      "label": "run",
+      "control_type": "button",
+      "value_source": "param",
+      "default": "off",
+      "minimum": 0.0,
+      "maximum": 100.0,
+      "decimals": 2,
+      "options": [
+        "off",
+        "on"
+      ],
+      "units_key": null,
+      "units_options": [],
+      "show_on_node": true,
+      "advanced_only": false,
+      "secondary_key": null,
+      "position_port": null,
+      "row": null,
+      "col": null,
+      "momentary": false
+    },
+    {
+      "key": "reset_button",
+      "label": "reset",
+      "control_type": "button",
+      "value_source": "param",
+      "default": "off",
+      "minimum": 0.0,
+      "maximum": 100.0,
+      "decimals": 2,
+      "options": [
+        "off",
+        "on"
+      ],
+      "units_key": null,
+      "units_options": [],
+      "show_on_node": true,
+      "advanced_only": false,
+      "secondary_key": null,
+      "position_port": null,
+      "row": null,
+      "col": null,
+      "momentary": true
+    },
+    {
+      "key": "start_button",
+      "label": "start",
+      "control_type": "button",
+      "value_source": "param",
+      "default": "off",
+      "minimum": 0.0,
+      "maximum": 100.0,
+      "decimals": 2,
+      "options": [
+        "off",
+        "on"
+      ],
+      "units_key": null,
+      "units_options": [],
+      "show_on_node": true,
+      "advanced_only": false,
+      "secondary_key": null,
+      "position_port": null,
+      "row": null,
+      "col": null,
+      "momentary": true
+    }
+  ],
+  "port_groups": [
+    {
+      "name": "IN",
+      "ports": [],
+      "layout": "vertical",
+      "rows": [
+        {
+          "left": [
+            "in_1"
+          ],
+          "right": [
+            "ch_1_sel"
+          ]
+        },
+        {
+          "left": [
+            "in_2"
+          ],
+          "right": [
+            "ch_2_sel"
+          ]
+        },
+        {
+          "left": [
+            "in_3"
+          ],
+          "right": [
+            "ch_3_sel"
+          ]
+        },
+        {
+          "left": [
+            "in_4"
+          ],
+          "right": [
+            "ch_4_sel"
+          ]
+        },
+        {
+          "left": [
+            "in_5"
+          ],
+          "right": [
+            "ch_5_sel"
+          ]
+        },
+        {
+          "left": [
+            "in_6"
+          ],
+          "right": [
+            "ch_6_sel"
+          ]
+        },
+        {
+          "left": [
+            "in_7"
+          ],
+          "right": [
+            "ch_7_sel"
+          ]
+        },
+        {
+          "left": [
+            "in_8"
+          ],
+          "right": [
+            "ch_8_sel"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "CLK",
+      "ports": [],
+      "layout": "vertical",
+      "rows": [
+        {
+          "left": [
+            "clock_run",
+            "clock_reset",
+            "clock_start"
+          ],
+          "right": []
+        }
+      ]
+    },
+    {
+      "name": "OUT",
+      "ports": [],
+      "layout": "vertical",
+      "rows": [
+        {
+          "left": [
+            "out"
+          ],
+          "right": []
+        }
+      ]
+    }
+  ],
+  "state_only_params": [
+    "active_channel",
+    "clock_running",
+    "clock_seconds"
+  ],
+  "internal_outputs": [],
+  "layout": {
+    "Uw": 6,
+    "Ur": 2,
+    "profile": "port_groups"
+  }
+}

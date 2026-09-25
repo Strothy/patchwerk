@@ -1,0 +1,2935 @@
+{
+  "name": "New Patch",
+  "modules": [
+    {
+      "id": "sr6_multiaxis_out_1",
+      "type": "sr6_multiaxis_out",
+      "name": "sr6_multiaxis_out 1",
+      "params": {
+        "profile": "serial_main",
+        "l0_invert": "off",
+        "l1_invert": "off",
+        "l2_invert": "off",
+        "r0_invert": "off",
+        "r1_invert": "off",
+        "r2_invert": "off",
+        "l0_enabled": "on",
+        "l1_enabled": "on",
+        "l2_enabled": "on",
+        "r0_enabled": "on",
+        "r1_enabled": "on",
+        "r2_enabled": "on"
+      },
+      "inputs": {
+        "l0_in": 0.0,
+        "l1_in": 0.0,
+        "l2_in": 0.0,
+        "r0_in": 0.0,
+        "r1_in": 0.0,
+        "r2_in": 0.0,
+        "l0_min": 0.0,
+        "l0_max": 100.0,
+        "l1_min": 0.0,
+        "l1_max": 100.0,
+        "l2_min": 0.0,
+        "l2_max": 100.0,
+        "r0_min": 0.0,
+        "r0_max": 100.0,
+        "r1_min": 0.0,
+        "r1_max": 100.0,
+        "r2_min": 0.0,
+        "r2_max": 100.0
+      },
+      "ui": {
+        "x": -1120.0,
+        "y": 0.0,
+        "control_ranges": {
+          "profile": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "l0_invert": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "l1_invert": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "l2_invert": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "r0_invert": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "r1_invert": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "r2_invert": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "l0_min": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "r0_min": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "l1_min": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "r1_min": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "l2_min": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "r2_min": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "l0_enabled": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "l1_enabled": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "l2_enabled": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "r0_enabled": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "r1_enabled": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "r2_enabled": {
+            "min": 0.0,
+            "max": 100.0
+          }
+        },
+        "control_mod_depths": {},
+        "control_units": {},
+        "panel_layout": "eurorack_v1",
+        "jack_layout": "bottom_split"
+      }
+    },
+    {
+      "id": "scope_4ch_1",
+      "type": "scope_4ch",
+      "name": "scope_4ch 1",
+      "params": {
+        "time_s": 5.0,
+        "display": "overlay",
+        "style": "line",
+        "freeze": "off",
+        "gain1": 1.0,
+        "gain2": 1.0,
+        "gain3": 1.0,
+        "gain4": 1.0,
+        "history_s": 30.0,
+        "readouts": "on",
+        "show1": "on",
+        "show2": "on",
+        "show3": "on",
+        "show4": "on",
+        "color1": "blue",
+        "color2": "yellow",
+        "color3": "green",
+        "color4": "magenta",
+        "offset1": 0.0,
+        "offset2": 0.0,
+        "offset3": 0.0,
+        "offset4": 0.0
+      },
+      "inputs": {
+        "in1": 50.0,
+        "in2": 50.0,
+        "in3": 50.0,
+        "in4": 50.0
+      },
+      "ui": {
+        "x": 280.0,
+        "y": 0.0,
+        "control_ranges": {
+          "time_s": {
+            "min": 0.5,
+            "max": 30.0
+          },
+          "display": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "style": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "freeze": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "gain1": {
+            "min": 0.1,
+            "max": 5.0
+          },
+          "gain2": {
+            "min": 0.1,
+            "max": 5.0
+          },
+          "gain3": {
+            "min": 0.1,
+            "max": 5.0
+          },
+          "gain4": {
+            "min": 0.1,
+            "max": 5.0
+          },
+          "history_s": {
+            "min": 2.0,
+            "max": 120.0
+          }
+        },
+        "control_mod_depths": {},
+        "control_units": {}
+      }
+    },
+    {
+      "id": "scope_4ch_2",
+      "type": "scope_4ch",
+      "name": "scope_4ch 1 Copy",
+      "params": {
+        "time_s": 5.0,
+        "display": "overlay",
+        "style": "line",
+        "freeze": "off",
+        "gain1": 1.0,
+        "gain2": 1.0,
+        "gain3": 1.0,
+        "gain4": 1.0,
+        "history_s": 30.0,
+        "readouts": "on",
+        "show1": "on",
+        "show2": "on",
+        "show3": "on",
+        "show4": "on",
+        "color1": "blue",
+        "color2": "yellow",
+        "color3": "green",
+        "color4": "magenta",
+        "offset1": 0.0,
+        "offset2": 0.0,
+        "offset3": 0.0,
+        "offset4": 0.0
+      },
+      "inputs": {
+        "in1": 50.0,
+        "in2": 50.0,
+        "in3": 50.0,
+        "in4": 50.0
+      },
+      "ui": {
+        "x": 280.0,
+        "y": 750.0,
+        "control_ranges": {
+          "time_s": {
+            "min": 0.5,
+            "max": 30.0
+          },
+          "display": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "style": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "freeze": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "gain1": {
+            "min": 0.1,
+            "max": 5.0
+          },
+          "gain2": {
+            "min": 0.1,
+            "max": 5.0
+          },
+          "gain3": {
+            "min": 0.1,
+            "max": 5.0
+          },
+          "gain4": {
+            "min": 0.1,
+            "max": 5.0
+          },
+          "history_s": {
+            "min": 2.0,
+            "max": 120.0
+          }
+        },
+        "control_mod_depths": {},
+        "control_units": {}
+      }
+    },
+    {
+      "id": "lfo_1",
+      "type": "lfo",
+      "name": "lfo 1",
+      "params": {
+        "shape": "sine",
+        "polarity": "bipolar"
+      },
+      "inputs": {
+        "rate": 1.0,
+        "amp": 21.666666666666732,
+        "offset": 50.0,
+        "phase": 0.0
+      },
+      "ui": {
+        "x": -6320.0,
+        "y": 750.0,
+        "control_ranges": {
+          "shape": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "polarity": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "rate": {
+            "min": 0.1,
+            "max": 1.0
+          },
+          "amp": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "offset": {
+            "min": -100.0,
+            "max": 100.0
+          },
+          "phase": {
+            "min": 0.0,
+            "max": 360.0
+          }
+        },
+        "control_mod_depths": {
+          "rate": 100.0,
+          "amp": 100.0,
+          "offset": 100.0,
+          "phase": 100.0
+        },
+        "control_units": {
+          "rate": "seconds"
+        },
+        "panel_layout": "eurorack_v1",
+        "jack_layout": "bottom_split"
+      }
+    },
+    {
+      "id": "sr6_sim_1",
+      "type": "sr6_sim",
+      "name": "sr6_sim 1",
+      "params": {},
+      "inputs": {
+        "l0": 50.0,
+        "l1": 50.0,
+        "l2": 50.0,
+        "r0": 50.0,
+        "r1": 50.0,
+        "r2": 50.0
+      },
+      "ui": {
+        "x": -2720.0,
+        "y": 0.0,
+        "control_ranges": {},
+        "control_mod_depths": {},
+        "control_units": {}
+      }
+    },
+    {
+      "id": "mult_1",
+      "type": "mult",
+      "name": "mult 1",
+      "params": {},
+      "inputs": {
+        "in": 0.0
+      },
+      "ui": {
+        "x": -5720.0,
+        "y": 750.0,
+        "control_ranges": {},
+        "control_mod_depths": {},
+        "control_units": {},
+        "panel_layout": "eurorack_v1",
+        "jack_layout": "bottom_compact_stack"
+      }
+    },
+    {
+      "id": "lfo_2",
+      "type": "lfo",
+      "name": "lfo 1 Copy",
+      "params": {
+        "shape": "sine",
+        "polarity": "bipolar"
+      },
+      "inputs": {
+        "rate": 0.19543973941367987,
+        "amp": 21.666666666666732,
+        "offset": 50.0,
+        "phase": 90.0
+      },
+      "ui": {
+        "x": -6360.0,
+        "y": 1500.0,
+        "control_ranges": {
+          "shape": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "polarity": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "rate": {
+            "min": 0.05,
+            "max": 1.0
+          },
+          "amp": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "offset": {
+            "min": -100.0,
+            "max": 100.0
+          },
+          "phase": {
+            "min": 0.0,
+            "max": 360.0
+          }
+        },
+        "control_mod_depths": {
+          "rate": 100.0,
+          "amp": 100.0,
+          "offset": 100.0,
+          "phase": 100.0
+        },
+        "control_units": {
+          "rate": "seconds"
+        },
+        "panel_layout": "eurorack_v1",
+        "jack_layout": "bottom_split"
+      }
+    },
+    {
+      "id": "envelope_adsr_1",
+      "type": "envelope_adsr",
+      "name": "envelope_adsr 1",
+      "params": {
+        "enabled": "on",
+        "curve": "linear",
+        "retrigger": "ignore active",
+        "behavior": "gate sustain",
+        "loop": "off"
+      },
+      "inputs": {
+        "gate": 0.0,
+        "trigger": 0.0,
+        "attack": 0.1,
+        "decay": 0.509579319625415,
+        "sustain": 50.0,
+        "release": 0.3,
+        "amount": 35.55555555555554
+      },
+      "ui": {
+        "x": -2800.0,
+        "y": 1500.0,
+        "control_ranges": {
+          "enabled": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "curve": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "retrigger": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "behavior": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "loop": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "attack": {
+            "min": 0.0,
+            "max": 10.0
+          },
+          "decay": {
+            "min": 0.0,
+            "max": 10.0
+          },
+          "sustain": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "release": {
+            "min": 0.0,
+            "max": 10.0
+          },
+          "amount": {
+            "min": 0.0,
+            "max": 100.0
+          }
+        },
+        "control_mod_depths": {
+          "amount": 100.0,
+          "attack": 16.111111111111363,
+          "sustain": 57.77777777777791
+        },
+        "control_units": {}
+      }
+    },
+    {
+      "id": "step_seq_16_1",
+      "type": "step_seq_16",
+      "name": "step_seq_16 1",
+      "params": {
+        "enabled": "on",
+        "mode": "external",
+        "direction": "forward",
+        "reset_behavior": "reset only",
+        "glide": "off",
+        "step01": 50.0,
+        "gate01": "on",
+        "prob01": 100.0,
+        "step02": 50.0,
+        "gate02": "off",
+        "prob02": 100.0,
+        "step03": 50.0,
+        "gate03": "off",
+        "prob03": 100.0,
+        "step04": 50.0,
+        "gate04": "off",
+        "prob04": 100.0,
+        "step05": 50.0,
+        "gate05": "on",
+        "prob05": 100.0,
+        "step06": 50.0,
+        "gate06": "off",
+        "prob06": 100.0,
+        "step07": 50.0,
+        "gate07": "off",
+        "prob07": 100.0,
+        "step08": 50.0,
+        "gate08": "off",
+        "prob08": 100.0,
+        "step09": 50.0,
+        "gate09": "on",
+        "prob09": 100.0,
+        "step10": 50.0,
+        "gate10": "off",
+        "prob10": 100.0,
+        "step11": 50.0,
+        "gate11": "off",
+        "prob11": 100.0,
+        "step12": 50.0,
+        "gate12": "off",
+        "prob12": 100.0,
+        "step13": 50.0,
+        "gate13": "on",
+        "prob13": 100.0,
+        "step14": 50.0,
+        "gate14": "off",
+        "prob14": 100.0,
+        "step15": 50.0,
+        "gate15": "off",
+        "prob15": 100.0,
+        "step16": 50.0,
+        "gate16": "off",
+        "prob16": 100.0
+      },
+      "inputs": {
+        "clock": 0.0,
+        "reset": 0.0,
+        "run": 1.0,
+        "bpm": 120.0,
+        "length": 16.0,
+        "probability": 100.0,
+        "glide_time": 0.2
+      },
+      "ui": {
+        "x": -2080.0,
+        "y": 3000.0,
+        "control_ranges": {
+          "enabled": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "mode": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "bpm": {
+            "min": 1.0,
+            "max": 600.0
+          },
+          "length": {
+            "min": 1.0,
+            "max": 16.0
+          },
+          "probability": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "glide": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "glide_time": {
+            "min": 0.0,
+            "max": 10.0
+          },
+          "direction": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "reset_behavior": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "step01": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "step02": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "step03": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "step04": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "step05": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "step06": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "step07": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "step08": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "step09": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "step10": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "step11": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "step12": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "step13": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "step14": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "step15": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "step16": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "gate01": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "gate02": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "gate03": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "gate04": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "gate05": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "gate06": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "gate07": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "gate08": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "gate09": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "gate10": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "gate11": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "gate12": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "gate13": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "gate14": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "gate15": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "gate16": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "prob01": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "prob02": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "prob03": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "prob04": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "prob05": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "prob06": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "prob07": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "prob08": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "prob09": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "prob10": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "prob11": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "prob12": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "prob13": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "prob14": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "prob15": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "prob16": {
+            "min": 0.0,
+            "max": 100.0
+          }
+        },
+        "control_mod_depths": {
+          "bpm": 100.0,
+          "length": 100.0,
+          "probability": 100.0,
+          "glide_time": 100.0
+        },
+        "control_units": {}
+      }
+    },
+    {
+      "id": "step_seq_16_2",
+      "type": "step_seq_16",
+      "name": "step_seq_16 1 Copy",
+      "params": {
+        "enabled": "on",
+        "mode": "external",
+        "direction": "forward",
+        "reset_behavior": "reset only",
+        "glide": "off",
+        "step01": 50.0,
+        "gate01": "on",
+        "prob01": 100.0,
+        "step02": 50.0,
+        "gate02": "off",
+        "prob02": 100.0,
+        "step03": 50.0,
+        "gate03": "on",
+        "prob03": 100.0,
+        "step04": 50.0,
+        "gate04": "off",
+        "prob04": 75.0,
+        "step05": 50.0,
+        "gate05": "on",
+        "prob05": 100.0,
+        "step06": 50.0,
+        "gate06": "off",
+        "prob06": 100.0,
+        "step07": 50.0,
+        "gate07": "on",
+        "prob07": 100.0,
+        "step08": 50.0,
+        "gate08": "off",
+        "prob08": 100.0,
+        "step09": 50.0,
+        "gate09": "on",
+        "prob09": 100.0,
+        "step10": 50.0,
+        "gate10": "off",
+        "prob10": 50.0,
+        "step11": 50.0,
+        "gate11": "on",
+        "prob11": 100.0,
+        "step12": 50.0,
+        "gate12": "off",
+        "prob12": 100.0,
+        "step13": 50.0,
+        "gate13": "on",
+        "prob13": 100.0,
+        "step14": 50.0,
+        "gate14": "off",
+        "prob14": 100.0,
+        "step15": 50.0,
+        "gate15": "on",
+        "prob15": 100.0,
+        "step16": 50.0,
+        "gate16": "off",
+        "prob16": 100.0
+      },
+      "inputs": {
+        "clock": 0.0,
+        "reset": 0.0,
+        "run": 1.0,
+        "bpm": 120.0,
+        "length": 16.0,
+        "probability": 50.0,
+        "glide_time": 0.2
+      },
+      "ui": {
+        "x": -2080.0,
+        "y": 3750.0,
+        "control_ranges": {
+          "enabled": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "mode": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "bpm": {
+            "min": 1.0,
+            "max": 600.0
+          },
+          "length": {
+            "min": 1.0,
+            "max": 16.0
+          },
+          "probability": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "glide": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "glide_time": {
+            "min": 0.0,
+            "max": 10.0
+          },
+          "direction": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "reset_behavior": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "step01": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "step02": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "step03": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "step04": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "step05": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "step06": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "step07": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "step08": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "step09": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "step10": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "step11": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "step12": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "step13": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "step14": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "step15": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "step16": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "gate01": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "gate02": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "gate03": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "gate04": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "gate05": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "gate06": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "gate07": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "gate08": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "gate09": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "gate10": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "gate11": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "gate12": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "gate13": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "gate14": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "gate15": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "gate16": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "prob01": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "prob02": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "prob03": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "prob04": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "prob05": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "prob06": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "prob07": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "prob08": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "prob09": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "prob10": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "prob11": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "prob12": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "prob13": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "prob14": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "prob15": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "prob16": {
+            "min": 0.0,
+            "max": 100.0
+          }
+        },
+        "control_mod_depths": {
+          "bpm": 100.0,
+          "length": 100.0,
+          "probability": 100.0,
+          "glide_time": 100.0
+        },
+        "control_units": {}
+      }
+    },
+    {
+      "id": "step_seq_16_3",
+      "type": "step_seq_16",
+      "name": "step_seq_16 1 Copy Copy",
+      "params": {
+        "enabled": "on",
+        "mode": "external",
+        "direction": "forward",
+        "reset_behavior": "reset only",
+        "glide": "off",
+        "step01": 50.0,
+        "gate01": "on",
+        "prob01": 100.0,
+        "step02": 50.0,
+        "gate02": "on",
+        "prob02": 100.0,
+        "step03": 50.0,
+        "gate03": "on",
+        "prob03": 100.0,
+        "step04": 50.0,
+        "gate04": "on",
+        "prob04": 100.0,
+        "step05": 50.0,
+        "gate05": "on",
+        "prob05": 100.0,
+        "step06": 50.0,
+        "gate06": "on",
+        "prob06": 100.0,
+        "step07": 50.0,
+        "gate07": "on",
+        "prob07": 100.0,
+        "step08": 50.0,
+        "gate08": "on",
+        "prob08": 100.0,
+        "step09": 50.0,
+        "gate09": "on",
+        "prob09": 100.0,
+        "step10": 50.0,
+        "gate10": "on",
+        "prob10": 100.0,
+        "step11": 50.0,
+        "gate11": "on",
+        "prob11": 100.0,
+        "step12": 50.0,
+        "gate12": "on",
+        "prob12": 100.0,
+        "step13": 50.0,
+        "gate13": "on",
+        "prob13": 100.0,
+        "step14": 50.0,
+        "gate14": "on",
+        "prob14": 100.0,
+        "step15": 50.0,
+        "gate15": "on",
+        "prob15": 100.0,
+        "step16": 50.0,
+        "gate16": "on",
+        "prob16": 100.0
+      },
+      "inputs": {
+        "clock": 0.0,
+        "reset": 0.0,
+        "run": 1.0,
+        "bpm": 120.0,
+        "length": 16.0,
+        "probability": 100.0,
+        "glide_time": 0.2
+      },
+      "ui": {
+        "x": -2080.0,
+        "y": 4500.0,
+        "control_ranges": {
+          "enabled": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "mode": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "bpm": {
+            "min": 1.0,
+            "max": 600.0
+          },
+          "length": {
+            "min": 1.0,
+            "max": 16.0
+          },
+          "probability": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "glide": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "glide_time": {
+            "min": 0.0,
+            "max": 10.0
+          },
+          "direction": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "reset_behavior": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "step01": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "step02": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "step03": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "step04": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "step05": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "step06": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "step07": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "step08": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "step09": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "step10": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "step11": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "step12": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "step13": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "step14": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "step15": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "step16": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "gate01": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "gate02": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "gate03": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "gate04": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "gate05": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "gate06": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "gate07": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "gate08": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "gate09": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "gate10": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "gate11": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "gate12": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "gate13": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "gate14": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "gate15": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "gate16": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "prob01": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "prob02": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "prob03": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "prob04": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "prob05": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "prob06": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "prob07": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "prob08": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "prob09": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "prob10": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "prob11": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "prob12": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "prob13": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "prob14": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "prob15": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "prob16": {
+            "min": 0.0,
+            "max": 100.0
+          }
+        },
+        "control_mod_depths": {
+          "bpm": 100.0,
+          "length": 100.0,
+          "probability": 100.0,
+          "glide_time": 100.0
+        },
+        "control_units": {}
+      }
+    },
+    {
+      "id": "clock_divider_stack_1",
+      "type": "clock_divider_stack",
+      "name": "clock_divider_stack 1",
+      "params": {
+        "enabled": "on",
+        "divider_source": "internal",
+        "div1": "1/2",
+        "div2": "1/4",
+        "div3": "1/8"
+      },
+      "inputs": {
+        "run": 1.0,
+        "reset": 0.0,
+        "bpm": 90.0,
+        "pulse_width": 10.0,
+        "div_clock": 0.0,
+        "div_reset": 0.0,
+        "divisor": 2.0
+      },
+      "ui": {
+        "x": -3120.0,
+        "y": 3000.0,
+        "control_ranges": {
+          "enabled": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "bpm": {
+            "min": 1.0,
+            "max": 600.0
+          },
+          "pulse_width": {
+            "min": 1.0,
+            "max": 95.0
+          },
+          "divider_source": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "div1": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "div2": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "div3": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "divisor": {
+            "min": 1.0,
+            "max": 16.0
+          }
+        },
+        "control_mod_depths": {
+          "bpm": 100.0,
+          "pulse_width": 100.0,
+          "divisor": 100.0
+        },
+        "control_units": {}
+      }
+    },
+    {
+      "id": "step_seq_16_4",
+      "type": "step_seq_16",
+      "name": "step_seq_16 1 Copy Copy Copy",
+      "params": {
+        "enabled": "on",
+        "mode": "external",
+        "direction": "forward",
+        "reset_behavior": "reset only",
+        "glide": "off",
+        "step01": 50.0,
+        "gate01": "on",
+        "prob01": 100.0,
+        "step02": 50.0,
+        "gate02": "on",
+        "prob02": 100.0,
+        "step03": 50.0,
+        "gate03": "on",
+        "prob03": 100.0,
+        "step04": 50.0,
+        "gate04": "on",
+        "prob04": 100.0,
+        "step05": 50.0,
+        "gate05": "on",
+        "prob05": 100.0,
+        "step06": 50.0,
+        "gate06": "on",
+        "prob06": 100.0,
+        "step07": 50.0,
+        "gate07": "on",
+        "prob07": 100.0,
+        "step08": 50.0,
+        "gate08": "on",
+        "prob08": 100.0,
+        "step09": 50.0,
+        "gate09": "on",
+        "prob09": 100.0,
+        "step10": 50.0,
+        "gate10": "on",
+        "prob10": 100.0,
+        "step11": 50.0,
+        "gate11": "on",
+        "prob11": 100.0,
+        "step12": 50.0,
+        "gate12": "on",
+        "prob12": 100.0,
+        "step13": 50.0,
+        "gate13": "on",
+        "prob13": 100.0,
+        "step14": 50.0,
+        "gate14": "on",
+        "prob14": 100.0,
+        "step15": 50.0,
+        "gate15": "on",
+        "prob15": 100.0,
+        "step16": 50.0,
+        "gate16": "on",
+        "prob16": 100.0
+      },
+      "inputs": {
+        "clock": 0.0,
+        "reset": 0.0,
+        "run": 1.0,
+        "bpm": 120.0,
+        "length": 16.0,
+        "probability": 100.0,
+        "glide_time": 0.2
+      },
+      "ui": {
+        "x": -2080.0,
+        "y": 5250.0,
+        "control_ranges": {
+          "enabled": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "mode": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "bpm": {
+            "min": 1.0,
+            "max": 600.0
+          },
+          "length": {
+            "min": 1.0,
+            "max": 16.0
+          },
+          "probability": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "glide": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "glide_time": {
+            "min": 0.0,
+            "max": 10.0
+          },
+          "direction": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "reset_behavior": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "step01": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "step02": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "step03": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "step04": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "step05": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "step06": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "step07": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "step08": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "step09": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "step10": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "step11": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "step12": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "step13": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "step14": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "step15": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "step16": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "gate01": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "gate02": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "gate03": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "gate04": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "gate05": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "gate06": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "gate07": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "gate08": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "gate09": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "gate10": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "gate11": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "gate12": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "gate13": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "gate14": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "gate15": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "gate16": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "prob01": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "prob02": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "prob03": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "prob04": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "prob05": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "prob06": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "prob07": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "prob08": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "prob09": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "prob10": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "prob11": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "prob12": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "prob13": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "prob14": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "prob15": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "prob16": {
+            "min": 0.0,
+            "max": 100.0
+          }
+        },
+        "control_mod_depths": {
+          "bpm": 100.0,
+          "length": 100.0,
+          "probability": 100.0,
+          "glide_time": 100.0
+        },
+        "control_units": {}
+      }
+    },
+    {
+      "id": "manual_trigger_8_1",
+      "type": "manual_trigger_8",
+      "name": "manual_trigger_8 1",
+      "params": {
+        "pulse_length_s": 0.1,
+        "mode1": "pulse",
+        "mode2": "pulse",
+        "mode3": "pulse",
+        "mode4": "pulse",
+        "mode5": "pulse",
+        "mode6": "pulse",
+        "mode7": "pulse",
+        "mode8": "pulse",
+        "label1": "T1",
+        "label2": "T2",
+        "label3": "T3",
+        "label4": "T4",
+        "label5": "T5",
+        "label6": "T6",
+        "label7": "T7",
+        "label8": "RESET"
+      },
+      "inputs": {},
+      "ui": {
+        "x": -5760.0,
+        "y": 2250.0,
+        "control_ranges": {
+          "pulse_length_s": {
+            "min": 0.0,
+            "max": 2.0
+          }
+        },
+        "control_mod_depths": {},
+        "control_units": {}
+      }
+    },
+    {
+      "id": "mult_2",
+      "type": "mult",
+      "name": "mult 2",
+      "params": {},
+      "inputs": {
+        "in": 0.0
+      },
+      "ui": {
+        "x": -3080.0,
+        "y": 2250.0,
+        "control_ranges": {},
+        "control_mod_depths": {},
+        "control_units": {},
+        "panel_layout": "eurorack_v1",
+        "jack_layout": "bottom_compact_stack"
+      }
+    },
+    {
+      "id": "lfo_3",
+      "type": "lfo",
+      "name": "lfo 3",
+      "params": {
+        "shape": "sine",
+        "polarity": "unipolar"
+      },
+      "inputs": {
+        "rate": 0.03333333333333333,
+        "amp": 0.6166666666666692,
+        "offset": 0.4,
+        "phase": 0.0
+      },
+      "ui": {
+        "x": 560.0,
+        "y": 3750.0,
+        "control_ranges": {
+          "shape": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "polarity": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "rate": {
+            "min": 0.016666666666666666,
+            "max": 1.0
+          },
+          "amp": {
+            "min": 0.1,
+            "max": 1.5
+          },
+          "offset": {
+            "min": -100.0,
+            "max": 100.0
+          },
+          "phase": {
+            "min": 0.0,
+            "max": 360.0
+          }
+        },
+        "control_mod_depths": {
+          "rate": 100.0,
+          "amp": 100.0,
+          "offset": 100.0,
+          "phase": 100.0
+        },
+        "control_units": {
+          "rate": "seconds"
+        },
+        "panel_layout": "eurorack_v1",
+        "jack_layout": "bottom_split"
+      }
+    },
+    {
+      "id": "scope_4ch_3",
+      "type": "scope_4ch",
+      "name": "scope_4ch 3",
+      "params": {
+        "time_s": 5.0,
+        "display": "overlay",
+        "style": "line",
+        "freeze": "off",
+        "gain1": 1.0,
+        "gain2": 1.0,
+        "gain3": 1.0,
+        "gain4": 1.0,
+        "history_s": 30.0,
+        "readouts": "on",
+        "show1": "on",
+        "show2": "on",
+        "show3": "on",
+        "show4": "on",
+        "color1": "blue",
+        "color2": "yellow",
+        "color3": "green",
+        "color4": "magenta",
+        "offset1": 0.0,
+        "offset2": 0.0,
+        "offset3": 0.0,
+        "offset4": 0.0
+      },
+      "inputs": {
+        "in1": 50.0,
+        "in2": 50.0,
+        "in3": 50.0,
+        "in4": 50.0
+      },
+      "ui": {
+        "x": 3760.0,
+        "y": 3000.0,
+        "control_ranges": {
+          "time_s": {
+            "min": 0.5,
+            "max": 30.0
+          },
+          "display": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "style": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "freeze": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "gain1": {
+            "min": 0.1,
+            "max": 5.0
+          },
+          "gain2": {
+            "min": 0.1,
+            "max": 5.0
+          },
+          "gain3": {
+            "min": 0.1,
+            "max": 5.0
+          },
+          "gain4": {
+            "min": 0.1,
+            "max": 5.0
+          },
+          "history_s": {
+            "min": 2.0,
+            "max": 120.0
+          }
+        },
+        "control_mod_depths": {},
+        "control_units": {}
+      }
+    },
+    {
+      "id": "lfo_4",
+      "type": "lfo",
+      "name": "lfo 3 Copy",
+      "params": {
+        "shape": "sine",
+        "polarity": "unipolar"
+      },
+      "inputs": {
+        "rate": 0.06666666666666667,
+        "amp": 0.65,
+        "offset": 0.4,
+        "phase": 90.0
+      },
+      "ui": {
+        "x": 1080.0,
+        "y": 3750.0,
+        "control_ranges": {
+          "shape": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "polarity": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "rate": {
+            "min": 0.016666666666666666,
+            "max": 1.0
+          },
+          "amp": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "offset": {
+            "min": -100.0,
+            "max": 100.0
+          },
+          "phase": {
+            "min": 0.0,
+            "max": 360.0
+          }
+        },
+        "control_mod_depths": {
+          "rate": 100.0,
+          "amp": 100.0,
+          "offset": 100.0,
+          "phase": 100.0
+        },
+        "control_units": {
+          "rate": "seconds"
+        },
+        "panel_layout": "eurorack_v1",
+        "jack_layout": "bottom_split"
+      }
+    },
+    {
+      "id": "lfo_5",
+      "type": "lfo",
+      "name": "lfo 3 Copy Copy",
+      "params": {
+        "shape": "sine",
+        "polarity": "bipolar"
+      },
+      "inputs": {
+        "rate": 0.03333333333333333,
+        "amp": 15.0,
+        "offset": 50.0,
+        "phase": 180.0
+      },
+      "ui": {
+        "x": 1600.0,
+        "y": 3750.0,
+        "control_ranges": {
+          "shape": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "polarity": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "rate": {
+            "min": 0.016666666666666666,
+            "max": 1.0
+          },
+          "amp": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "offset": {
+            "min": -100.0,
+            "max": 100.0
+          },
+          "phase": {
+            "min": 0.0,
+            "max": 360.0
+          }
+        },
+        "control_mod_depths": {
+          "rate": 100.0,
+          "amp": 100.0,
+          "offset": 100.0,
+          "phase": 100.0
+        },
+        "control_units": {
+          "rate": "seconds"
+        },
+        "panel_layout": "eurorack_v1",
+        "jack_layout": "bottom_split"
+      }
+    },
+    {
+      "id": "lfo_6",
+      "type": "lfo",
+      "name": "lfo 3 Copy Copy Copy",
+      "params": {
+        "shape": "sine",
+        "polarity": "unipolar"
+      },
+      "inputs": {
+        "rate": 0.06666666666666667,
+        "amp": 0.6,
+        "offset": 0.4,
+        "phase": 270.0
+      },
+      "ui": {
+        "x": 2120.0,
+        "y": 3750.0,
+        "control_ranges": {
+          "shape": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "polarity": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "rate": {
+            "min": 0.016666666666666666,
+            "max": 1.0
+          },
+          "amp": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "offset": {
+            "min": -100.0,
+            "max": 100.0
+          },
+          "phase": {
+            "min": 0.0,
+            "max": 360.0
+          }
+        },
+        "control_mod_depths": {
+          "rate": 100.0,
+          "amp": 100.0,
+          "offset": 100.0,
+          "phase": 100.0
+        },
+        "control_units": {
+          "rate": "seconds"
+        },
+        "panel_layout": "eurorack_v1",
+        "jack_layout": "bottom_split"
+      }
+    },
+    {
+      "id": "constant_1",
+      "type": "constant",
+      "name": "constant 1",
+      "params": {
+        "value": 50.0
+      },
+      "inputs": {},
+      "ui": {
+        "x": -1720.0,
+        "y": -750.0,
+        "control_ranges": {
+          "value": {
+            "min": 0.0,
+            "max": 100.0
+          }
+        },
+        "control_mod_depths": {},
+        "control_units": {}
+      }
+    },
+    {
+      "id": "envelope_adsr_2",
+      "type": "envelope_adsr",
+      "name": "envelope_adsr 1 Copy",
+      "params": {
+        "enabled": "on",
+        "curve": "linear",
+        "retrigger": "ignore active",
+        "behavior": "gate sustain",
+        "loop": "off"
+      },
+      "inputs": {
+        "gate": 0.0,
+        "trigger": 0.0,
+        "attack": 0.3960784781495186,
+        "decay": 0.509579319625415,
+        "sustain": 50.0,
+        "release": 0.3,
+        "amount": 100.0
+      },
+      "ui": {
+        "x": -1400.0,
+        "y": 1500.0,
+        "control_ranges": {
+          "enabled": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "curve": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "retrigger": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "behavior": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "loop": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "attack": {
+            "min": 0.0,
+            "max": 10.0
+          },
+          "decay": {
+            "min": 0.0,
+            "max": 10.0
+          },
+          "sustain": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "release": {
+            "min": 0.0,
+            "max": 10.0
+          },
+          "amount": {
+            "min": 0.0,
+            "max": 100.0
+          }
+        },
+        "control_mod_depths": {
+          "amount": 100.0
+        },
+        "control_units": {}
+      }
+    },
+    {
+      "id": "divide_1",
+      "type": "divide",
+      "name": "divide 1",
+      "params": {},
+      "inputs": {
+        "a": 0.0,
+        "b": 1.0
+      },
+      "ui": {
+        "x": 480.0,
+        "y": 2250.0,
+        "control_ranges": {},
+        "control_mod_depths": {},
+        "control_units": {},
+        "panel_layout": "eurorack_v1",
+        "jack_layout": "bottom_compact_stack"
+      }
+    },
+    {
+      "id": "constant_2",
+      "type": "constant",
+      "name": "constant 2",
+      "params": {
+        "value": 0.8611111111111098
+      },
+      "inputs": {},
+      "ui": {
+        "x": 640.0,
+        "y": 2250.0,
+        "control_ranges": {
+          "value": {
+            "min": 0.0,
+            "max": 1.0
+          }
+        },
+        "control_mod_depths": {},
+        "control_units": {}
+      }
+    },
+    {
+      "id": "mixer4_1",
+      "type": "mixer4",
+      "name": "mixer4 1",
+      "params": {},
+      "inputs": {
+        "a": 0.0,
+        "b": 0.0,
+        "c": 0.0,
+        "d": 0.0
+      },
+      "ui": {
+        "x": -3040.0,
+        "y": 1500.0,
+        "control_ranges": {},
+        "control_mod_depths": {},
+        "control_units": {},
+        "panel_layout": "eurorack_v1",
+        "jack_layout": "bottom_compact_stack"
+      }
+    },
+    {
+      "id": "divide_2",
+      "type": "divide",
+      "name": "divide 1 Copy",
+      "params": {},
+      "inputs": {
+        "a": 0.0,
+        "b": 1.0
+      },
+      "ui": {
+        "x": 320.0,
+        "y": 2250.0,
+        "control_ranges": {},
+        "control_mod_depths": {},
+        "control_units": {},
+        "panel_layout": "eurorack_v1",
+        "jack_layout": "bottom_compact_stack"
+      }
+    },
+    {
+      "id": "divide_3",
+      "type": "divide",
+      "name": "divide 1 Copy Copy",
+      "params": {},
+      "inputs": {
+        "a": 0.0,
+        "b": 1.0
+      },
+      "ui": {
+        "x": 160.0,
+        "y": 2250.0,
+        "control_ranges": {},
+        "control_mod_depths": {},
+        "control_units": {},
+        "panel_layout": "eurorack_v1",
+        "jack_layout": "bottom_compact_stack"
+      }
+    },
+    {
+      "id": "divide_4",
+      "type": "divide",
+      "name": "divide 1 Copy Copy Copy",
+      "params": {},
+      "inputs": {
+        "a": 0.0,
+        "b": 1.0
+      },
+      "ui": {
+        "x": 0.0,
+        "y": 2250.0,
+        "control_ranges": {},
+        "control_mod_depths": {},
+        "control_units": {},
+        "panel_layout": "eurorack_v1",
+        "jack_layout": "bottom_compact_stack"
+      }
+    },
+    {
+      "id": "oscillator_1",
+      "type": "oscillator",
+      "name": "oscillator 1",
+      "params": {
+        "shape": "sine",
+        "polarity": "bipolar"
+      },
+      "inputs": {
+        "rate": 0.3030303030303045,
+        "amp": 0.0,
+        "offset": 50.0,
+        "phase": 0.0
+      },
+      "ui": {
+        "x": -3560.0,
+        "y": 0.0,
+        "control_ranges": {
+          "shape": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "polarity": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "rate": {
+            "min": 0.1,
+            "max": 1.0
+          },
+          "amp": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "offset": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "phase": {
+            "min": 0.0,
+            "max": 360.0
+          }
+        },
+        "control_mod_depths": {
+          "rate": 100.0,
+          "amp": 100.0,
+          "offset": 100.0,
+          "phase": 100.0
+        },
+        "control_units": {
+          "rate": "seconds"
+        },
+        "panel_layout": "eurorack_v1",
+        "jack_layout": "bottom_split"
+      }
+    },
+    {
+      "id": "lfo_7",
+      "type": "lfo",
+      "name": "lfo 7",
+      "params": {
+        "shape": "sine",
+        "polarity": "bipolar"
+      },
+      "inputs": {
+        "rate": 0.016666666666666666,
+        "amp": 16.111111111111423,
+        "offset": 50.0,
+        "phase": 0.0
+      },
+      "ui": {
+        "x": -4120.0,
+        "y": 0.0,
+        "control_ranges": {
+          "shape": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "polarity": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "rate": {
+            "min": 0.008333333333333333,
+            "max": 1.0
+          },
+          "amp": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "offset": {
+            "min": -100.0,
+            "max": 100.0
+          },
+          "phase": {
+            "min": 0.0,
+            "max": 360.0
+          }
+        },
+        "control_mod_depths": {
+          "rate": 100.0,
+          "amp": 100.0,
+          "offset": 100.0,
+          "phase": 100.0
+        },
+        "control_units": {
+          "rate": "seconds"
+        },
+        "panel_layout": "eurorack_v1",
+        "jack_layout": "bottom_split"
+      }
+    }
+  ],
+  "connections": [
+    {
+      "src_module": "sr6_multiaxis_out_1",
+      "src_port": "l1_out",
+      "dst_module": "scope_4ch_1",
+      "dst_port": "in2",
+      "color_index": 1
+    },
+    {
+      "src_module": "sr6_multiaxis_out_1",
+      "src_port": "l2_out",
+      "dst_module": "scope_4ch_1",
+      "dst_port": "in3",
+      "color_index": 1
+    },
+    {
+      "src_module": "sr6_multiaxis_out_1",
+      "src_port": "l0_out",
+      "dst_module": "scope_4ch_1",
+      "dst_port": "in1",
+      "color_index": 1
+    },
+    {
+      "src_module": "sr6_multiaxis_out_1",
+      "src_port": "l0_out",
+      "dst_module": "sr6_sim_1",
+      "dst_port": "l0",
+      "color_index": 0
+    },
+    {
+      "src_module": "sr6_multiaxis_out_1",
+      "src_port": "l1_out",
+      "dst_module": "sr6_sim_1",
+      "dst_port": "l1",
+      "color_index": 0
+    },
+    {
+      "src_module": "sr6_multiaxis_out_1",
+      "src_port": "l2_out",
+      "dst_module": "sr6_sim_1",
+      "dst_port": "l2",
+      "color_index": 0
+    },
+    {
+      "src_module": "sr6_multiaxis_out_1",
+      "src_port": "r0_out",
+      "dst_module": "sr6_sim_1",
+      "dst_port": "r0",
+      "color_index": 0
+    },
+    {
+      "src_module": "sr6_multiaxis_out_1",
+      "src_port": "r1_out",
+      "dst_module": "sr6_sim_1",
+      "dst_port": "r1",
+      "color_index": 0
+    },
+    {
+      "src_module": "sr6_multiaxis_out_1",
+      "src_port": "r2_out",
+      "dst_module": "sr6_sim_1",
+      "dst_port": "r2",
+      "color_index": 0
+    },
+    {
+      "src_module": "sr6_multiaxis_out_1",
+      "src_port": "r0_out",
+      "dst_module": "scope_4ch_2",
+      "dst_port": "in1",
+      "color_index": 4
+    },
+    {
+      "src_module": "sr6_multiaxis_out_1",
+      "src_port": "r1_out",
+      "dst_module": "scope_4ch_2",
+      "dst_port": "in2",
+      "color_index": 4
+    },
+    {
+      "src_module": "sr6_multiaxis_out_1",
+      "src_port": "r2_out",
+      "dst_module": "scope_4ch_2",
+      "dst_port": "in3",
+      "color_index": 4
+    },
+    {
+      "src_module": "clock_divider_stack_1",
+      "src_port": "clock",
+      "dst_module": "step_seq_16_1",
+      "dst_port": "clock",
+      "color_index": 0
+    },
+    {
+      "src_module": "clock_divider_stack_1",
+      "src_port": "div1_out",
+      "dst_module": "step_seq_16_2",
+      "dst_port": "clock",
+      "color_index": 0
+    },
+    {
+      "src_module": "clock_divider_stack_1",
+      "src_port": "div2_out",
+      "dst_module": "step_seq_16_3",
+      "dst_port": "clock",
+      "color_index": 0
+    },
+    {
+      "src_module": "clock_divider_stack_1",
+      "src_port": "div3_out",
+      "dst_module": "step_seq_16_4",
+      "dst_port": "clock",
+      "color_index": 0
+    },
+    {
+      "src_module": "manual_trigger_8_1",
+      "src_port": "trig8",
+      "dst_module": "mult_2",
+      "dst_port": "in",
+      "color_index": 0
+    },
+    {
+      "src_module": "mult_2",
+      "src_port": "out1",
+      "dst_module": "clock_divider_stack_1",
+      "dst_port": "reset",
+      "color_index": 0
+    },
+    {
+      "src_module": "mult_2",
+      "src_port": "out1",
+      "dst_module": "clock_divider_stack_1",
+      "dst_port": "div_reset",
+      "color_index": 0
+    },
+    {
+      "src_module": "mult_2",
+      "src_port": "out1",
+      "dst_module": "step_seq_16_1",
+      "dst_port": "reset",
+      "color_index": 0
+    },
+    {
+      "src_module": "mult_2",
+      "src_port": "out1",
+      "dst_module": "step_seq_16_2",
+      "dst_port": "reset",
+      "color_index": 0
+    },
+    {
+      "src_module": "mult_2",
+      "src_port": "out1",
+      "dst_module": "step_seq_16_3",
+      "dst_port": "reset",
+      "color_index": 0
+    },
+    {
+      "src_module": "mult_2",
+      "src_port": "out1",
+      "dst_module": "step_seq_16_4",
+      "dst_port": "reset",
+      "color_index": 0
+    },
+    {
+      "src_module": "step_seq_16_1",
+      "src_port": "trigger",
+      "dst_module": "envelope_adsr_1",
+      "dst_port": "trigger",
+      "color_index": 0
+    },
+    {
+      "src_module": "lfo_3",
+      "src_port": "out",
+      "dst_module": "envelope_adsr_1",
+      "dst_port": "attack",
+      "color_index": 0
+    },
+    {
+      "src_module": "envelope_adsr_1",
+      "src_port": "env",
+      "dst_module": "scope_4ch_3",
+      "dst_port": "in1",
+      "color_index": 0
+    },
+    {
+      "src_module": "lfo_4",
+      "src_port": "out",
+      "dst_module": "envelope_adsr_1",
+      "dst_port": "decay",
+      "color_index": 0
+    },
+    {
+      "src_module": "lfo_5",
+      "src_port": "out",
+      "dst_module": "envelope_adsr_1",
+      "dst_port": "sustain",
+      "color_index": 0
+    },
+    {
+      "src_module": "lfo_6",
+      "src_port": "out",
+      "dst_module": "envelope_adsr_1",
+      "dst_port": "release",
+      "color_index": 0
+    },
+    {
+      "src_module": "constant_1",
+      "src_port": "out",
+      "dst_module": "sr6_multiaxis_out_1",
+      "dst_port": "l1_in",
+      "color_index": 0
+    },
+    {
+      "src_module": "constant_1",
+      "src_port": "out",
+      "dst_module": "sr6_multiaxis_out_1",
+      "dst_port": "l2_in",
+      "color_index": 0
+    },
+    {
+      "src_module": "constant_1",
+      "src_port": "out",
+      "dst_module": "sr6_multiaxis_out_1",
+      "dst_port": "r1_in",
+      "color_index": 0
+    },
+    {
+      "src_module": "constant_1",
+      "src_port": "out",
+      "dst_module": "sr6_multiaxis_out_1",
+      "dst_port": "r2_in",
+      "color_index": 0
+    },
+    {
+      "src_module": "lfo_3",
+      "src_port": "out",
+      "dst_module": "divide_1",
+      "dst_port": "a",
+      "color_index": 0
+    },
+    {
+      "src_module": "constant_2",
+      "src_port": "out",
+      "dst_module": "divide_1",
+      "dst_port": "b",
+      "color_index": 0
+    },
+    {
+      "src_module": "divide_1",
+      "src_port": "out",
+      "dst_module": "envelope_adsr_2",
+      "dst_port": "attack",
+      "color_index": 0
+    },
+    {
+      "src_module": "step_seq_16_2",
+      "src_port": "trigger",
+      "dst_module": "envelope_adsr_2",
+      "dst_port": "trigger",
+      "color_index": 0
+    },
+    {
+      "src_module": "envelope_adsr_1",
+      "src_port": "env",
+      "dst_module": "mixer4_1",
+      "dst_port": "a",
+      "color_index": 0
+    },
+    {
+      "src_module": "envelope_adsr_2",
+      "src_port": "env",
+      "dst_module": "mixer4_1",
+      "dst_port": "b",
+      "color_index": 0
+    },
+    {
+      "src_module": "mixer4_1",
+      "src_port": "out",
+      "dst_module": "sr6_multiaxis_out_1",
+      "dst_port": "l0_in",
+      "color_index": 0
+    },
+    {
+      "src_module": "constant_2",
+      "src_port": "out",
+      "dst_module": "divide_2",
+      "dst_port": "b",
+      "color_index": 0
+    },
+    {
+      "src_module": "lfo_4",
+      "src_port": "out",
+      "dst_module": "divide_2",
+      "dst_port": "a",
+      "color_index": 0
+    },
+    {
+      "src_module": "divide_2",
+      "src_port": "out",
+      "dst_module": "envelope_adsr_2",
+      "dst_port": "decay",
+      "color_index": 0
+    },
+    {
+      "src_module": "constant_2",
+      "src_port": "out",
+      "dst_module": "divide_3",
+      "dst_port": "b",
+      "color_index": 0
+    },
+    {
+      "src_module": "constant_2",
+      "src_port": "out",
+      "dst_module": "divide_4",
+      "dst_port": "b",
+      "color_index": 0
+    },
+    {
+      "src_module": "lfo_5",
+      "src_port": "out",
+      "dst_module": "divide_3",
+      "dst_port": "a",
+      "color_index": 0
+    },
+    {
+      "src_module": "lfo_6",
+      "src_port": "out",
+      "dst_module": "divide_4",
+      "dst_port": "a",
+      "color_index": 0
+    },
+    {
+      "src_module": "divide_3",
+      "src_port": "out",
+      "dst_module": "envelope_adsr_2",
+      "dst_port": "sustain",
+      "color_index": 0
+    },
+    {
+      "src_module": "divide_4",
+      "src_port": "out",
+      "dst_module": "envelope_adsr_2",
+      "dst_port": "release",
+      "color_index": 0
+    },
+    {
+      "src_module": "oscillator_1",
+      "src_port": "out",
+      "dst_module": "sr6_multiaxis_out_1",
+      "dst_port": "r0_in",
+      "color_index": 0
+    },
+    {
+      "src_module": "lfo_7",
+      "src_port": "out",
+      "dst_module": "oscillator_1",
+      "dst_port": "amp",
+      "color_index": 0
+    },
+    {
+      "src_module": "lfo_7",
+      "src_port": "out",
+      "dst_module": "oscillator_1",
+      "dst_port": "rate",
+      "color_index": 0
+    }
+  ],
+  "meta": {
+    "version": 1,
+    "output_profiles": {
+      "serial": {
+        "serial_main": {
+          "name": "serial_main",
+          "enabled": true,
+          "port": "",
+          "baud": 115200,
+          "interval_ms": 20,
+          "auto_connect": true,
+          "line_ending": "\n",
+          "protocol": "tcode_v0"
+        },
+        "serial_aux_1": {
+          "name": "serial_aux_1",
+          "enabled": true,
+          "port": "",
+          "baud": 115200,
+          "interval_ms": 20,
+          "auto_connect": true,
+          "line_ending": "\n",
+          "protocol": "tcode_v0"
+        },
+        "serial_aux_2": {
+          "name": "serial_aux_2",
+          "enabled": true,
+          "port": "",
+          "baud": 115200,
+          "interval_ms": 20,
+          "auto_connect": true,
+          "line_ending": "\n",
+          "protocol": "tcode_v0"
+        },
+        "serial_aux_3": {
+          "name": "serial_aux_3",
+          "enabled": true,
+          "port": "",
+          "baud": 115200,
+          "interval_ms": 20,
+          "auto_connect": true,
+          "line_ending": "\n",
+          "protocol": "tcode_v0"
+        }
+      },
+      "buttplug": {
+        "buttplug_main": {
+          "name": "buttplug_main",
+          "enabled": true,
+          "server_url": "ws://127.0.0.1:12345",
+          "auto_connect": false
+        },
+        "buttplug_aux_1": {
+          "name": "buttplug_aux_1",
+          "enabled": true,
+          "server_url": "ws://127.0.0.1:12345",
+          "auto_connect": false
+        },
+        "buttplug_aux_2": {
+          "name": "buttplug_aux_2",
+          "enabled": true,
+          "server_url": "ws://127.0.0.1:12345",
+          "auto_connect": false
+        }
+      }
+    },
+    "plugin_provenance": {
+      "external_module_types": [],
+      "modules": []
+    }
+  }
+}

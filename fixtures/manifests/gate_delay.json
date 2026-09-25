@@ -1,0 +1,123 @@
+{
+  "module_type": "gate_delay",
+  "category": "Utility",
+  "input_ports": [
+    {
+      "name": "trig",
+      "signal_kind": "trigger",
+      "default": 0.0
+    },
+    {
+      "name": "delay_ms",
+      "signal_kind": "signal",
+      "default": 100.0
+    }
+  ],
+  "output_ports": [
+    {
+      "name": "out",
+      "signal_kind": "trigger",
+      "default": 0.0
+    }
+  ],
+  "param_defaults": {},
+  "controls": [
+    {
+      "key": "delay_ms",
+      "label": "delay ms",
+      "control_type": "knob",
+      "value_source": "input",
+      "default": 100.0,
+      "minimum": 0.0,
+      "maximum": 2000.0,
+      "decimals": 0,
+      "options": [],
+      "units_key": null,
+      "units_options": [],
+      "show_on_node": true,
+      "advanced_only": false,
+      "secondary_key": null,
+      "position_port": null,
+      "row": null,
+      "col": null,
+      "momentary": false
+    },
+    {
+      "key": "in_led",
+      "label": "in",
+      "control_type": "led",
+      "value_source": "auto",
+      "default": 0.0,
+      "minimum": 0.0,
+      "maximum": 100.0,
+      "decimals": 2,
+      "options": [],
+      "units_key": null,
+      "units_options": [],
+      "show_on_node": true,
+      "advanced_only": false,
+      "secondary_key": null,
+      "position_port": null,
+      "row": null,
+      "col": null,
+      "momentary": false
+    },
+    {
+      "key": "out_led",
+      "label": "out",
+      "control_type": "led",
+      "value_source": "auto",
+      "default": 0.0,
+      "minimum": 0.0,
+      "maximum": 100.0,
+      "decimals": 2,
+      "options": [],
+      "units_key": null,
+      "units_options": [],
+      "show_on_node": true,
+      "advanced_only": false,
+      "secondary_key": null,
+      "position_port": null,
+      "row": null,
+      "col": null,
+      "momentary": false
+    }
+  ],
+  "port_groups": [
+    {
+      "name": "IN",
+      "ports": [],
+      "layout": "vertical",
+      "rows": [
+        {
+          "left": [
+            "trig"
+          ],
+          "right": [
+            "delay_ms"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "OUT",
+      "ports": [],
+      "layout": "vertical",
+      "rows": [
+        {
+          "left": [
+            "out"
+          ],
+          "right": []
+        }
+      ]
+    }
+  ],
+  "state_only_params": [],
+  "internal_outputs": [],
+  "layout": {
+    "Uw": 2,
+    "Ur": 1,
+    "profile": "unknown"
+  }
+}

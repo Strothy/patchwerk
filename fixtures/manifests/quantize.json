@@ -1,0 +1,33 @@
+{
+  "module_type": "quantize",
+  "category": "Shaper",
+  "input_ports": [
+    {
+      "name": "in",
+      "signal_kind": "signal",
+      "default": 0.0
+    },
+    {
+      "name": "step",
+      "signal_kind": "signal",
+      "default": 1.0
+    }
+  ],
+  "output_ports": [
+    {
+      "name": "out",
+      "signal_kind": "signal",
+      "default": 0.0
+    }
+  ],
+  "param_defaults": {},
+  "controls": [],
+  "port_groups": [],
+  "state_only_params": [],
+  "internal_outputs": [],
+  "layout": {
+    "Uw": 2,
+    "Ur": 1,
+    "profile": "unknown"
+  }
+}

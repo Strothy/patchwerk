@@ -1,0 +1,113 @@
+{
+  "module_type": "manual_trigger_8",
+  "category": "Motion",
+  "input_ports": [],
+  "output_ports": [
+    {
+      "name": "trig1",
+      "signal_kind": "trigger",
+      "default": 0.0
+    },
+    {
+      "name": "trig2",
+      "signal_kind": "trigger",
+      "default": 0.0
+    },
+    {
+      "name": "trig3",
+      "signal_kind": "trigger",
+      "default": 0.0
+    },
+    {
+      "name": "trig4",
+      "signal_kind": "trigger",
+      "default": 0.0
+    },
+    {
+      "name": "trig5",
+      "signal_kind": "trigger",
+      "default": 0.0
+    },
+    {
+      "name": "trig6",
+      "signal_kind": "trigger",
+      "default": 0.0
+    },
+    {
+      "name": "trig7",
+      "signal_kind": "trigger",
+      "default": 0.0
+    },
+    {
+      "name": "trig8",
+      "signal_kind": "trigger",
+      "default": 0.0
+    }
+  ],
+  "param_defaults": {
+    "pulse_length_s": 0.1,
+    "mode1": "pulse",
+    "mode2": "pulse",
+    "mode3": "pulse",
+    "mode4": "pulse",
+    "mode5": "pulse",
+    "mode6": "pulse",
+    "mode7": "pulse",
+    "mode8": "pulse",
+    "label1": "T1",
+    "label2": "T2",
+    "label3": "T3",
+    "label4": "T4",
+    "label5": "T5",
+    "label6": "T6",
+    "label7": "T7",
+    "label8": "T8"
+  },
+  "controls": [
+    {
+      "key": "pulse_length_s",
+      "label": "pulse s",
+      "control_type": "knob",
+      "value_source": "param",
+      "default": 0.1,
+      "minimum": 0.0,
+      "maximum": 2.0,
+      "decimals": 3,
+      "options": [],
+      "units_key": null,
+      "units_options": [],
+      "show_on_node": false,
+      "advanced_only": false,
+      "secondary_key": null,
+      "position_port": null,
+      "row": null,
+      "col": null,
+      "momentary": false
+    }
+  ],
+  "port_groups": [],
+  "state_only_params": [
+    "mode1",
+    "mode2",
+    "mode3",
+    "mode4",
+    "mode5",
+    "mode6",
+    "mode7",
+    "mode8",
+    "label1",
+    "label2",
+    "label3",
+    "label4",
+    "label5",
+    "label6",
+    "label7",
+    "label8"
+  ],
+  "internal_outputs": [],
+  "layout": {
+    "Uw": 3,
+    "Ur": 1,
+    "profile": "unknown"
+  }
+}

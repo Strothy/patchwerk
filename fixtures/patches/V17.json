@@ -1,0 +1,594 @@
+{
+  "name": "New Patch",
+  "modules": [
+    {
+      "id": "envelope_adsr_1",
+      "type": "envelope_adsr",
+      "name": "envelope_adsr 1",
+      "params": {
+        "enabled": "on",
+        "curve": "linear",
+        "retrigger": "restart",
+        "behavior": "gate sustain",
+        "loop": "off"
+      },
+      "inputs": {
+        "gate": 0.0,
+        "trigger": 0.0,
+        "attack": 0.1,
+        "decay": 6.873385630063337,
+        "sustain": 43.79392088648436,
+        "release": 3.036823532900046,
+        "amount": 100.0
+      },
+      "ui": {
+        "x": 1120.0,
+        "y": 750.0,
+        "control_ranges": {
+          "enabled": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "curve": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "retrigger": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "behavior": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "loop": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "attack": {
+            "min": 0.0,
+            "max": 10.0
+          },
+          "decay": {
+            "min": 0.0,
+            "max": 10.0
+          },
+          "sustain": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "release": {
+            "min": 0.0,
+            "max": 10.0
+          },
+          "amount": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "stage_disp": {
+            "min": 0.0,
+            "max": 100.0
+          }
+        },
+        "control_mod_depths": {
+          "amount": 100.0
+        },
+        "control_units": {}
+      }
+    },
+    {
+      "id": "vca_1",
+      "type": "vca",
+      "name": "vca 1",
+      "params": {
+        "level": 60.773455194847315
+      },
+      "inputs": {
+        "in": 0.0,
+        "cv": 100.0
+      },
+      "ui": {
+        "x": 2100.0,
+        "y": 750.0,
+        "control_ranges": {
+          "level": {
+            "min": 0.0,
+            "max": 100.0
+          }
+        },
+        "control_mod_depths": {},
+        "control_units": {},
+        "panel_layout": "eurorack_v1",
+        "jack_layout": "bottom_compact_stack"
+      }
+    },
+    {
+      "id": "manual_trigger_8_1",
+      "type": "manual_trigger_8",
+      "name": "manual_trigger_8 1",
+      "params": {
+        "pulse_length_s": 0.0,
+        "mode1": "pulse",
+        "mode2": "pulse",
+        "mode3": "pulse",
+        "mode4": "pulse",
+        "mode5": "pulse",
+        "mode6": "pulse",
+        "mode7": "pulse",
+        "mode8": "pulse",
+        "label1": "T1",
+        "label2": "T2",
+        "label3": "T3",
+        "label4": "T4",
+        "label5": "T5",
+        "label6": "T6",
+        "label7": "T7",
+        "label8": "T8"
+      },
+      "inputs": {},
+      "ui": {
+        "x": 560.0,
+        "y": 750.0,
+        "control_ranges": {
+          "pulse_length_s": {
+            "min": 0.0,
+            "max": 2.0
+          }
+        },
+        "control_mod_depths": {},
+        "control_units": {},
+        "panel_layout": "eurorack_v1",
+        "jack_layout": "bottom_split"
+      }
+    },
+    {
+      "id": "midi_out_8_1",
+      "type": "midi_out_8",
+      "name": "midi_out_8 1",
+      "params": {
+        "enabled": "on",
+        "note_hold_ms": 80.0,
+        "slot1_mode": "trigger",
+        "slot1_type": "cc",
+        "slot1_device": "(any)",
+        "slot1_channel": "any",
+        "slot1_number": 0.0,
+        "slot1_velocity": 100.0,
+        "slot1_learn": "off",
+        "slot2_mode": "trigger",
+        "slot2_type": "cc",
+        "slot2_device": "(any)",
+        "slot2_channel": "any",
+        "slot2_number": 0.0,
+        "slot2_velocity": 100.0,
+        "slot2_learn": "off",
+        "slot3_mode": "trigger",
+        "slot3_type": "cc",
+        "slot3_device": "(any)",
+        "slot3_channel": "any",
+        "slot3_number": 0.0,
+        "slot3_velocity": 100.0,
+        "slot3_learn": "off",
+        "slot4_mode": "trigger",
+        "slot4_type": "cc",
+        "slot4_device": "(any)",
+        "slot4_channel": "any",
+        "slot4_number": 0.0,
+        "slot4_velocity": 100.0,
+        "slot4_learn": "off",
+        "slot5_mode": "trigger",
+        "slot5_type": "cc",
+        "slot5_device": "(any)",
+        "slot5_channel": "any",
+        "slot5_number": 0.0,
+        "slot5_velocity": 100.0,
+        "slot5_learn": "off",
+        "slot6_mode": "trigger",
+        "slot6_type": "cc",
+        "slot6_device": "(any)",
+        "slot6_channel": "any",
+        "slot6_number": 0.0,
+        "slot6_velocity": 100.0,
+        "slot6_learn": "off",
+        "slot7_mode": "trigger",
+        "slot7_type": "cc",
+        "slot7_device": "(any)",
+        "slot7_channel": "any",
+        "slot7_number": 0.0,
+        "slot7_velocity": 100.0,
+        "slot7_learn": "off",
+        "slot8_mode": "trigger",
+        "slot8_type": "cc",
+        "slot8_device": "(any)",
+        "slot8_channel": "any",
+        "slot8_number": 0.0,
+        "slot8_velocity": 100.0,
+        "slot8_learn": "off"
+      },
+      "inputs": {
+        "in1": 0.0,
+        "in2": 0.0,
+        "in3": 0.0,
+        "in4": 0.0,
+        "in5": 0.0,
+        "in6": 0.0,
+        "in7": 0.0,
+        "in8": 0.0,
+        "in1_vel": 0.0,
+        "in2_vel": 0.0,
+        "in3_vel": 0.0,
+        "in4_vel": 0.0,
+        "in5_vel": 0.0,
+        "in6_vel": 0.0,
+        "in7_vel": 0.0,
+        "in8_vel": 0.0
+      },
+      "ui": {
+        "x": -280.0,
+        "y": 750.0,
+        "control_ranges": {
+          "enabled": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "note_hold_ms": {
+            "min": 0.0,
+            "max": 500.0
+          },
+          "activity_led": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "slot1_learn": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "slot1_type": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "slot1_channel": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "slot1_number": {
+            "min": 0.0,
+            "max": 127.0
+          },
+          "slot1_mode": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "slot1_velocity": {
+            "min": 0.0,
+            "max": 127.0
+          },
+          "slot1_device": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "slot2_learn": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "slot2_type": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "slot2_channel": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "slot2_number": {
+            "min": 0.0,
+            "max": 127.0
+          },
+          "slot2_mode": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "slot2_velocity": {
+            "min": 0.0,
+            "max": 127.0
+          },
+          "slot2_device": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "slot3_learn": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "slot3_type": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "slot3_channel": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "slot3_number": {
+            "min": 0.0,
+            "max": 127.0
+          },
+          "slot3_mode": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "slot3_velocity": {
+            "min": 0.0,
+            "max": 127.0
+          },
+          "slot3_device": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "slot4_learn": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "slot4_type": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "slot4_channel": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "slot4_number": {
+            "min": 0.0,
+            "max": 127.0
+          },
+          "slot4_mode": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "slot4_velocity": {
+            "min": 0.0,
+            "max": 127.0
+          },
+          "slot4_device": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "slot5_learn": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "slot5_type": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "slot5_channel": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "slot5_number": {
+            "min": 0.0,
+            "max": 127.0
+          },
+          "slot5_mode": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "slot5_velocity": {
+            "min": 0.0,
+            "max": 127.0
+          },
+          "slot5_device": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "slot6_learn": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "slot6_type": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "slot6_channel": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "slot6_number": {
+            "min": 0.0,
+            "max": 127.0
+          },
+          "slot6_mode": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "slot6_velocity": {
+            "min": 0.0,
+            "max": 127.0
+          },
+          "slot6_device": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "slot7_learn": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "slot7_type": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "slot7_channel": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "slot7_number": {
+            "min": 0.0,
+            "max": 127.0
+          },
+          "slot7_mode": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "slot7_velocity": {
+            "min": 0.0,
+            "max": 127.0
+          },
+          "slot7_device": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "slot8_learn": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "slot8_type": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "slot8_channel": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "slot8_number": {
+            "min": 0.0,
+            "max": 127.0
+          },
+          "slot8_mode": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "slot8_velocity": {
+            "min": 0.0,
+            "max": 127.0
+          },
+          "slot8_device": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "slot1_led": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "slot2_led": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "slot3_led": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "slot4_led": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "slot5_led": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "slot6_led": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "slot7_led": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "slot8_led": {
+            "min": 0.0,
+            "max": 100.0
+          }
+        },
+        "control_mod_depths": {},
+        "control_units": {},
+        "panel_layout": "eurorack_v1",
+        "jack_layout": "bottom_split"
+      }
+    }
+  ],
+  "connections": [
+    {
+      "src_module": "vca_1",
+      "src_port": "out",
+      "dst_module": "envelope_adsr_1",
+      "dst_port": "gate",
+      "color_index": 0
+    }
+  ],
+  "annotations": [],
+  "module_groups": [],
+  "canvas_boxes": [],
+  "meta": {
+    "version": 1,
+    "output_profiles": {
+      "serial": {
+        "serial_main": {
+          "name": "serial_main",
+          "enabled": true,
+          "port": "",
+          "baud": 115200,
+          "interval_ms": 20,
+          "auto_connect": false,
+          "line_ending": "\n",
+          "protocol": "tcode_v0"
+        },
+        "serial_aux_1": {
+          "name": "serial_aux_1",
+          "enabled": true,
+          "port": "",
+          "baud": 115200,
+          "interval_ms": 20,
+          "auto_connect": false,
+          "line_ending": "\n",
+          "protocol": "tcode_v0"
+        },
+        "serial_aux_2": {
+          "name": "serial_aux_2",
+          "enabled": true,
+          "port": "",
+          "baud": 115200,
+          "interval_ms": 20,
+          "auto_connect": false,
+          "line_ending": "\n",
+          "protocol": "tcode_v0"
+        },
+        "serial_aux_3": {
+          "name": "serial_aux_3",
+          "enabled": true,
+          "port": "",
+          "baud": 115200,
+          "interval_ms": 20,
+          "auto_connect": false,
+          "line_ending": "\n",
+          "protocol": "tcode_v0"
+        }
+      },
+      "buttplug": {
+        "buttplug_main": {
+          "name": "buttplug_main",
+          "enabled": true,
+          "server_url": "ws://127.0.0.1:12345",
+          "auto_connect": false
+        },
+        "buttplug_aux_1": {
+          "name": "buttplug_aux_1",
+          "enabled": true,
+          "server_url": "ws://127.0.0.1:12345",
+          "auto_connect": false
+        },
+        "buttplug_aux_2": {
+          "name": "buttplug_aux_2",
+          "enabled": true,
+          "server_url": "ws://127.0.0.1:12345",
+          "auto_connect": false
+        }
+      }
+    },
+    "plugin_provenance": {
+      "external_module_types": [],
+      "modules": []
+    },
+    "camera": {
+      "zoom": 0.5938889581759025,
+      "cx": 1706.1115792861685,
+      "cy": 1604.5692379222387
+    }
+  }
+}

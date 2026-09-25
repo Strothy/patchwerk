@@ -1,0 +1,136 @@
+{
+  "module_type": "switch_4",
+  "category": "Utility",
+  "input_ports": [
+    {
+      "name": "select",
+      "signal_kind": "signal",
+      "default": 0.0
+    },
+    {
+      "name": "in1",
+      "signal_kind": "signal",
+      "default": 0.0
+    },
+    {
+      "name": "in2",
+      "signal_kind": "signal",
+      "default": 0.0
+    },
+    {
+      "name": "in3",
+      "signal_kind": "signal",
+      "default": 0.0
+    },
+    {
+      "name": "in4",
+      "signal_kind": "signal",
+      "default": 0.0
+    }
+  ],
+  "output_ports": [
+    {
+      "name": "out",
+      "signal_kind": "signal",
+      "default": 0.0
+    }
+  ],
+  "param_defaults": {
+    "manual": "1"
+  },
+  "controls": [
+    {
+      "key": "manual",
+      "label": "manual",
+      "control_type": "selector",
+      "value_source": "param",
+      "default": "1",
+      "minimum": 0.0,
+      "maximum": 100.0,
+      "decimals": 2,
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "units_key": null,
+      "units_options": [],
+      "show_on_node": true,
+      "advanced_only": false,
+      "secondary_key": null,
+      "position_port": null,
+      "row": null,
+      "col": null,
+      "momentary": false
+    },
+    {
+      "key": "active_disp",
+      "label": "active",
+      "control_type": "display",
+      "value_source": "auto",
+      "default": 1.0,
+      "minimum": 0.0,
+      "maximum": 100.0,
+      "decimals": 2,
+      "options": [],
+      "units_key": null,
+      "units_options": [],
+      "show_on_node": true,
+      "advanced_only": false,
+      "secondary_key": null,
+      "position_port": null,
+      "row": null,
+      "col": null,
+      "momentary": false
+    }
+  ],
+  "port_groups": [
+    {
+      "name": "SEL",
+      "ports": [
+        "select"
+      ],
+      "layout": "vertical",
+      "rows": []
+    },
+    {
+      "name": "IN",
+      "ports": [],
+      "layout": "vertical",
+      "rows": [
+        {
+          "left": [
+            "in1"
+          ],
+          "right": [
+            "in2"
+          ]
+        },
+        {
+          "left": [
+            "in3"
+          ],
+          "right": [
+            "in4"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "OUT",
+      "ports": [
+        "out"
+      ],
+      "layout": "vertical",
+      "rows": []
+    }
+  ],
+  "state_only_params": [],
+  "internal_outputs": [],
+  "layout": {
+    "Uw": 2,
+    "Ur": 1,
+    "profile": "unknown"
+  }
+}

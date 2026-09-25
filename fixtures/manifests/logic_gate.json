@@ -1,0 +1,112 @@
+{
+  "module_type": "logic_gate",
+  "category": "Utility",
+  "input_ports": [
+    {
+      "name": "a",
+      "signal_kind": "gate",
+      "default": 0.0
+    },
+    {
+      "name": "b",
+      "signal_kind": "gate",
+      "default": 0.0
+    }
+  ],
+  "output_ports": [
+    {
+      "name": "out",
+      "signal_kind": "gate",
+      "default": 0.0
+    }
+  ],
+  "param_defaults": {
+    "type": "and"
+  },
+  "controls": [
+    {
+      "key": "type",
+      "label": "type",
+      "control_type": "selector",
+      "value_source": "param",
+      "default": "and",
+      "minimum": 0.0,
+      "maximum": 100.0,
+      "decimals": 2,
+      "options": [
+        "and",
+        "or",
+        "xor",
+        "not",
+        "nand",
+        "nor"
+      ],
+      "units_key": null,
+      "units_options": [],
+      "show_on_node": true,
+      "advanced_only": false,
+      "secondary_key": null,
+      "position_port": null,
+      "row": null,
+      "col": null,
+      "momentary": false
+    },
+    {
+      "key": "out_led",
+      "label": "out",
+      "control_type": "led",
+      "value_source": "auto",
+      "default": 0.0,
+      "minimum": 0.0,
+      "maximum": 100.0,
+      "decimals": 2,
+      "options": [],
+      "units_key": null,
+      "units_options": [],
+      "show_on_node": true,
+      "advanced_only": false,
+      "secondary_key": null,
+      "position_port": null,
+      "row": null,
+      "col": null,
+      "momentary": false
+    }
+  ],
+  "port_groups": [
+    {
+      "name": "IN",
+      "ports": [],
+      "layout": "vertical",
+      "rows": [
+        {
+          "left": [
+            "a"
+          ],
+          "right": [
+            "b"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "OUT",
+      "ports": [],
+      "layout": "vertical",
+      "rows": [
+        {
+          "left": [
+            "out"
+          ],
+          "right": []
+        }
+      ]
+    }
+  ],
+  "state_only_params": [],
+  "internal_outputs": [],
+  "layout": {
+    "Uw": 2,
+    "Ur": 1,
+    "profile": "unknown"
+  }
+}

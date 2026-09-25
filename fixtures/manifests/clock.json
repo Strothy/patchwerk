@@ -1,0 +1,169 @@
+{
+  "module_type": "clock",
+  "category": "Generator",
+  "input_ports": [
+    {
+      "name": "run",
+      "signal_kind": "gate",
+      "default": 1.0
+    },
+    {
+      "name": "reset",
+      "signal_kind": "trigger",
+      "default": 0.0
+    },
+    {
+      "name": "bpm",
+      "signal_kind": "signal",
+      "default": 120.0
+    },
+    {
+      "name": "pulse_width",
+      "signal_kind": "signal",
+      "default": 10.0
+    }
+  ],
+  "output_ports": [
+    {
+      "name": "clock",
+      "signal_kind": "trigger",
+      "default": 0.0
+    },
+    {
+      "name": "gate",
+      "signal_kind": "gate",
+      "default": 0.0
+    },
+    {
+      "name": "reset_out",
+      "signal_kind": "trigger",
+      "default": 0.0
+    },
+    {
+      "name": "phase",
+      "signal_kind": "signal",
+      "default": 0.0
+    },
+    {
+      "name": "beat",
+      "signal_kind": "signal",
+      "default": 0.0
+    }
+  ],
+  "param_defaults": {
+    "enabled": "on"
+  },
+  "controls": [
+    {
+      "key": "enabled",
+      "label": "enabled",
+      "control_type": "selector",
+      "value_source": "param",
+      "default": "on",
+      "minimum": 0.0,
+      "maximum": 100.0,
+      "decimals": 2,
+      "options": [
+        "on",
+        "off"
+      ],
+      "units_key": null,
+      "units_options": [],
+      "show_on_node": true,
+      "advanced_only": false,
+      "secondary_key": null,
+      "position_port": null,
+      "row": null,
+      "col": null,
+      "momentary": false
+    },
+    {
+      "key": "bpm",
+      "label": "bpm",
+      "control_type": "knob",
+      "value_source": "input",
+      "default": 120.0,
+      "minimum": 1.0,
+      "maximum": 600.0,
+      "decimals": 1,
+      "options": [],
+      "units_key": null,
+      "units_options": [],
+      "show_on_node": true,
+      "advanced_only": false,
+      "secondary_key": null,
+      "position_port": null,
+      "row": null,
+      "col": null,
+      "momentary": false
+    },
+    {
+      "key": "pulse_width",
+      "label": "pulse width",
+      "control_type": "knob",
+      "value_source": "input",
+      "default": 10.0,
+      "minimum": 1.0,
+      "maximum": 95.0,
+      "decimals": 1,
+      "options": [],
+      "units_key": null,
+      "units_options": [],
+      "show_on_node": true,
+      "advanced_only": false,
+      "secondary_key": null,
+      "position_port": null,
+      "row": null,
+      "col": null,
+      "momentary": false
+    },
+    {
+      "key": "bpm_disp",
+      "label": "bpm",
+      "control_type": "display",
+      "value_source": "auto",
+      "default": 120.0,
+      "minimum": 0.0,
+      "maximum": 100.0,
+      "decimals": 2,
+      "options": [],
+      "units_key": null,
+      "units_options": [],
+      "show_on_node": true,
+      "advanced_only": false,
+      "secondary_key": null,
+      "position_port": null,
+      "row": null,
+      "col": null,
+      "momentary": false
+    },
+    {
+      "key": "tick_led",
+      "label": "tick",
+      "control_type": "led",
+      "value_source": "auto",
+      "default": 0.0,
+      "minimum": 0.0,
+      "maximum": 100.0,
+      "decimals": 2,
+      "options": [],
+      "units_key": null,
+      "units_options": [],
+      "show_on_node": true,
+      "advanced_only": false,
+      "secondary_key": null,
+      "position_port": null,
+      "row": null,
+      "col": null,
+      "momentary": false
+    }
+  ],
+  "port_groups": [],
+  "state_only_params": [],
+  "internal_outputs": [],
+  "layout": {
+    "Uw": 3,
+    "Ur": 1,
+    "profile": "unknown"
+  }
+}

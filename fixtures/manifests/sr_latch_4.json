@@ -1,0 +1,229 @@
+{
+  "module_type": "sr_latch_4",
+  "category": "Sequencer",
+  "input_ports": [
+    {
+      "name": "set1",
+      "signal_kind": "gate",
+      "default": 0.0
+    },
+    {
+      "name": "set2",
+      "signal_kind": "gate",
+      "default": 0.0
+    },
+    {
+      "name": "set3",
+      "signal_kind": "gate",
+      "default": 0.0
+    },
+    {
+      "name": "set4",
+      "signal_kind": "gate",
+      "default": 0.0
+    },
+    {
+      "name": "reset1",
+      "signal_kind": "gate",
+      "default": 0.0
+    },
+    {
+      "name": "reset2",
+      "signal_kind": "gate",
+      "default": 0.0
+    },
+    {
+      "name": "reset3",
+      "signal_kind": "gate",
+      "default": 0.0
+    },
+    {
+      "name": "reset4",
+      "signal_kind": "gate",
+      "default": 0.0
+    }
+  ],
+  "output_ports": [
+    {
+      "name": "q1",
+      "signal_kind": "gate",
+      "default": 0.0
+    },
+    {
+      "name": "q2",
+      "signal_kind": "gate",
+      "default": 0.0
+    },
+    {
+      "name": "q3",
+      "signal_kind": "gate",
+      "default": 0.0
+    },
+    {
+      "name": "q4",
+      "signal_kind": "gate",
+      "default": 0.0
+    }
+  ],
+  "param_defaults": {},
+  "controls": [
+    {
+      "key": "q1_led",
+      "label": "Q1",
+      "control_type": "led",
+      "value_source": "auto",
+      "default": 0.0,
+      "minimum": 0.0,
+      "maximum": 100.0,
+      "decimals": 2,
+      "options": [],
+      "units_key": null,
+      "units_options": [],
+      "show_on_node": true,
+      "advanced_only": false,
+      "secondary_key": null,
+      "position_port": null,
+      "row": null,
+      "col": null,
+      "momentary": false
+    },
+    {
+      "key": "q2_led",
+      "label": "Q2",
+      "control_type": "led",
+      "value_source": "auto",
+      "default": 0.0,
+      "minimum": 0.0,
+      "maximum": 100.0,
+      "decimals": 2,
+      "options": [],
+      "units_key": null,
+      "units_options": [],
+      "show_on_node": true,
+      "advanced_only": false,
+      "secondary_key": null,
+      "position_port": null,
+      "row": null,
+      "col": null,
+      "momentary": false
+    },
+    {
+      "key": "q3_led",
+      "label": "Q3",
+      "control_type": "led",
+      "value_source": "auto",
+      "default": 0.0,
+      "minimum": 0.0,
+      "maximum": 100.0,
+      "decimals": 2,
+      "options": [],
+      "units_key": null,
+      "units_options": [],
+      "show_on_node": true,
+      "advanced_only": false,
+      "secondary_key": null,
+      "position_port": null,
+      "row": null,
+      "col": null,
+      "momentary": false
+    },
+    {
+      "key": "q4_led",
+      "label": "Q4",
+      "control_type": "led",
+      "value_source": "auto",
+      "default": 0.0,
+      "minimum": 0.0,
+      "maximum": 100.0,
+      "decimals": 2,
+      "options": [],
+      "units_key": null,
+      "units_options": [],
+      "show_on_node": true,
+      "advanced_only": false,
+      "secondary_key": null,
+      "position_port": null,
+      "row": null,
+      "col": null,
+      "momentary": false
+    }
+  ],
+  "port_groups": [
+    {
+      "name": "SET",
+      "ports": [],
+      "layout": "vertical",
+      "rows": [
+        {
+          "left": [
+            "set1"
+          ],
+          "right": [
+            "set2"
+          ]
+        },
+        {
+          "left": [
+            "set3"
+          ],
+          "right": [
+            "set4"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "RST",
+      "ports": [],
+      "layout": "vertical",
+      "rows": [
+        {
+          "left": [
+            "reset1"
+          ],
+          "right": [
+            "reset2"
+          ]
+        },
+        {
+          "left": [
+            "reset3"
+          ],
+          "right": [
+            "reset4"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "OUT",
+      "ports": [],
+      "layout": "vertical",
+      "rows": [
+        {
+          "left": [
+            "q1"
+          ],
+          "right": [
+            "q2"
+          ]
+        },
+        {
+          "left": [
+            "q3"
+          ],
+          "right": [
+            "q4"
+          ]
+        }
+      ]
+    }
+  ],
+  "state_only_params": [],
+  "internal_outputs": [],
+  "layout": {
+    "Uw": 2,
+    "Ur": 1,
+    "profile": "unknown"
+  }
+}

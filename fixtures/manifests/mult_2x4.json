@@ -1,0 +1,171 @@
+{
+  "module_type": "mult_2x4",
+  "category": "Utility",
+  "input_ports": [
+    {
+      "name": "in_a",
+      "signal_kind": "signal",
+      "default": 0.0
+    },
+    {
+      "name": "in_b",
+      "signal_kind": "signal",
+      "default": 0.0
+    }
+  ],
+  "output_ports": [
+    {
+      "name": "out_a1",
+      "signal_kind": "signal",
+      "default": 0.0
+    },
+    {
+      "name": "out_a2",
+      "signal_kind": "signal",
+      "default": 0.0
+    },
+    {
+      "name": "out_a3",
+      "signal_kind": "signal",
+      "default": 0.0
+    },
+    {
+      "name": "out_a4",
+      "signal_kind": "signal",
+      "default": 0.0
+    },
+    {
+      "name": "out_a5",
+      "signal_kind": "signal",
+      "default": 0.0
+    },
+    {
+      "name": "out_a6",
+      "signal_kind": "signal",
+      "default": 0.0
+    },
+    {
+      "name": "out_a7",
+      "signal_kind": "signal",
+      "default": 0.0
+    },
+    {
+      "name": "out_a8",
+      "signal_kind": "signal",
+      "default": 0.0
+    },
+    {
+      "name": "out_b1",
+      "signal_kind": "signal",
+      "default": 0.0
+    },
+    {
+      "name": "out_b2",
+      "signal_kind": "signal",
+      "default": 0.0
+    },
+    {
+      "name": "out_b3",
+      "signal_kind": "signal",
+      "default": 0.0
+    },
+    {
+      "name": "out_b4",
+      "signal_kind": "signal",
+      "default": 0.0
+    },
+    {
+      "name": "out_b5",
+      "signal_kind": "signal",
+      "default": 0.0
+    },
+    {
+      "name": "out_b6",
+      "signal_kind": "signal",
+      "default": 0.0
+    },
+    {
+      "name": "out_b7",
+      "signal_kind": "signal",
+      "default": 0.0
+    },
+    {
+      "name": "out_b8",
+      "signal_kind": "signal",
+      "default": 0.0
+    }
+  ],
+  "param_defaults": {},
+  "controls": [],
+  "port_groups": [
+    {
+      "name": "IN",
+      "ports": [],
+      "layout": "vertical",
+      "rows": [
+        {
+          "left": [
+            "in_a"
+          ],
+          "right": [
+            "in_b"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "OUT",
+      "ports": [],
+      "layout": "vertical",
+      "rows": [
+        {
+          "left": [
+            "out_a1",
+            "out_a2"
+          ],
+          "right": [
+            "out_b1",
+            "out_b2"
+          ]
+        },
+        {
+          "left": [
+            "out_a3",
+            "out_a4"
+          ],
+          "right": [
+            "out_b3",
+            "out_b4"
+          ]
+        },
+        {
+          "left": [
+            "out_a5",
+            "out_a6"
+          ],
+          "right": [
+            "out_b5",
+            "out_b6"
+          ]
+        },
+        {
+          "left": [
+            "out_a7",
+            "out_a8"
+          ],
+          "right": [
+            "out_b7",
+            "out_b8"
+          ]
+        }
+      ]
+    }
+  ],
+  "state_only_params": [],
+  "internal_outputs": [],
+  "layout": {
+    "Uw": 2,
+    "Ur": 1,
+    "profile": "unknown"
+  }
+}

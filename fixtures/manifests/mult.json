@@ -1,0 +1,99 @@
+{
+  "module_type": "mult",
+  "category": "Utility",
+  "input_ports": [
+    {
+      "name": "in",
+      "signal_kind": "signal",
+      "default": 0.0
+    }
+  ],
+  "output_ports": [
+    {
+      "name": "out1",
+      "signal_kind": "signal",
+      "default": 0.0
+    },
+    {
+      "name": "out2",
+      "signal_kind": "signal",
+      "default": 0.0
+    },
+    {
+      "name": "out3",
+      "signal_kind": "signal",
+      "default": 0.0
+    },
+    {
+      "name": "out4",
+      "signal_kind": "signal",
+      "default": 0.0
+    },
+    {
+      "name": "out5",
+      "signal_kind": "signal",
+      "default": 0.0
+    },
+    {
+      "name": "out6",
+      "signal_kind": "signal",
+      "default": 0.0
+    },
+    {
+      "name": "out7",
+      "signal_kind": "signal",
+      "default": 0.0
+    },
+    {
+      "name": "out8",
+      "signal_kind": "signal",
+      "default": 0.0
+    }
+  ],
+  "param_defaults": {},
+  "controls": [],
+  "port_groups": [
+    {
+      "name": "IN",
+      "ports": [
+        "in"
+      ],
+      "layout": "vertical",
+      "rows": []
+    },
+    {
+      "name": "OUT",
+      "ports": [],
+      "layout": "vertical",
+      "rows": [
+        {
+          "left": [
+            "out1",
+            "out2"
+          ],
+          "right": [
+            "out5",
+            "out6"
+          ]
+        },
+        {
+          "left": [
+            "out3",
+            "out4"
+          ],
+          "right": [
+            "out7",
+            "out8"
+          ]
+        }
+      ]
+    }
+  ],
+  "state_only_params": [],
+  "internal_outputs": [],
+  "layout": {
+    "Uw": 2,
+    "Ur": 1,
+    "profile": "unknown"
+  }
+}

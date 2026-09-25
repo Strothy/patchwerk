@@ -1,0 +1,75 @@
+{
+  "version": 1,
+  "name": "2",
+  "created": "2026-05-12",
+  "modules": [
+    {
+      "id": "add_44",
+      "type": "add",
+      "name": "add 1",
+      "params": {},
+      "inputs": {
+        "a": 0.0,
+        "b": 0.0
+      },
+      "ui": {
+        "x": 1680.0,
+        "y": 2250.0,
+        "control_ranges": {},
+        "control_mod_depths": {},
+        "control_units": {},
+        "panel_layout": "eurorack_v1",
+        "jack_layout": "bottom_compact_stack"
+      }
+    },
+    {
+      "id": "add_45",
+      "type": "add",
+      "name": "add 1",
+      "params": {},
+      "inputs": {
+        "a": 0.0,
+        "b": 0.0
+      },
+      "ui": {
+        "x": 1960.0,
+        "y": 2250.0,
+        "control_ranges": {},
+        "control_mod_depths": {},
+        "control_units": {},
+        "panel_layout": "eurorack_v1",
+        "jack_layout": "bottom_compact_stack"
+      }
+    }
+  ],
+  "connections": [
+    {
+      "src_module": "add_45",
+      "src_port": "out",
+      "dst_module": "add_44",
+      "dst_port": "a",
+      "color_index": 0
+    },
+    {
+      "src_module": "add_44",
+      "src_port": "out",
+      "dst_module": "add_45",
+      "dst_port": "a",
+      "color_index": 0
+    },
+    {
+      "src_module": "add_45",
+      "src_port": "out",
+      "dst_module": "add_44",
+      "dst_port": "b",
+      "color_index": 0
+    },
+    {
+      "src_module": "add_44",
+      "src_port": "out",
+      "dst_module": "add_45",
+      "dst_port": "b",
+      "color_index": 0
+    }
+  ]
+}

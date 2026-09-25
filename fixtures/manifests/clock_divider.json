@@ -1,0 +1,94 @@
+{
+  "module_type": "clock_divider",
+  "category": "Generator",
+  "input_ports": [
+    {
+      "name": "clock",
+      "signal_kind": "trigger",
+      "default": 0.0
+    },
+    {
+      "name": "reset",
+      "signal_kind": "trigger",
+      "default": 0.0
+    },
+    {
+      "name": "divisor",
+      "signal_kind": "signal",
+      "default": 2.0
+    }
+  ],
+  "output_ports": [
+    {
+      "name": "out",
+      "signal_kind": "trigger",
+      "default": 0.0
+    },
+    {
+      "name": "gate",
+      "signal_kind": "gate",
+      "default": 0.0
+    },
+    {
+      "name": "count",
+      "signal_kind": "signal",
+      "default": 0.0
+    },
+    {
+      "name": "phase",
+      "signal_kind": "signal",
+      "default": 0.0
+    }
+  ],
+  "param_defaults": {},
+  "controls": [
+    {
+      "key": "divisor",
+      "label": "divisor",
+      "control_type": "knob",
+      "value_source": "input",
+      "default": 2.0,
+      "minimum": 1.0,
+      "maximum": 64.0,
+      "decimals": 0,
+      "options": [],
+      "units_key": null,
+      "units_options": [],
+      "show_on_node": true,
+      "advanced_only": false,
+      "secondary_key": null,
+      "position_port": null,
+      "row": null,
+      "col": null,
+      "momentary": false
+    },
+    {
+      "key": "count_disp",
+      "label": "count",
+      "control_type": "display",
+      "value_source": "auto",
+      "default": 0.0,
+      "minimum": 0.0,
+      "maximum": 100.0,
+      "decimals": 2,
+      "options": [],
+      "units_key": null,
+      "units_options": [],
+      "show_on_node": true,
+      "advanced_only": false,
+      "secondary_key": null,
+      "position_port": null,
+      "row": null,
+      "col": null,
+      "momentary": false
+    }
+  ],
+  "port_groups": [],
+  "state_only_params": [],
+  "internal_outputs": [],
+  "layout": {
+    "Uw": 3,
+    "Ur": 1,
+    "profile": "unknown"
+  }
+}

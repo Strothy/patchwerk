@@ -1,0 +1,691 @@
+{
+  "name": "New Patch",
+  "modules": [
+    {
+      "id": "lfo_1",
+      "type": "lfo",
+      "name": "lfo 1",
+      "params": {
+        "shape": "sine",
+        "polarity": "bipolar"
+      },
+      "inputs": {
+        "rate": 0.1,
+        "amp": 50.0,
+        "offset": 0.0,
+        "phase": 0.0
+      },
+      "ui": {
+        "x": -2840.0,
+        "y": -1500.0,
+        "control_ranges": {
+          "shape": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "polarity": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "rate": {
+            "min": 0.0,
+            "max": 20.0
+          },
+          "amp": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "offset": {
+            "min": -100.0,
+            "max": 100.0
+          },
+          "phase": {
+            "min": 0.0,
+            "max": 360.0
+          }
+        },
+        "control_mod_depths": {
+          "rate": 100.0,
+          "amp": 100.0,
+          "offset": 100.0,
+          "phase": 100.0
+        },
+        "control_units": {
+          "rate": "hz"
+        },
+        "panel_layout": "eurorack_v1",
+        "jack_layout": "bottom_split"
+      }
+    },
+    {
+      "id": "vca_1",
+      "type": "vca",
+      "name": "vca 1",
+      "params": {},
+      "inputs": {
+        "in": 0.0,
+        "cv": 100.0
+      },
+      "ui": {
+        "x": -2280.0,
+        "y": -1500.0,
+        "control_ranges": {},
+        "control_mod_depths": {},
+        "control_units": {},
+        "panel_layout": "eurorack_v1",
+        "jack_layout": "bottom_compact_stack"
+      }
+    },
+    {
+      "id": "add_1",
+      "type": "add",
+      "name": "add 1",
+      "params": {},
+      "inputs": {
+        "a": 0.0,
+        "b": 0.0
+      },
+      "ui": {
+        "x": -2120.0,
+        "y": -1500.0,
+        "control_ranges": {},
+        "control_mod_depths": {},
+        "control_units": {},
+        "panel_layout": "eurorack_v1",
+        "jack_layout": "bottom_compact_stack"
+      }
+    },
+    {
+      "id": "midi_cc_1",
+      "type": "midi_cc",
+      "name": "midi_cc 1",
+      "params": {
+        "enabled": "on",
+        "device": "MIDI Mix 1",
+        "channel": "1",
+        "mode": "fixed",
+        "learn": "off",
+        "cc": 19.0,
+        "min": 0.0,
+        "max": 10.0,
+        "response": "raw",
+        "smooth": 0.15,
+        "slew": 100.0,
+        "deadzone": 0.0,
+        "invert": "off"
+      },
+      "inputs": {},
+      "ui": {
+        "x": -2840.0,
+        "y": -2250.0,
+        "control_ranges": {
+          "enabled": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "device": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "channel": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "mode": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "learn": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "cc": {
+            "min": 0.0,
+            "max": 127.0
+          },
+          "min": {
+            "min": -100.0,
+            "max": 100.0
+          },
+          "max": {
+            "min": -100.0,
+            "max": 200.0
+          },
+          "response": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "smooth": {
+            "min": 0.0,
+            "max": 0.95
+          },
+          "slew": {
+            "min": 10.0,
+            "max": 500.0
+          },
+          "deadzone": {
+            "min": 0.0,
+            "max": 20.0
+          },
+          "invert": {
+            "min": 0.0,
+            "max": 100.0
+          }
+        },
+        "control_mod_depths": {},
+        "control_units": {},
+        "panel_layout": "eurorack_v1",
+        "jack_layout": "bottom_compact_stack"
+      }
+    },
+    {
+      "id": "oscillator_1",
+      "type": "oscillator",
+      "name": "oscillator 1",
+      "params": {
+        "shape": "sine",
+        "polarity": "bipolar"
+      },
+      "inputs": {
+        "rate": 0.0,
+        "amp": 30.0,
+        "offset": 50.0,
+        "phase": 0.0
+      },
+      "ui": {
+        "x": -1920.0,
+        "y": -1500.0,
+        "control_ranges": {
+          "shape": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "polarity": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "rate": {
+            "min": 0.0,
+            "max": 20.0
+          },
+          "amp": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "offset": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "phase": {
+            "min": 0.0,
+            "max": 360.0
+          }
+        },
+        "control_mod_depths": {
+          "rate": 100.0,
+          "amp": 100.0,
+          "offset": 100.0,
+          "phase": 100.0
+        },
+        "control_units": {
+          "rate": "hz"
+        },
+        "panel_layout": "eurorack_v1",
+        "jack_layout": "bottom_split"
+      }
+    },
+    {
+      "id": "scope_4ch_1",
+      "type": "scope_4ch",
+      "name": "scope_4ch 1",
+      "params": {
+        "time_s": 30.0,
+        "display": "overlay",
+        "style": "line",
+        "freeze": "off",
+        "gain1": 1.0,
+        "gain2": 1.0,
+        "gain3": 1.0,
+        "gain4": 1.0,
+        "history_s": 30.0,
+        "readouts": "on",
+        "show1": "on",
+        "show2": "on",
+        "show3": "on",
+        "show4": "on",
+        "color1": "blue",
+        "color2": "yellow",
+        "color3": "green",
+        "color4": "magenta",
+        "offset1": 0.0,
+        "offset2": 0.0,
+        "offset3": 0.0,
+        "offset4": 0.0
+      },
+      "inputs": {
+        "in1": 50.0,
+        "in2": 50.0,
+        "in3": 50.0,
+        "in4": 50.0
+      },
+      "ui": {
+        "x": -2200.0,
+        "y": -2250.0,
+        "control_ranges": {
+          "time_s": {
+            "min": 0.5,
+            "max": 30.0
+          },
+          "display": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "style": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "freeze": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "gain1": {
+            "min": 0.1,
+            "max": 5.0
+          },
+          "gain2": {
+            "min": 0.1,
+            "max": 5.0
+          },
+          "gain3": {
+            "min": 0.1,
+            "max": 5.0
+          },
+          "gain4": {
+            "min": 0.1,
+            "max": 5.0
+          },
+          "history_s": {
+            "min": 2.0,
+            "max": 120.0
+          }
+        },
+        "control_mod_depths": {},
+        "control_units": {}
+      }
+    },
+    {
+      "id": "midi_cv_1",
+      "type": "midi_cv",
+      "name": "midi_cv 1",
+      "params": {
+        "enabled": "on",
+        "device": "MIDI Mix 1",
+        "channel": "1",
+        "mode": "fixed",
+        "learn": "off",
+        "cc": 62.0,
+        "out_min": 0.0,
+        "out_max": 100.0,
+        "response": "raw",
+        "smooth": 0.15,
+        "slew": 100.0,
+        "invert": "off",
+        "_saved_out": 0.0,
+        "_saved_last_target": 0.0
+      },
+      "inputs": {},
+      "ui": {
+        "x": -4200.0,
+        "y": -2250.0,
+        "control_ranges": {
+          "enabled": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "device": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "channel": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "mode": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "learn": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "cc": {
+            "min": 0.0,
+            "max": 127.0
+          },
+          "out_min": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "out_max": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "response": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "smooth": {
+            "min": 0.0,
+            "max": 0.95
+          },
+          "slew": {
+            "min": 10.0,
+            "max": 500.0
+          },
+          "invert": {
+            "min": 0.0,
+            "max": 100.0
+          }
+        },
+        "control_mod_depths": {},
+        "control_units": {},
+        "panel_layout": "eurorack_v1",
+        "jack_layout": "bottom_split"
+      }
+    },
+    {
+      "id": "midi_lfo_1",
+      "type": "midi_lfo",
+      "name": "midi_lfo 1",
+      "params": {
+        "enabled": "on",
+        "device": "MIDI Mix 1",
+        "channel": "1",
+        "mode": "fixed",
+        "learn": "off",
+        "cc": 61.0,
+        "depth": 50.0,
+        "rate": 2.111111111111086,
+        "shape": "sine",
+        "response": "raw",
+        "smooth": 0.15,
+        "invert": "off",
+        "_saved_center_cv": 0.0,
+        "_saved_last_target": 0.0
+      },
+      "inputs": {},
+      "ui": {
+        "x": -3720.0,
+        "y": -2250.0,
+        "control_ranges": {
+          "enabled": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "device": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "channel": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "mode": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "learn": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "cc": {
+            "min": 0.0,
+            "max": 127.0
+          },
+          "depth": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "rate": {
+            "min": 0.0,
+            "max": 20.0
+          },
+          "shape": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "response": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "smooth": {
+            "min": 0.0,
+            "max": 0.95
+          },
+          "invert": {
+            "min": 0.0,
+            "max": 100.0
+          }
+        },
+        "control_mod_depths": {},
+        "control_units": {},
+        "panel_layout": "eurorack_v1",
+        "jack_layout": "bottom_split"
+      }
+    },
+    {
+      "id": "lfo_2",
+      "type": "lfo",
+      "name": "lfo 2",
+      "params": {
+        "shape": "sine",
+        "polarity": "bipolar"
+      },
+      "inputs": {
+        "rate": 0.1,
+        "amp": 10.0,
+        "offset": 0.0,
+        "phase": 0.0
+      },
+      "ui": {
+        "x": -4200.0,
+        "y": -1500.0,
+        "control_ranges": {
+          "shape": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "polarity": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "rate": {
+            "min": 0.0,
+            "max": 20.0
+          },
+          "amp": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "offset": {
+            "min": -100.0,
+            "max": 100.0
+          },
+          "phase": {
+            "min": 0.0,
+            "max": 360.0
+          }
+        },
+        "control_mod_depths": {
+          "rate": 100.0,
+          "amp": 100.0,
+          "offset": 100.0,
+          "phase": 100.0
+        },
+        "control_units": {
+          "rate": "hz"
+        },
+        "panel_layout": "eurorack_v1",
+        "jack_layout": "bottom_split"
+      }
+    }
+  ],
+  "connections": [
+    {
+      "src_module": "lfo_1",
+      "src_port": "out",
+      "dst_module": "vca_1",
+      "dst_port": "in",
+      "color_index": 0
+    },
+    {
+      "src_module": "midi_cc_1",
+      "src_port": "out",
+      "dst_module": "vca_1",
+      "dst_port": "cv",
+      "color_index": 0
+    },
+    {
+      "src_module": "vca_1",
+      "src_port": "out",
+      "dst_module": "add_1",
+      "dst_port": "b",
+      "color_index": 0
+    },
+    {
+      "src_module": "add_1",
+      "src_port": "out",
+      "dst_module": "oscillator_1",
+      "dst_port": "rate",
+      "color_index": 0
+    },
+    {
+      "src_module": "midi_cc_1",
+      "src_port": "out",
+      "dst_module": "add_1",
+      "dst_port": "a",
+      "color_index": 0
+    },
+    {
+      "src_module": "lfo_1",
+      "src_port": "out",
+      "dst_module": "scope_4ch_1",
+      "dst_port": "in1",
+      "color_index": 0
+    },
+    {
+      "src_module": "midi_cc_1",
+      "src_port": "out",
+      "dst_module": "scope_4ch_1",
+      "dst_port": "in2",
+      "color_index": 0
+    },
+    {
+      "src_module": "vca_1",
+      "src_port": "out",
+      "dst_module": "scope_4ch_1",
+      "dst_port": "in3",
+      "color_index": 0
+    },
+    {
+      "src_module": "add_1",
+      "src_port": "out",
+      "dst_module": "scope_4ch_1",
+      "dst_port": "in4",
+      "color_index": 0
+    },
+    {
+      "src_module": "midi_cv_1",
+      "src_port": "out",
+      "dst_module": "lfo_2",
+      "dst_port": "rate",
+      "color_index": 0
+    },
+    {
+      "src_module": "midi_lfo_1",
+      "src_port": "out",
+      "dst_module": "lfo_2",
+      "dst_port": "amp",
+      "color_index": 0
+    },
+    {
+      "src_module": "midi_lfo_1",
+      "src_port": "lfo_out",
+      "dst_module": "lfo_2",
+      "dst_port": "offset",
+      "color_index": 0
+    }
+  ],
+  "annotations": [],
+  "meta": {
+    "version": 1,
+    "output_profiles": {
+      "serial": {
+        "serial_main": {
+          "name": "serial_main",
+          "enabled": true,
+          "port": "",
+          "baud": 115200,
+          "interval_ms": 20,
+          "auto_connect": false,
+          "line_ending": "\n",
+          "protocol": "tcode_v0"
+        },
+        "serial_aux_1": {
+          "name": "serial_aux_1",
+          "enabled": true,
+          "port": "",
+          "baud": 115200,
+          "interval_ms": 20,
+          "auto_connect": false,
+          "line_ending": "\n",
+          "protocol": "tcode_v0"
+        },
+        "serial_aux_2": {
+          "name": "serial_aux_2",
+          "enabled": true,
+          "port": "",
+          "baud": 115200,
+          "interval_ms": 20,
+          "auto_connect": false,
+          "line_ending": "\n",
+          "protocol": "tcode_v0"
+        },
+        "serial_aux_3": {
+          "name": "serial_aux_3",
+          "enabled": true,
+          "port": "",
+          "baud": 115200,
+          "interval_ms": 20,
+          "auto_connect": false,
+          "line_ending": "\n",
+          "protocol": "tcode_v0"
+        }
+      },
+      "buttplug": {
+        "buttplug_main": {
+          "name": "buttplug_main",
+          "enabled": true,
+          "server_url": "ws://127.0.0.1:12345",
+          "auto_connect": false
+        },
+        "buttplug_aux_1": {
+          "name": "buttplug_aux_1",
+          "enabled": true,
+          "server_url": "ws://127.0.0.1:12345",
+          "auto_connect": false
+        },
+        "buttplug_aux_2": {
+          "name": "buttplug_aux_2",
+          "enabled": true,
+          "server_url": "ws://127.0.0.1:12345",
+          "auto_connect": false
+        }
+      }
+    },
+    "plugin_provenance": {
+      "external_module_types": [],
+      "modules": []
+    }
+  }
+}

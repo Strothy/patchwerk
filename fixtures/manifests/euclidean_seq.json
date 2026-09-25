@@ -1,0 +1,145 @@
+{
+  "module_type": "euclidean_seq",
+  "category": "Sequencer",
+  "input_ports": [
+    {
+      "name": "clock",
+      "signal_kind": "trigger",
+      "default": 0.0
+    },
+    {
+      "name": "reset",
+      "signal_kind": "trigger",
+      "default": 0.0
+    }
+  ],
+  "output_ports": [
+    {
+      "name": "trigger",
+      "signal_kind": "trigger",
+      "default": 0.0
+    },
+    {
+      "name": "gate",
+      "signal_kind": "gate",
+      "default": 0.0
+    },
+    {
+      "name": "step",
+      "signal_kind": "signal",
+      "default": 0.0
+    }
+  ],
+  "param_defaults": {
+    "steps": 16.0,
+    "pulses": 4.0,
+    "rotation": 0.0
+  },
+  "controls": [
+    {
+      "key": "steps",
+      "label": "steps",
+      "control_type": "knob",
+      "value_source": "param",
+      "default": 16.0,
+      "minimum": 1.0,
+      "maximum": 32.0,
+      "decimals": 0,
+      "options": [],
+      "units_key": null,
+      "units_options": [],
+      "show_on_node": true,
+      "advanced_only": false,
+      "secondary_key": null,
+      "position_port": null,
+      "row": null,
+      "col": null,
+      "momentary": false
+    },
+    {
+      "key": "pulses",
+      "label": "pulses",
+      "control_type": "knob",
+      "value_source": "param",
+      "default": 4.0,
+      "minimum": 0.0,
+      "maximum": 32.0,
+      "decimals": 0,
+      "options": [],
+      "units_key": null,
+      "units_options": [],
+      "show_on_node": true,
+      "advanced_only": false,
+      "secondary_key": null,
+      "position_port": null,
+      "row": null,
+      "col": null,
+      "momentary": false
+    },
+    {
+      "key": "rotation",
+      "label": "rotation",
+      "control_type": "knob",
+      "value_source": "param",
+      "default": 0.0,
+      "minimum": 0.0,
+      "maximum": 31.0,
+      "decimals": 0,
+      "options": [],
+      "units_key": null,
+      "units_options": [],
+      "show_on_node": true,
+      "advanced_only": false,
+      "secondary_key": null,
+      "position_port": null,
+      "row": null,
+      "col": null,
+      "momentary": false
+    }
+  ],
+  "port_groups": [
+    {
+      "name": "IN",
+      "ports": [],
+      "layout": "vertical",
+      "rows": [
+        {
+          "left": [
+            "clock"
+          ],
+          "right": [
+            "reset"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "OUT",
+      "ports": [],
+      "layout": "vertical",
+      "rows": [
+        {
+          "left": [
+            "trigger"
+          ],
+          "right": [
+            "gate"
+          ]
+        },
+        {
+          "left": [
+            "step"
+          ],
+          "right": []
+        }
+      ]
+    }
+  ],
+  "state_only_params": [],
+  "internal_outputs": [],
+  "layout": {
+    "Uw": 3,
+    "Ur": 1,
+    "profile": "unknown"
+  }
+}

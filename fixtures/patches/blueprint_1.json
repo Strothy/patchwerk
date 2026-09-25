@@ -1,0 +1,117 @@
+{
+  "version": 1,
+  "name": "1",
+  "created": "2026-05-12",
+  "modules": [
+    {
+      "id": "constant_2",
+      "type": "constant",
+      "name": "constant 1",
+      "params": {
+        "value": 0.0
+      },
+      "inputs": {},
+      "ui": {
+        "x": -3420.0,
+        "y": 80.0,
+        "control_ranges": {
+          "value": {
+            "min": 0.0,
+            "max": 100.0
+          }
+        },
+        "control_mod_depths": {},
+        "control_units": {}
+      }
+    },
+    {
+      "id": "min_2",
+      "type": "min",
+      "name": "min 14",
+      "params": {},
+      "inputs": {
+        "a": 0.0,
+        "b": 0.0
+      },
+      "ui": {
+        "x": -3140.0,
+        "y": 80.0,
+        "control_ranges": {},
+        "control_mod_depths": {},
+        "control_units": {},
+        "panel_layout": "eurorack_v1",
+        "jack_layout": "bottom_compact_stack"
+      }
+    },
+    {
+      "id": "constant_3",
+      "type": "constant",
+      "name": "constant 1",
+      "params": {
+        "value": 0.0
+      },
+      "inputs": {},
+      "ui": {
+        "x": -3700.0,
+        "y": 80.0,
+        "control_ranges": {
+          "value": {
+            "min": 0.0,
+            "max": 100.0
+          }
+        },
+        "control_mod_depths": {},
+        "control_units": {}
+      }
+    },
+    {
+      "id": "min_3",
+      "type": "min",
+      "name": "min 14",
+      "params": {},
+      "inputs": {
+        "a": 0.0,
+        "b": 0.0
+      },
+      "ui": {
+        "x": -3980.0,
+        "y": 80.0,
+        "control_ranges": {},
+        "control_mod_depths": {},
+        "control_units": {},
+        "panel_layout": "eurorack_v1",
+        "jack_layout": "bottom_compact_stack"
+      }
+    }
+  ],
+  "connections": [
+    {
+      "src_module": "constant_3",
+      "src_port": "out",
+      "dst_module": "min_3",
+      "dst_port": "a",
+      "color_index": 0
+    },
+    {
+      "src_module": "min_3",
+      "src_port": "out",
+      "dst_module": "min_2",
+      "dst_port": "a",
+      "color_index": 0
+    },
+    {
+      "src_module": "constant_2",
+      "src_port": "out",
+      "dst_module": "min_2",
+      "dst_port": "b",
+      "color_index": 0
+    },
+    {
+      "src_module": "min_2",
+      "src_port": "out",
+      "dst_module": "min_3",
+      "dst_port": "b",
+      "color_index": 0
+    }
+  ]
+}

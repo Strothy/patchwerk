@@ -1,0 +1,313 @@
+{
+  "module_type": "pattern_gate",
+  "category": "Sequencer",
+  "input_ports": [
+    {
+      "name": "clock",
+      "signal_kind": "trigger",
+      "default": 0.0
+    },
+    {
+      "name": "reset",
+      "signal_kind": "trigger",
+      "default": 0.0
+    },
+    {
+      "name": "length",
+      "signal_kind": "signal",
+      "default": 8.0
+    }
+  ],
+  "output_ports": [
+    {
+      "name": "gate",
+      "signal_kind": "gate",
+      "default": 0.0
+    },
+    {
+      "name": "trigger",
+      "signal_kind": "trigger",
+      "default": 0.0
+    },
+    {
+      "name": "step",
+      "signal_kind": "signal",
+      "default": 0.0
+    },
+    {
+      "name": "eoc",
+      "signal_kind": "trigger",
+      "default": 0.0
+    }
+  ],
+  "param_defaults": {
+    "length": 8.0,
+    "step1": "on",
+    "step2": "on",
+    "step3": "on",
+    "step4": "on",
+    "step5": "on",
+    "step6": "on",
+    "step7": "on",
+    "step8": "on"
+  },
+  "controls": [
+    {
+      "key": "length",
+      "label": "length",
+      "control_type": "knob",
+      "value_source": "input",
+      "default": 8.0,
+      "minimum": 1.0,
+      "maximum": 8.0,
+      "decimals": 0,
+      "options": [],
+      "units_key": null,
+      "units_options": [],
+      "show_on_node": true,
+      "advanced_only": false,
+      "secondary_key": null,
+      "position_port": null,
+      "row": 0,
+      "col": null,
+      "momentary": false
+    },
+    {
+      "key": "step1",
+      "label": "1",
+      "control_type": "led",
+      "value_source": "param",
+      "default": "on",
+      "minimum": 0.0,
+      "maximum": 100.0,
+      "decimals": 2,
+      "options": [
+        "on",
+        "off"
+      ],
+      "units_key": null,
+      "units_options": [],
+      "show_on_node": true,
+      "advanced_only": false,
+      "secondary_key": null,
+      "position_port": null,
+      "row": 1,
+      "col": null,
+      "momentary": false
+    },
+    {
+      "key": "step2",
+      "label": "2",
+      "control_type": "led",
+      "value_source": "param",
+      "default": "on",
+      "minimum": 0.0,
+      "maximum": 100.0,
+      "decimals": 2,
+      "options": [
+        "on",
+        "off"
+      ],
+      "units_key": null,
+      "units_options": [],
+      "show_on_node": true,
+      "advanced_only": false,
+      "secondary_key": null,
+      "position_port": null,
+      "row": 1,
+      "col": null,
+      "momentary": false
+    },
+    {
+      "key": "step3",
+      "label": "3",
+      "control_type": "led",
+      "value_source": "param",
+      "default": "on",
+      "minimum": 0.0,
+      "maximum": 100.0,
+      "decimals": 2,
+      "options": [
+        "on",
+        "off"
+      ],
+      "units_key": null,
+      "units_options": [],
+      "show_on_node": true,
+      "advanced_only": false,
+      "secondary_key": null,
+      "position_port": null,
+      "row": 1,
+      "col": null,
+      "momentary": false
+    },
+    {
+      "key": "step4",
+      "label": "4",
+      "control_type": "led",
+      "value_source": "param",
+      "default": "on",
+      "minimum": 0.0,
+      "maximum": 100.0,
+      "decimals": 2,
+      "options": [
+        "on",
+        "off"
+      ],
+      "units_key": null,
+      "units_options": [],
+      "show_on_node": true,
+      "advanced_only": false,
+      "secondary_key": null,
+      "position_port": null,
+      "row": 1,
+      "col": null,
+      "momentary": false
+    },
+    {
+      "key": "step5",
+      "label": "5",
+      "control_type": "led",
+      "value_source": "param",
+      "default": "on",
+      "minimum": 0.0,
+      "maximum": 100.0,
+      "decimals": 2,
+      "options": [
+        "on",
+        "off"
+      ],
+      "units_key": null,
+      "units_options": [],
+      "show_on_node": true,
+      "advanced_only": false,
+      "secondary_key": null,
+      "position_port": null,
+      "row": 2,
+      "col": null,
+      "momentary": false
+    },
+    {
+      "key": "step6",
+      "label": "6",
+      "control_type": "led",
+      "value_source": "param",
+      "default": "on",
+      "minimum": 0.0,
+      "maximum": 100.0,
+      "decimals": 2,
+      "options": [
+        "on",
+        "off"
+      ],
+      "units_key": null,
+      "units_options": [],
+      "show_on_node": true,
+      "advanced_only": false,
+      "secondary_key": null,
+      "position_port": null,
+      "row": 2,
+      "col": null,
+      "momentary": false
+    },
+    {
+      "key": "step7",
+      "label": "7",
+      "control_type": "led",
+      "value_source": "param",
+      "default": "on",
+      "minimum": 0.0,
+      "maximum": 100.0,
+      "decimals": 2,
+      "options": [
+        "on",
+        "off"
+      ],
+      "units_key": null,
+      "units_options": [],
+      "show_on_node": true,
+      "advanced_only": false,
+      "secondary_key": null,
+      "position_port": null,
+      "row": 2,
+      "col": null,
+      "momentary": false
+    },
+    {
+      "key": "step8",
+      "label": "8",
+      "control_type": "led",
+      "value_source": "param",
+      "default": "on",
+      "minimum": 0.0,
+      "maximum": 100.0,
+      "decimals": 2,
+      "options": [
+        "on",
+        "off"
+      ],
+      "units_key": null,
+      "units_options": [],
+      "show_on_node": true,
+      "advanced_only": false,
+      "secondary_key": null,
+      "position_port": null,
+      "row": 2,
+      "col": null,
+      "momentary": false
+    }
+  ],
+  "port_groups": [
+    {
+      "name": "IN",
+      "ports": [],
+      "layout": "vertical",
+      "rows": [
+        {
+          "left": [
+            "clock"
+          ],
+          "right": [
+            "reset"
+          ]
+        },
+        {
+          "left": [
+            "length"
+          ],
+          "right": []
+        }
+      ]
+    },
+    {
+      "name": "OUT",
+      "ports": [],
+      "layout": "vertical",
+      "rows": [
+        {
+          "left": [
+            "gate"
+          ],
+          "right": [
+            "trigger"
+          ]
+        },
+        {
+          "left": [
+            "step"
+          ],
+          "right": [
+            "eoc"
+          ]
+        }
+      ]
+    }
+  ],
+  "state_only_params": [],
+  "internal_outputs": [],
+  "layout": {
+    "Uw": 3,
+    "Ur": 1,
+    "profile": "unknown"
+  }
+}

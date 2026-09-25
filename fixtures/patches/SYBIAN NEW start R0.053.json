@@ -1,0 +1,2308 @@
+{
+  "name": "New Patch",
+  "modules": [
+    {
+      "id": "scope_4ch_1",
+      "type": "scope_4ch",
+      "name": "scope_4ch 1",
+      "params": {
+        "time_s": "5",
+        "display": "overlay",
+        "style": "line",
+        "freeze": "off",
+        "gain1": 1.0,
+        "gain2": 1.0,
+        "gain3": 1.0,
+        "gain4": 1.0,
+        "history_s": 30.0,
+        "readouts": "on",
+        "show1": "on",
+        "show2": "on",
+        "show3": "on",
+        "show4": "on",
+        "color1": "blue",
+        "color2": "yellow",
+        "color3": "green",
+        "color4": "magenta",
+        "offset1": 0.0,
+        "offset2": 0.0,
+        "offset3": 0.0,
+        "offset4": 0.0,
+        "crt_effect": "off",
+        "glow": "off",
+        "y_range": "0-100"
+      },
+      "inputs": {
+        "in1": 50.0,
+        "in2": 50.0,
+        "in3": 50.0,
+        "in4": 50.0
+      },
+      "ui": {
+        "x": 280.0,
+        "y": -2250.0,
+        "control_ranges": {
+          "time_s": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "display": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "style": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "freeze": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "y_range": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "crt_effect": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "glow": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "gain1": {
+            "min": 0.1,
+            "max": 5.0
+          },
+          "gain2": {
+            "min": 0.1,
+            "max": 5.0
+          },
+          "gain3": {
+            "min": 0.1,
+            "max": 5.0
+          },
+          "gain4": {
+            "min": 0.1,
+            "max": 5.0
+          },
+          "history_s": {
+            "min": 2.0,
+            "max": 120.0
+          }
+        },
+        "control_mod_depths": {},
+        "control_units": {}
+      }
+    },
+    {
+      "id": "serial_axis_out_1",
+      "type": "serial_axis_out",
+      "name": "serial_axis_out 1",
+      "params": {
+        "profile": "serial_main",
+        "axis": "L0",
+        "enabled": "on",
+        "invert": "off",
+        "neutral": 0.0
+      },
+      "inputs": {
+        "in": 0.0,
+        "min": 0.0,
+        "max": 100.0
+      },
+      "ui": {
+        "x": -560.0,
+        "y": -3000.0,
+        "control_ranges": {
+          "profile": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "axis": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "enabled": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "invert": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "min": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "max": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "neutral": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "connected_led": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "active_led": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "value_disp": {
+            "min": 0.0,
+            "max": 100.0
+          }
+        },
+        "control_mod_depths": {
+          "min": 100.0,
+          "max": 100.0
+        },
+        "control_units": {},
+        "background_color": "#3A2A5A"
+      }
+    },
+    {
+      "id": "serial_axis_out_2",
+      "type": "serial_axis_out",
+      "name": "serial_axis_out 1 Copy",
+      "params": {
+        "profile": "serial_main",
+        "axis": "R0",
+        "enabled": "on",
+        "invert": "off",
+        "neutral": 0.0
+      },
+      "inputs": {
+        "in": 0.0,
+        "min": 0.0,
+        "max": 100.0
+      },
+      "ui": {
+        "x": 0.0,
+        "y": -3000.0,
+        "control_ranges": {
+          "profile": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "axis": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "enabled": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "invert": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "min": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "max": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "neutral": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "connected_led": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "active_led": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "value_disp": {
+            "min": 0.0,
+            "max": 100.0
+          }
+        },
+        "control_mod_depths": {
+          "min": 100.0,
+          "max": 100.0
+        },
+        "control_units": {},
+        "background_color": "#3A2A5A"
+      }
+    },
+    {
+      "id": "runtime_command_8_1",
+      "type": "runtime_command_8",
+      "name": "runtime_command_8 1",
+      "params": {
+        "enabled": "on",
+        "action1": "Toggle Start/Stop",
+        "action2": "Pause/Resume",
+        "action3": "Panic / Zero",
+        "action4": "Connect All Active Outputs",
+        "action5": "Disconnect All Active Outputs",
+        "action6": "(none)",
+        "action7": "(none)",
+        "action8": "(none)",
+        "slot1_learn": "off",
+        "slot1_midi_type": "(none)",
+        "slot1_midi_channel": "any",
+        "slot1_midi_number": 0.0,
+        "slot2_learn": "off",
+        "slot2_midi_type": "(none)",
+        "slot2_midi_channel": "any",
+        "slot2_midi_number": 0.0,
+        "slot3_learn": "off",
+        "slot3_midi_type": "(none)",
+        "slot3_midi_channel": "any",
+        "slot3_midi_number": 0.0,
+        "slot4_learn": "off",
+        "slot4_midi_type": "(none)",
+        "slot4_midi_channel": "any",
+        "slot4_midi_number": 0.0,
+        "slot5_learn": "off",
+        "slot5_midi_type": "(none)",
+        "slot5_midi_channel": "any",
+        "slot5_midi_number": 0.0,
+        "slot6_learn": "off",
+        "slot6_midi_type": "(none)",
+        "slot6_midi_channel": "any",
+        "slot6_midi_number": 0.0,
+        "slot7_learn": "off",
+        "slot7_midi_type": "(none)",
+        "slot7_midi_channel": "any",
+        "slot7_midi_number": 0.0,
+        "slot8_learn": "off",
+        "slot8_midi_type": "(none)",
+        "slot8_midi_channel": "any",
+        "slot8_midi_number": 0.0
+      },
+      "inputs": {
+        "in1": 0.0,
+        "in2": 0.0,
+        "in3": 0.0,
+        "in4": 0.0,
+        "in5": 0.0,
+        "in6": 0.0,
+        "in7": 0.0,
+        "in8": 0.0
+      },
+      "ui": {
+        "x": -1820.0,
+        "y": -2250.0,
+        "control_ranges": {
+          "enabled": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "activity_led": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "action1": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "action2": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "action3": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "action4": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "action5": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "action6": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "action7": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "action8": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "slot1_learn": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "slot1_midi_type": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "slot1_midi_channel": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "slot1_midi_number": {
+            "min": 0.0,
+            "max": 127.0
+          },
+          "slot1_led": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "slot2_learn": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "slot2_midi_type": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "slot2_midi_channel": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "slot2_midi_number": {
+            "min": 0.0,
+            "max": 127.0
+          },
+          "slot2_led": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "slot3_learn": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "slot3_midi_type": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "slot3_midi_channel": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "slot3_midi_number": {
+            "min": 0.0,
+            "max": 127.0
+          },
+          "slot3_led": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "slot4_learn": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "slot4_midi_type": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "slot4_midi_channel": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "slot4_midi_number": {
+            "min": 0.0,
+            "max": 127.0
+          },
+          "slot4_led": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "slot5_learn": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "slot5_midi_type": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "slot5_midi_channel": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "slot5_midi_number": {
+            "min": 0.0,
+            "max": 127.0
+          },
+          "slot5_led": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "slot6_learn": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "slot6_midi_type": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "slot6_midi_channel": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "slot6_midi_number": {
+            "min": 0.0,
+            "max": 127.0
+          },
+          "slot6_led": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "slot7_learn": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "slot7_midi_type": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "slot7_midi_channel": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "slot7_midi_number": {
+            "min": 0.0,
+            "max": 127.0
+          },
+          "slot7_led": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "slot8_learn": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "slot8_midi_type": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "slot8_midi_channel": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "slot8_midi_number": {
+            "min": 0.0,
+            "max": 127.0
+          },
+          "slot8_led": {
+            "min": 0.0,
+            "max": 100.0
+          }
+        },
+        "control_mod_depths": {},
+        "control_units": {},
+        "background_color": "#2A5A3A"
+      }
+    },
+    {
+      "id": "scope_4ch_2",
+      "type": "scope_4ch",
+      "name": "scope_4ch 2",
+      "params": {
+        "time_s": "5",
+        "display": "overlay",
+        "style": "line",
+        "freeze": "off",
+        "gain1": 1.0,
+        "gain2": 1.0,
+        "gain3": 1.0,
+        "gain4": 1.0,
+        "history_s": 30.0,
+        "readouts": "on",
+        "show1": "on",
+        "show2": "on",
+        "show3": "on",
+        "show4": "on",
+        "color1": "blue",
+        "color2": "yellow",
+        "color3": "green",
+        "color4": "magenta",
+        "offset1": 0.0,
+        "offset2": 0.0,
+        "offset3": 0.0,
+        "offset4": 0.0,
+        "crt_effect": "off",
+        "glow": "off",
+        "y_range": "0-100"
+      },
+      "inputs": {
+        "in1": 50.0,
+        "in2": 50.0,
+        "in3": 50.0,
+        "in4": 50.0
+      },
+      "ui": {
+        "x": 420.0,
+        "y": -3000.0,
+        "control_ranges": {
+          "time_s": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "display": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "style": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "freeze": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "y_range": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "crt_effect": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "glow": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "gain1": {
+            "min": 0.1,
+            "max": 5.0
+          },
+          "gain2": {
+            "min": 0.1,
+            "max": 5.0
+          },
+          "gain3": {
+            "min": 0.1,
+            "max": 5.0
+          },
+          "gain4": {
+            "min": 0.1,
+            "max": 5.0
+          },
+          "history_s": {
+            "min": 2.0,
+            "max": 120.0
+          }
+        },
+        "control_mod_depths": {},
+        "control_units": {}
+      }
+    },
+    {
+      "id": "midi_note_gate_1",
+      "type": "midi_note_gate",
+      "name": "midi_note_gate 1",
+      "params": {
+        "enabled": "on",
+        "device": "MPK mini 3 0",
+        "channel": "1",
+        "mode": "fixed",
+        "learn": "off",
+        "note": 48.0,
+        "hold_ms": 80.0
+      },
+      "inputs": {},
+      "ui": {
+        "x": -2659.9999999999995,
+        "y": -2999.790663403806,
+        "control_ranges": {
+          "enabled": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "device": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "channel": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "mode": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "learn": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "note": {
+            "min": 0.0,
+            "max": 127.0
+          },
+          "hold_ms": {
+            "min": 0.0,
+            "max": 500.0
+          },
+          "activity_led": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "vel_disp": {
+            "min": 0.0,
+            "max": 100.0
+          }
+        },
+        "control_mod_depths": {},
+        "control_units": {},
+        "panel_layout": "eurorack_v1",
+        "jack_layout": "bottom_compact_stack",
+        "background_color": "#2A5A3A"
+      }
+    },
+    {
+      "id": "midi_note_gate_2",
+      "type": "midi_note_gate",
+      "name": "midi_note_gate 1 Copy",
+      "params": {
+        "enabled": "on",
+        "device": "MPK mini 3 0",
+        "channel": "1",
+        "mode": "fixed",
+        "learn": "off",
+        "note": 50.0,
+        "hold_ms": 80.0
+      },
+      "inputs": {},
+      "ui": {
+        "x": -2239.9999999999995,
+        "y": -2999.790663403806,
+        "control_ranges": {
+          "enabled": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "device": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "channel": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "mode": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "learn": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "note": {
+            "min": 0.0,
+            "max": 127.0
+          },
+          "hold_ms": {
+            "min": 0.0,
+            "max": 500.0
+          },
+          "activity_led": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "vel_disp": {
+            "min": 0.0,
+            "max": 100.0
+          }
+        },
+        "control_mod_depths": {},
+        "control_units": {},
+        "panel_layout": "eurorack_v1",
+        "jack_layout": "bottom_compact_stack",
+        "background_color": "#2A5A3A"
+      }
+    },
+    {
+      "id": "midi_note_gate_3",
+      "type": "midi_note_gate",
+      "name": "midi_note_gate 1 Copy Copy",
+      "params": {
+        "enabled": "on",
+        "device": "MPK mini 3 0",
+        "channel": "1",
+        "mode": "fixed",
+        "learn": "off",
+        "note": 52.0,
+        "hold_ms": 80.0
+      },
+      "inputs": {},
+      "ui": {
+        "x": -1820.0,
+        "y": -3000.0,
+        "control_ranges": {
+          "enabled": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "device": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "channel": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "mode": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "learn": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "note": {
+            "min": 0.0,
+            "max": 127.0
+          },
+          "hold_ms": {
+            "min": 0.0,
+            "max": 500.0
+          },
+          "activity_led": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "vel_disp": {
+            "min": 0.0,
+            "max": 100.0
+          }
+        },
+        "control_mod_depths": {},
+        "control_units": {},
+        "panel_layout": "eurorack_v1",
+        "jack_layout": "bottom_compact_stack",
+        "background_color": "#2A5A3A"
+      }
+    },
+    {
+      "id": "midi_note_gate_4",
+      "type": "midi_note_gate",
+      "name": "midi_note_gate 1 Copy Copy Copy",
+      "params": {
+        "enabled": "on",
+        "device": "MPK mini 3 0",
+        "channel": "1",
+        "mode": "fixed",
+        "learn": "off",
+        "note": 55.0,
+        "hold_ms": 80.0
+      },
+      "inputs": {},
+      "ui": {
+        "x": -2659.9999999999995,
+        "y": -2249.790663403806,
+        "control_ranges": {
+          "enabled": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "device": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "channel": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "mode": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "learn": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "note": {
+            "min": 0.0,
+            "max": 127.0
+          },
+          "hold_ms": {
+            "min": 0.0,
+            "max": 500.0
+          },
+          "activity_led": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "vel_disp": {
+            "min": 0.0,
+            "max": 100.0
+          }
+        },
+        "control_mod_depths": {},
+        "control_units": {},
+        "panel_layout": "eurorack_v1",
+        "jack_layout": "bottom_compact_stack",
+        "background_color": "#2A5A3A"
+      }
+    },
+    {
+      "id": "midi_note_gate_5",
+      "type": "midi_note_gate",
+      "name": "midi_note_gate 1 Copy Copy Copy Copy",
+      "params": {
+        "enabled": "on",
+        "device": "MPK mini 3 0",
+        "channel": "1",
+        "mode": "fixed",
+        "learn": "off",
+        "note": 57.0,
+        "hold_ms": 80.0
+      },
+      "inputs": {},
+      "ui": {
+        "x": -2239.9999999999995,
+        "y": -2249.790663403806,
+        "control_ranges": {
+          "enabled": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "device": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "channel": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "mode": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "learn": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "note": {
+            "min": 0.0,
+            "max": 127.0
+          },
+          "hold_ms": {
+            "min": 0.0,
+            "max": 500.0
+          },
+          "activity_led": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "vel_disp": {
+            "min": 0.0,
+            "max": 100.0
+          }
+        },
+        "control_mod_depths": {},
+        "control_units": {},
+        "panel_layout": "eurorack_v1",
+        "jack_layout": "bottom_compact_stack",
+        "background_color": "#2A5A3A"
+      }
+    },
+    {
+      "id": "midi_map_serial_axis_out_1__min",
+      "type": "midi_cv",
+      "name": "\u21b3 serial_axis_out.min",
+      "params": {
+        "enabled": "on",
+        "device": "MPK mini 3 0",
+        "channel": "1",
+        "mode": "fixed",
+        "learn": "off",
+        "cc": 1.0,
+        "out_min": 0.0,
+        "out_max": 100.0,
+        "response": "smooth",
+        "smooth": 0.15,
+        "slew": 100.0,
+        "invert": "off",
+        "_midi_map": "true",
+        "_saved_out": 0.0,
+        "_saved_last_target": 0.0
+      },
+      "inputs": {},
+      "ui": {
+        "x": 9900.0,
+        "y": 9900.0,
+        "label": "\u21b3 serial_axis_out.min",
+        "control_ranges": {
+          "enabled": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "device": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "channel": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "mode": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "learn": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "cc": {
+            "min": 0.0,
+            "max": 127.0
+          },
+          "out_min": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "out_max": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "response": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "smooth": {
+            "min": 0.0,
+            "max": 0.95
+          },
+          "slew": {
+            "min": 10.0,
+            "max": 500.0
+          },
+          "invert": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "activity_led": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "value_disp": {
+            "min": 0.0,
+            "max": 100.0
+          }
+        },
+        "control_mod_depths": {},
+        "control_units": {}
+      }
+    },
+    {
+      "id": "midi_map_serial_axis_out_2__min",
+      "type": "midi_cv",
+      "name": "\u21b3 serial_axis_out.min",
+      "params": {
+        "enabled": "on",
+        "device": "MPK mini 3 0",
+        "channel": "1",
+        "mode": "fixed",
+        "learn": "off",
+        "cc": 5.0,
+        "out_min": 0.0,
+        "out_max": 100.0,
+        "response": "smooth",
+        "smooth": 0.15,
+        "slew": 100.0,
+        "invert": "off",
+        "_midi_map": "true",
+        "_saved_out": 0.0,
+        "_saved_last_target": 0.0
+      },
+      "inputs": {},
+      "ui": {
+        "x": 9900.0,
+        "y": 10160.0,
+        "label": "\u21b3 serial_axis_out.min",
+        "control_ranges": {
+          "enabled": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "device": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "channel": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "mode": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "learn": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "cc": {
+            "min": 0.0,
+            "max": 127.0
+          },
+          "out_min": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "out_max": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "response": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "smooth": {
+            "min": 0.0,
+            "max": 0.95
+          },
+          "slew": {
+            "min": 10.0,
+            "max": 500.0
+          },
+          "invert": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "activity_led": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "value_disp": {
+            "min": 0.0,
+            "max": 100.0
+          }
+        },
+        "control_mod_depths": {},
+        "control_units": {}
+      }
+    },
+    {
+      "id": "midi_map_serial_axis_out_2__max",
+      "type": "midi_cv",
+      "name": "\u21b3 serial_axis_out.max",
+      "params": {
+        "enabled": "on",
+        "device": "MPK mini 3 0",
+        "channel": "1",
+        "mode": "fixed",
+        "learn": "off",
+        "cc": 6.0,
+        "out_min": 0.0,
+        "out_max": 100.0,
+        "response": "smooth",
+        "smooth": 0.15,
+        "slew": 100.0,
+        "invert": "off",
+        "_midi_map": "true",
+        "_saved_out": 100.0,
+        "_saved_last_target": 100.0
+      },
+      "inputs": {},
+      "ui": {
+        "x": 9900.0,
+        "y": 10290.0,
+        "label": "\u21b3 serial_axis_out.max",
+        "control_ranges": {
+          "enabled": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "device": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "channel": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "mode": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "learn": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "cc": {
+            "min": 0.0,
+            "max": 127.0
+          },
+          "out_min": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "out_max": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "response": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "smooth": {
+            "min": 0.0,
+            "max": 0.95
+          },
+          "slew": {
+            "min": 10.0,
+            "max": 500.0
+          },
+          "invert": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "activity_led": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "value_disp": {
+            "min": 0.0,
+            "max": 100.0
+          }
+        },
+        "control_mod_depths": {},
+        "control_units": {}
+      }
+    },
+    {
+      "id": "scene_changer_8ch_1",
+      "type": "scene_changer_8ch",
+      "name": "scene_changer_8ch 1",
+      "params": {
+        "mode": "trig_gate",
+        "ramp_s": 0.5,
+        "ch_1_time_s": 0.0,
+        "ch_2_time_s": 0.0,
+        "ch_3_time_s": 0.0,
+        "ch_4_time_s": 0.0,
+        "ch_5_time_s": 0.0,
+        "ch_6_time_s": 0.0,
+        "ch_7_time_s": 0.0,
+        "ch_8_time_s": 0.0,
+        "active_channel": 1.0,
+        "clock_seconds": 0.0,
+        "clock_running": 0.0,
+        "run_button": "off",
+        "reset_button": "off",
+        "start_button": "off",
+        "ch_1_active_led": 100.0,
+        "ch_2_active_led": 0.0,
+        "ch_3_active_led": 0.0,
+        "ch_4_active_led": 0.0,
+        "ch_5_active_led": 0.0,
+        "ch_6_active_led": 0.0,
+        "ch_7_active_led": 0.0,
+        "ch_8_active_led": 0.0,
+        "clock_display_hh": 0.0,
+        "clock_display_mmss": 0.0
+      },
+      "inputs": {
+        "in_1": 0.0,
+        "in_2": 0.0,
+        "in_3": 0.0,
+        "in_4": 0.0,
+        "in_5": 0.0,
+        "in_6": 0.0,
+        "in_7": 0.0,
+        "in_8": 0.0,
+        "ch_1_sel": 0.0,
+        "ch_2_sel": 0.0,
+        "ch_3_sel": 0.0,
+        "ch_4_sel": 0.0,
+        "ch_5_sel": 0.0,
+        "ch_6_sel": 0.0,
+        "ch_7_sel": 0.0,
+        "ch_8_sel": 0.0,
+        "clock_run": 0.0,
+        "clock_reset": 0.0,
+        "clock_start": 0.0
+      },
+      "ui": {
+        "x": -560.0,
+        "y": -2250.0,
+        "control_ranges": {
+          "mode": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "ramp_s": {
+            "min": 0.01,
+            "max": 10.0
+          },
+          "ch_1_time_s": {
+            "min": 0.0,
+            "max": 359999.0
+          },
+          "ch_2_time_s": {
+            "min": 0.0,
+            "max": 359999.0
+          },
+          "ch_3_time_s": {
+            "min": 0.0,
+            "max": 359999.0
+          },
+          "ch_4_time_s": {
+            "min": 0.0,
+            "max": 359999.0
+          },
+          "ch_5_time_s": {
+            "min": 0.0,
+            "max": 359999.0
+          },
+          "ch_6_time_s": {
+            "min": 0.0,
+            "max": 359999.0
+          },
+          "ch_7_time_s": {
+            "min": 0.0,
+            "max": 359999.0
+          },
+          "ch_8_time_s": {
+            "min": 0.0,
+            "max": 359999.0
+          },
+          "ch_1_active_led": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "ch_2_active_led": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "ch_3_active_led": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "ch_4_active_led": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "ch_5_active_led": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "ch_6_active_led": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "ch_7_active_led": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "ch_8_active_led": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "clock_display_hh": {
+            "min": 0.0,
+            "max": 99.0
+          },
+          "clock_display_mmss": {
+            "min": 0.0,
+            "max": 5999.0
+          },
+          "run_button": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "reset_button": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "start_button": {
+            "min": 0.0,
+            "max": 100.0
+          }
+        },
+        "control_mod_depths": {},
+        "control_units": {},
+        "background_color": "#1f3448"
+      }
+    },
+    {
+      "id": "scene_changer_8ch_2",
+      "type": "scene_changer_8ch",
+      "name": "scene_changer_8ch 1 Copy",
+      "params": {
+        "mode": "trig_gate",
+        "ramp_s": 0.5,
+        "ch_1_time_s": 0.0,
+        "ch_2_time_s": 0.0,
+        "ch_3_time_s": 0.0,
+        "ch_4_time_s": 0.0,
+        "ch_5_time_s": 0.0,
+        "ch_6_time_s": 0.0,
+        "ch_7_time_s": 0.0,
+        "ch_8_time_s": 0.0,
+        "active_channel": 1.0,
+        "clock_seconds": 0.0,
+        "clock_running": 0.0,
+        "run_button": "off",
+        "reset_button": "off",
+        "start_button": "off",
+        "ch_1_active_led": 100.0,
+        "ch_2_active_led": 0.0,
+        "ch_3_active_led": 0.0,
+        "ch_4_active_led": 0.0,
+        "ch_5_active_led": 0.0,
+        "ch_6_active_led": 0.0,
+        "ch_7_active_led": 0.0,
+        "ch_8_active_led": 0.0,
+        "clock_display_hh": 0.0,
+        "clock_display_mmss": 0.0
+      },
+      "inputs": {
+        "in_1": 0.0,
+        "in_2": 0.0,
+        "in_3": 0.0,
+        "in_4": 0.0,
+        "in_5": 0.0,
+        "in_6": 0.0,
+        "in_7": 0.0,
+        "in_8": 0.0,
+        "ch_1_sel": 0.0,
+        "ch_2_sel": 0.0,
+        "ch_3_sel": 0.0,
+        "ch_4_sel": 0.0,
+        "ch_5_sel": 0.0,
+        "ch_6_sel": 0.0,
+        "ch_7_sel": 0.0,
+        "ch_8_sel": 0.0,
+        "clock_run": 0.0,
+        "clock_reset": 0.0,
+        "clock_start": 0.0
+      },
+      "ui": {
+        "x": 1680.0,
+        "y": -2250.0,
+        "control_ranges": {
+          "mode": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "ramp_s": {
+            "min": 0.01,
+            "max": 10.0
+          },
+          "ch_1_time_s": {
+            "min": 0.0,
+            "max": 359999.0
+          },
+          "ch_2_time_s": {
+            "min": 0.0,
+            "max": 359999.0
+          },
+          "ch_3_time_s": {
+            "min": 0.0,
+            "max": 359999.0
+          },
+          "ch_4_time_s": {
+            "min": 0.0,
+            "max": 359999.0
+          },
+          "ch_5_time_s": {
+            "min": 0.0,
+            "max": 359999.0
+          },
+          "ch_6_time_s": {
+            "min": 0.0,
+            "max": 359999.0
+          },
+          "ch_7_time_s": {
+            "min": 0.0,
+            "max": 359999.0
+          },
+          "ch_8_time_s": {
+            "min": 0.0,
+            "max": 359999.0
+          },
+          "ch_1_active_led": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "ch_2_active_led": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "ch_3_active_led": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "ch_4_active_led": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "ch_5_active_led": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "ch_6_active_led": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "ch_7_active_led": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "ch_8_active_led": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "clock_display_hh": {
+            "min": 0.0,
+            "max": 99.0
+          },
+          "clock_display_mmss": {
+            "min": 0.0,
+            "max": 5999.0
+          },
+          "run_button": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "reset_button": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "start_button": {
+            "min": 0.0,
+            "max": 100.0
+          }
+        },
+        "control_mod_depths": {},
+        "control_units": {},
+        "background_color": "#1f3448"
+      }
+    },
+    {
+      "id": "midi_note_gate_6",
+      "type": "midi_note_gate",
+      "name": "midi_note_gate 6",
+      "params": {
+        "enabled": "on",
+        "device": "MPK mini 3 0",
+        "channel": "1",
+        "mode": "fixed",
+        "learn": "off",
+        "note": 60.0,
+        "hold_ms": 80.0
+      },
+      "inputs": {},
+      "ui": {
+        "x": -2660.0,
+        "y": -1500.0,
+        "control_ranges": {
+          "enabled": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "device": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "channel": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "mode": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "learn": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "note": {
+            "min": 0.0,
+            "max": 127.0
+          },
+          "hold_ms": {
+            "min": 0.0,
+            "max": 500.0
+          },
+          "activity_led": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "vel_disp": {
+            "min": 0.0,
+            "max": 100.0
+          }
+        },
+        "control_mod_depths": {},
+        "control_units": {},
+        "panel_layout": "eurorack_v1",
+        "jack_layout": "bottom_compact_stack",
+        "background_color": "#1f3448"
+      }
+    },
+    {
+      "id": "midi_note_gate_7",
+      "type": "midi_note_gate",
+      "name": "midi_note_gate 6 Copy",
+      "params": {
+        "enabled": "on",
+        "device": "MPK mini 3 0",
+        "channel": "1",
+        "mode": "fixed",
+        "learn": "off",
+        "note": 62.0,
+        "hold_ms": 80.0
+      },
+      "inputs": {},
+      "ui": {
+        "x": -2240.0,
+        "y": -1500.0,
+        "control_ranges": {
+          "enabled": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "device": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "channel": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "mode": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "learn": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "note": {
+            "min": 0.0,
+            "max": 127.0
+          },
+          "hold_ms": {
+            "min": 0.0,
+            "max": 500.0
+          },
+          "activity_led": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "vel_disp": {
+            "min": 0.0,
+            "max": 100.0
+          }
+        },
+        "control_mod_depths": {},
+        "control_units": {},
+        "panel_layout": "eurorack_v1",
+        "jack_layout": "bottom_compact_stack",
+        "background_color": "#1f3448"
+      }
+    },
+    {
+      "id": "midi_note_gate_8",
+      "type": "midi_note_gate",
+      "name": "midi_note_gate 6 Copy Copy",
+      "params": {
+        "enabled": "on",
+        "device": "MPK mini 3 0",
+        "channel": "1",
+        "mode": "fixed",
+        "learn": "off",
+        "note": 64.0,
+        "hold_ms": 80.0
+      },
+      "inputs": {},
+      "ui": {
+        "x": -1820.0,
+        "y": -1500.0,
+        "control_ranges": {
+          "enabled": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "device": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "channel": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "mode": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "learn": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "note": {
+            "min": 0.0,
+            "max": 127.0
+          },
+          "hold_ms": {
+            "min": 0.0,
+            "max": 500.0
+          },
+          "activity_led": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "vel_disp": {
+            "min": 0.0,
+            "max": 100.0
+          }
+        },
+        "control_mod_depths": {},
+        "control_units": {},
+        "panel_layout": "eurorack_v1",
+        "jack_layout": "bottom_compact_stack",
+        "background_color": "#1f3448"
+      }
+    },
+    {
+      "id": "oscillator_1",
+      "type": "oscillator",
+      "name": "oscillator 1",
+      "params": {
+        "shape": "sine",
+        "polarity": "unipolar"
+      },
+      "inputs": {
+        "rate": 0.016666666666666666,
+        "amp": 40.42246533296259,
+        "offset": 5.0,
+        "phase": 0.0,
+        "reset": 0.0
+      },
+      "ui": {
+        "x": 280.0,
+        "y": -1500.0,
+        "control_ranges": {
+          "shape": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "polarity": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "rate": {
+            "min": 0.008333333333333333,
+            "max": 0.016666666666666666
+          },
+          "amp": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "offset": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "phase": {
+            "min": 0.0,
+            "max": 360.0
+          }
+        },
+        "control_mod_depths": {
+          "rate": 100.0,
+          "amp": 100.0,
+          "offset": 100.0,
+          "phase": 100.0
+        },
+        "control_units": {
+          "rate": "seconds"
+        },
+        "panel_layout": "eurorack_v1",
+        "jack_layout": "bottom_split"
+      }
+    },
+    {
+      "id": "midi_map_serial_axis_out_1__max",
+      "type": "midi_cv",
+      "name": "\u21b3 serial_axis_out.max",
+      "params": {
+        "enabled": "on",
+        "device": "MPK mini 3 0",
+        "channel": "1",
+        "mode": "fixed",
+        "learn": "off",
+        "cc": 2.0,
+        "out_min": 0.0,
+        "out_max": 100.0,
+        "response": "smooth",
+        "smooth": 0.15,
+        "slew": 100.0,
+        "invert": "off",
+        "_midi_map": "true",
+        "_saved_out": 100.0,
+        "_saved_last_target": 100.0
+      },
+      "inputs": {},
+      "ui": {
+        "x": 9900.0,
+        "y": 10290.0,
+        "label": "\u21b3 serial_axis_out.max",
+        "control_ranges": {
+          "enabled": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "device": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "channel": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "mode": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "learn": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "cc": {
+            "min": 0.0,
+            "max": 127.0
+          },
+          "out_min": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "out_max": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "response": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "smooth": {
+            "min": 0.0,
+            "max": 0.95
+          },
+          "slew": {
+            "min": 10.0,
+            "max": 500.0
+          },
+          "invert": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "activity_led": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "value_disp": {
+            "min": 0.0,
+            "max": 100.0
+          }
+        },
+        "control_mod_depths": {},
+        "control_units": {}
+      }
+    },
+    {
+      "id": "lfo_1",
+      "type": "lfo",
+      "name": "lfo 1",
+      "params": {
+        "shape": "sine",
+        "polarity": "bipolar"
+      },
+      "inputs": {
+        "rate": 0.017089843715694157,
+        "amp": 30.0,
+        "offset": 0.0,
+        "phase": 0.0,
+        "reset": 0.0
+      },
+      "ui": {
+        "x": 560.0,
+        "y": -1500.0,
+        "control_ranges": {
+          "shape": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "polarity": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "rate": {
+            "min": 0.008333333333333333,
+            "max": 0.016666666666666666
+          },
+          "amp": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "offset": {
+            "min": -100.0,
+            "max": 100.0
+          },
+          "phase": {
+            "min": 0.0,
+            "max": 360.0
+          }
+        },
+        "control_mod_depths": {
+          "rate": 100.0,
+          "amp": 100.0,
+          "offset": 100.0,
+          "phase": 100.0
+        },
+        "control_units": {
+          "rate": "seconds"
+        },
+        "panel_layout": "eurorack_v1",
+        "jack_layout": "bottom_split"
+      }
+    },
+    {
+      "id": "lfo_2",
+      "type": "lfo",
+      "name": "lfo 1 Copy",
+      "params": {
+        "shape": "sine",
+        "polarity": "bipolar"
+      },
+      "inputs": {
+        "rate": 0.011412902626827514,
+        "amp": 30.0,
+        "offset": 0.0,
+        "phase": 0.0,
+        "reset": 0.0
+      },
+      "ui": {
+        "x": 980.0,
+        "y": -1500.0,
+        "control_ranges": {
+          "shape": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "polarity": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "rate": {
+            "min": 0.008333333333333333,
+            "max": 0.016666666666666666
+          },
+          "amp": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "offset": {
+            "min": -100.0,
+            "max": 100.0
+          },
+          "phase": {
+            "min": 0.0,
+            "max": 360.0
+          }
+        },
+        "control_mod_depths": {
+          "rate": 100.0,
+          "amp": 100.0,
+          "offset": 100.0,
+          "phase": 100.0
+        },
+        "control_units": {
+          "rate": "seconds"
+        },
+        "panel_layout": "eurorack_v1",
+        "jack_layout": "bottom_split"
+      }
+    },
+    {
+      "id": "oscillator_2",
+      "type": "oscillator",
+      "name": "oscillator 1 Copy",
+      "params": {
+        "shape": "sine",
+        "polarity": "unipolar"
+      },
+      "inputs": {
+        "rate": 0.016666666666666666,
+        "amp": 47.034622521012686,
+        "offset": 5.0,
+        "phase": 90.0,
+        "reset": 0.0
+      },
+      "ui": {
+        "x": 1400.0,
+        "y": -1500.0,
+        "control_ranges": {
+          "shape": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "polarity": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "rate": {
+            "min": 0.008333333333333333,
+            "max": 0.016666666666666666
+          },
+          "amp": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "offset": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "phase": {
+            "min": 0.0,
+            "max": 360.0
+          }
+        },
+        "control_mod_depths": {
+          "rate": 100.0,
+          "amp": 100.0,
+          "offset": 100.0,
+          "phase": 100.0
+        },
+        "control_units": {
+          "rate": "seconds"
+        },
+        "panel_layout": "eurorack_v1",
+        "jack_layout": "bottom_split"
+      }
+    },
+    {
+      "id": "clock_1",
+      "type": "clock",
+      "name": "clock 1",
+      "params": {
+        "enabled": "on"
+      },
+      "inputs": {
+        "run": 1.0,
+        "reset": 0.0,
+        "bpm": 120.0,
+        "pulse_width": 10.0
+      },
+      "ui": {
+        "x": -1120.0,
+        "y": -1500.0,
+        "control_ranges": {
+          "enabled": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "bpm": {
+            "min": 1.0,
+            "max": 600.0
+          },
+          "pulse_width": {
+            "min": 1.0,
+            "max": 95.0
+          },
+          "bpm_disp": {
+            "min": 0.0,
+            "max": 100.0
+          },
+          "tick_led": {
+            "min": 0.0,
+            "max": 100.0
+          }
+        },
+        "control_mod_depths": {
+          "bpm": 100.0,
+          "pulse_width": 100.0
+        },
+        "control_units": {},
+        "panel_layout": "eurorack_v1",
+        "jack_layout": "bottom_split"
+      }
+    }
+  ],
+  "connections": [
+    {
+      "src_module": "midi_note_gate_1",
+      "src_port": "trigger",
+      "dst_module": "runtime_command_8_1",
+      "dst_port": "in1",
+      "color_index": 2
+    },
+    {
+      "src_module": "midi_note_gate_2",
+      "src_port": "trigger",
+      "dst_module": "runtime_command_8_1",
+      "dst_port": "in2",
+      "color_index": 2
+    },
+    {
+      "src_module": "midi_note_gate_3",
+      "src_port": "trigger",
+      "dst_module": "runtime_command_8_1",
+      "dst_port": "in3",
+      "color_index": 2
+    },
+    {
+      "src_module": "midi_note_gate_4",
+      "src_port": "trigger",
+      "dst_module": "runtime_command_8_1",
+      "dst_port": "in4",
+      "color_index": 2
+    },
+    {
+      "src_module": "midi_note_gate_5",
+      "src_port": "trigger",
+      "dst_module": "runtime_command_8_1",
+      "dst_port": "in5",
+      "color_index": 2
+    },
+    {
+      "src_module": "midi_map_serial_axis_out_1__min",
+      "src_port": "out",
+      "dst_module": "serial_axis_out_1",
+      "dst_port": "min",
+      "color_index": 0
+    },
+    {
+      "src_module": "midi_map_serial_axis_out_2__min",
+      "src_port": "out",
+      "dst_module": "serial_axis_out_2",
+      "dst_port": "min",
+      "color_index": 0
+    },
+    {
+      "src_module": "midi_map_serial_axis_out_2__max",
+      "src_port": "out",
+      "dst_module": "serial_axis_out_2",
+      "dst_port": "max",
+      "color_index": 0
+    },
+    {
+      "src_module": "serial_axis_out_2",
+      "src_port": "out",
+      "dst_module": "scope_4ch_2",
+      "dst_port": "in2",
+      "color_index": 0
+    },
+    {
+      "src_module": "scene_changer_8ch_1",
+      "src_port": "out",
+      "dst_module": "serial_axis_out_1",
+      "dst_port": "in",
+      "color_index": 0
+    },
+    {
+      "src_module": "scene_changer_8ch_2",
+      "src_port": "out",
+      "dst_module": "serial_axis_out_2",
+      "dst_port": "in",
+      "color_index": 0
+    },
+    {
+      "src_module": "midi_note_gate_6",
+      "src_port": "trigger",
+      "dst_module": "scene_changer_8ch_1",
+      "dst_port": "ch_1_sel",
+      "color_index": 2
+    },
+    {
+      "src_module": "midi_note_gate_7",
+      "src_port": "trigger",
+      "dst_module": "scene_changer_8ch_1",
+      "dst_port": "ch_2_sel",
+      "color_index": 2
+    },
+    {
+      "src_module": "midi_note_gate_8",
+      "src_port": "trigger",
+      "dst_module": "scene_changer_8ch_1",
+      "dst_port": "ch_3_sel",
+      "color_index": 2
+    },
+    {
+      "src_module": "midi_note_gate_6",
+      "src_port": "trigger",
+      "dst_module": "scene_changer_8ch_2",
+      "dst_port": "ch_1_sel",
+      "color_index": 2
+    },
+    {
+      "src_module": "midi_note_gate_7",
+      "src_port": "trigger",
+      "dst_module": "scene_changer_8ch_2",
+      "dst_port": "ch_2_sel",
+      "color_index": 2
+    },
+    {
+      "src_module": "midi_note_gate_8",
+      "src_port": "trigger",
+      "dst_module": "scene_changer_8ch_2",
+      "dst_port": "ch_3_sel",
+      "color_index": 2
+    },
+    {
+      "src_module": "midi_map_serial_axis_out_1__max",
+      "src_port": "out",
+      "dst_module": "serial_axis_out_1",
+      "dst_port": "max",
+      "color_index": 0
+    },
+    {
+      "src_module": "oscillator_1",
+      "src_port": "out",
+      "dst_module": "scene_changer_8ch_1",
+      "dst_port": "in_1",
+      "color_index": 0
+    },
+    {
+      "src_module": "lfo_1",
+      "src_port": "out",
+      "dst_module": "oscillator_1",
+      "dst_port": "rate",
+      "color_index": 0
+    },
+    {
+      "src_module": "lfo_2",
+      "src_port": "out",
+      "dst_module": "oscillator_1",
+      "dst_port": "amp",
+      "color_index": 0
+    },
+    {
+      "src_module": "lfo_2",
+      "src_port": "out",
+      "dst_module": "lfo_1",
+      "dst_port": "rate",
+      "color_index": 0
+    },
+    {
+      "src_module": "scene_changer_8ch_1",
+      "src_port": "out",
+      "dst_module": "scope_4ch_1",
+      "dst_port": "in1",
+      "color_index": 0
+    },
+    {
+      "src_module": "lfo_2",
+      "src_port": "out",
+      "dst_module": "oscillator_2",
+      "dst_port": "amp",
+      "color_index": 0
+    },
+    {
+      "src_module": "lfo_1",
+      "src_port": "out",
+      "dst_module": "oscillator_2",
+      "dst_port": "rate",
+      "color_index": 0
+    },
+    {
+      "src_module": "oscillator_2",
+      "src_port": "out",
+      "dst_module": "scope_4ch_1",
+      "dst_port": "in2",
+      "color_index": 0
+    },
+    {
+      "src_module": "oscillator_2",
+      "src_port": "out",
+      "dst_module": "scene_changer_8ch_2",
+      "dst_port": "in_1",
+      "color_index": 0
+    },
+    {
+      "src_module": "serial_axis_out_1",
+      "src_port": "out",
+      "dst_module": "scope_4ch_2",
+      "dst_port": "in1",
+      "color_index": 0
+    }
+  ],
+  "annotations": [],
+  "module_groups": [],
+  "canvas_boxes": [],
+  "meta": {
+    "version": 1,
+    "output_profiles": {
+      "serial": {
+        "serial_main": {
+          "name": "serial_main",
+          "enabled": true,
+          "port": "COM3",
+          "baud": 115200,
+          "interval_ms": 20,
+          "auto_connect": false,
+          "line_ending": "\n",
+          "protocol": "tcode_v0"
+        },
+        "serial_aux_1": {
+          "name": "serial_aux_1",
+          "enabled": true,
+          "port": "",
+          "baud": 115200,
+          "interval_ms": 20,
+          "auto_connect": false,
+          "line_ending": "\n",
+          "protocol": "tcode_v0"
+        },
+        "serial_aux_2": {
+          "name": "serial_aux_2",
+          "enabled": true,
+          "port": "",
+          "baud": 115200,
+          "interval_ms": 20,
+          "auto_connect": false,
+          "line_ending": "\n",
+          "protocol": "tcode_v0"
+        },
+        "serial_aux_3": {
+          "name": "serial_aux_3",
+          "enabled": true,
+          "port": "",
+          "baud": 115200,
+          "interval_ms": 20,
+          "auto_connect": false,
+          "line_ending": "\n",
+          "protocol": "tcode_v0"
+        }
+      },
+      "buttplug": {
+        "buttplug_main": {
+          "name": "buttplug_main",
+          "enabled": true,
+          "server_url": "ws://127.0.0.1:12345",
+          "auto_connect": false
+        },
+        "buttplug_aux_1": {
+          "name": "buttplug_aux_1",
+          "enabled": true,
+          "server_url": "ws://127.0.0.1:12345",
+          "auto_connect": false
+        },
+        "buttplug_aux_2": {
+          "name": "buttplug_aux_2",
+          "enabled": true,
+          "server_url": "ws://127.0.0.1:12345",
+          "auto_connect": false
+        }
+      }
+    },
+    "plugin_provenance": {
+      "external_module_types": [],
+      "modules": []
+    },
+    "camera": {
+      "zoom": 0.45100613794801053,
+      "cx": 417.830078561551,
+      "cy": -1857.648722078833
+    }
+  }
+}

@@ -1,0 +1,316 @@
+{
+  "module_type": "waveshaper",
+  "category": "Envelope",
+  "input_ports": [
+    {
+      "name": "in",
+      "signal_kind": "signal",
+      "default": 0.0
+    },
+    {
+      "name": "trigger",
+      "signal_kind": "trigger",
+      "default": 0.0
+    },
+    {
+      "name": "gate",
+      "signal_kind": "gate",
+      "default": 0.0
+    },
+    {
+      "name": "mod_pt1",
+      "signal_kind": "signal",
+      "default": 0.0
+    },
+    {
+      "name": "mod_pt2",
+      "signal_kind": "signal",
+      "default": 0.0
+    },
+    {
+      "name": "mod_pt3",
+      "signal_kind": "signal",
+      "default": 0.0
+    },
+    {
+      "name": "mod_pt4",
+      "signal_kind": "signal",
+      "default": 0.0
+    },
+    {
+      "name": "mod_pt5",
+      "signal_kind": "signal",
+      "default": 0.0
+    },
+    {
+      "name": "mod_pt6",
+      "signal_kind": "signal",
+      "default": 0.0
+    },
+    {
+      "name": "mod_pt7",
+      "signal_kind": "signal",
+      "default": 0.0
+    },
+    {
+      "name": "mod_pt8",
+      "signal_kind": "signal",
+      "default": 0.0
+    },
+    {
+      "name": "mod_pt9",
+      "signal_kind": "signal",
+      "default": 0.0
+    },
+    {
+      "name": "mod_pt10",
+      "signal_kind": "signal",
+      "default": 0.0
+    },
+    {
+      "name": "mod_pt11",
+      "signal_kind": "signal",
+      "default": 0.0
+    },
+    {
+      "name": "mod_pt12",
+      "signal_kind": "signal",
+      "default": 0.0
+    }
+  ],
+  "output_ports": [
+    {
+      "name": "out",
+      "signal_kind": "signal",
+      "default": 0.0
+    },
+    {
+      "name": "phase_out",
+      "signal_kind": "signal",
+      "default": 0.0
+    }
+  ],
+  "param_defaults": {
+    "mode": "cv",
+    "shape": "linear",
+    "amount": 50.0,
+    "bias": 50.0,
+    "duration": 1.0,
+    "sustain": 50.0,
+    "invert": "off",
+    "retrigger": "off",
+    "custom_points": "0.0,0.0;0.33,0.1;0.67,0.9;1.0,1.0"
+  },
+  "controls": [
+    {
+      "key": "mode",
+      "label": "mode",
+      "control_type": "selector",
+      "value_source": "param",
+      "default": "cv",
+      "minimum": 0.0,
+      "maximum": 100.0,
+      "decimals": 2,
+      "options": [
+        "cv",
+        "one_shot",
+        "gated",
+        "loop"
+      ],
+      "units_key": null,
+      "units_options": [],
+      "show_on_node": true,
+      "advanced_only": false,
+      "secondary_key": null,
+      "position_port": null,
+      "row": 0,
+      "col": null,
+      "momentary": false
+    },
+    {
+      "key": "shape",
+      "label": "shape",
+      "control_type": "selector",
+      "value_source": "param",
+      "default": "linear",
+      "minimum": 0.0,
+      "maximum": 100.0,
+      "decimals": 2,
+      "options": [
+        "linear",
+        "ease_in",
+        "ease_out",
+        "ease_in_out",
+        "sine",
+        "exponential",
+        "sine_fold",
+        "bounce",
+        "step",
+        "custom"
+      ],
+      "units_key": null,
+      "units_options": [],
+      "show_on_node": true,
+      "advanced_only": false,
+      "secondary_key": null,
+      "position_port": null,
+      "row": 0,
+      "col": null,
+      "momentary": false
+    },
+    {
+      "key": "amount",
+      "label": "amount",
+      "control_type": "knob",
+      "value_source": "param",
+      "default": 50.0,
+      "minimum": 0.0,
+      "maximum": 100.0,
+      "decimals": 1,
+      "options": [],
+      "units_key": null,
+      "units_options": [],
+      "show_on_node": true,
+      "advanced_only": false,
+      "secondary_key": null,
+      "position_port": null,
+      "row": 0,
+      "col": null,
+      "momentary": false
+    },
+    {
+      "key": "bias",
+      "label": "bias",
+      "control_type": "knob",
+      "value_source": "param",
+      "default": 50.0,
+      "minimum": 0.0,
+      "maximum": 100.0,
+      "decimals": 1,
+      "options": [],
+      "units_key": null,
+      "units_options": [],
+      "show_on_node": true,
+      "advanced_only": false,
+      "secondary_key": null,
+      "position_port": null,
+      "row": 0,
+      "col": null,
+      "momentary": false
+    },
+    {
+      "key": "duration",
+      "label": "duration s",
+      "control_type": "knob",
+      "value_source": "param",
+      "default": 1.0,
+      "minimum": 0.01,
+      "maximum": 30.0,
+      "decimals": 2,
+      "options": [],
+      "units_key": null,
+      "units_options": [],
+      "show_on_node": true,
+      "advanced_only": false,
+      "secondary_key": null,
+      "position_port": null,
+      "row": 1,
+      "col": null,
+      "momentary": false
+    },
+    {
+      "key": "sustain",
+      "label": "sustain %",
+      "control_type": "knob",
+      "value_source": "param",
+      "default": 50.0,
+      "minimum": 0.0,
+      "maximum": 100.0,
+      "decimals": 1,
+      "options": [],
+      "units_key": null,
+      "units_options": [],
+      "show_on_node": true,
+      "advanced_only": false,
+      "secondary_key": null,
+      "position_port": null,
+      "row": 1,
+      "col": null,
+      "momentary": false
+    },
+    {
+      "key": "invert",
+      "label": "invert",
+      "control_type": "button",
+      "value_source": "param",
+      "default": "off",
+      "minimum": 0.0,
+      "maximum": 100.0,
+      "decimals": 2,
+      "options": [
+        "off",
+        "on"
+      ],
+      "units_key": null,
+      "units_options": [],
+      "show_on_node": true,
+      "advanced_only": false,
+      "secondary_key": null,
+      "position_port": null,
+      "row": 1,
+      "col": null,
+      "momentary": false
+    },
+    {
+      "key": "retrigger",
+      "label": "retrig",
+      "control_type": "button",
+      "value_source": "param",
+      "default": "off",
+      "minimum": 0.0,
+      "maximum": 100.0,
+      "decimals": 2,
+      "options": [
+        "off",
+        "on"
+      ],
+      "units_key": null,
+      "units_options": [],
+      "show_on_node": true,
+      "advanced_only": false,
+      "secondary_key": null,
+      "position_port": null,
+      "row": 1,
+      "col": null,
+      "momentary": false
+    },
+    {
+      "key": "custom_points",
+      "label": "curve",
+      "control_type": "curve_editor",
+      "value_source": "param",
+      "default": "0.0,0.0;0.33,0.1;0.67,0.9;1.0,1.0",
+      "minimum": 0.0,
+      "maximum": 100.0,
+      "decimals": 2,
+      "options": [],
+      "units_key": null,
+      "units_options": [],
+      "show_on_node": true,
+      "advanced_only": false,
+      "secondary_key": null,
+      "position_port": null,
+      "row": 2,
+      "col": null,
+      "momentary": false
+    }
+  ],
+  "port_groups": [],
+  "state_only_params": [],
+  "internal_outputs": [],
+  "layout": {
+    "Uw": 4,
+    "Ur": 2,
+    "profile": "unknown"
+  }
+}

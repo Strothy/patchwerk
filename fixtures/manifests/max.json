@@ -1,0 +1,33 @@
+{
+  "module_type": "max",
+  "category": "Math",
+  "input_ports": [
+    {
+      "name": "a",
+      "signal_kind": "signal",
+      "default": 0.0
+    },
+    {
+      "name": "b",
+      "signal_kind": "signal",
+      "default": 0.0
+    }
+  ],
+  "output_ports": [
+    {
+      "name": "out",
+      "signal_kind": "signal",
+      "default": 0.0
+    }
+  ],
+  "param_defaults": {},
+  "controls": [],
+  "port_groups": [],
+  "state_only_params": [],
+  "internal_outputs": [],
+  "layout": {
+    "Uw": 2,
+    "Ur": 1,
+    "profile": "unknown"
+  }
+}
