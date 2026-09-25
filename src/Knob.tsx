@@ -11,7 +11,7 @@ function arc(r: number, from: number, to: number) {
 }
 
 /** A rotary knob: drag up or down (Shift for fine), the wheel steps, double-click resets. */
-export function Knob({ label, value, min, max, decimals = 2, onChange, onReset }: { label: string; value: number; min: number; max: number; decimals?: number; onChange: (v: number) => void; onReset: () => void }) {
+export function Knob({ label, value, min, max, decimals = 2, size = 40, onChange, onReset }: { label: string; value: number; min: number; max: number; decimals?: number; size?: number; onChange: (v: number) => void; onReset: () => void }) {
   const drag = useRef<{ y: number; v: number } | null>(null)
   const span = max - min || 1
   const round = (v: number) => Number(Math.min(max, Math.max(min, v)).toFixed(Math.max(0, decimals)))
@@ -22,6 +22,8 @@ export function Knob({ label, value, min, max, decimals = 2, onChange, onReset }
     <div className="knob" title={`${label}: ${value}`}>
       <svg
         viewBox="0 0 40 40"
+        width={size}
+        height={size}
         role="slider"
         aria-label={label}
         aria-valuemin={min}

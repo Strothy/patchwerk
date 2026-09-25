@@ -1,4 +1,4 @@
-import { StrictMode } from 'react'
+import { lazy, StrictMode, Suspense } from 'react'
 import { createRoot } from 'react-dom/client'
 import './index.css'
 import App from './App.tsx'
@@ -13,10 +13,10 @@ document.addEventListener('keydown', (e) => {
   e.stopPropagation()
   t.blur()
 }, true)
+// ?gallery: every module face for design review (dev only; its own chunk, so the app never loads the legacy manifests)
+const Gallery = import.meta.env.DEV && new URLSearchParams(location.search).has('gallery') ? lazy(() => import('./Gallery.tsx')) : null
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <ErrorBoundary>
-      <App />
-    </ErrorBoundary>
+    <ErrorBoundary>{Gallery ? <Suspense><Gallery /></Suspense> : <App />}</ErrorBoundary>
   </StrictMode>,
 )

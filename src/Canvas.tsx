@@ -1,4 +1,5 @@
-import { useLayoutEffect, useRef, useState, type PointerEvent as RPointerEvent } from 'react'
+import { useLayoutEffect, useMemo, useRef, useState, type PointerEvent as RPointerEvent } from 'react'
+import { layout } from './core/layout.ts'
 import type { Connection, Manifest, Patch } from './core/patch.ts'
 import { ModuleView } from './ModuleView.tsx'
 
@@ -41,6 +42,7 @@ export function Canvas(props: Props) {
   const drag = useRef<Drag | null>(null)
   const [jacks, setJacks] = useState(new Map<string, { x: number; y: number }>())
   const [wire, setWire] = useState<{ from: End; x: number; y: number } | null>(null)
+  const faces = useMemo(() => new Map([...manifests].map(([t, m]) => [t, layout(m)])), [manifests])
 
   // Jack centres in canvas coordinates, measured after each layout change (modules moved, added, zoomed).
   // ponytail: measures every jack on every patch change; per-module measurement if big patches make drags stutter (M5 perf gate)
@@ -124,7 +126,7 @@ export function Canvas(props: Props) {
         {patch.modules.map((inst) => {
           const manifest = manifests.get(inst.type)
           if (!manifest) return <section key={inst.id} className="module missing" style={{ left: inst.ui.x ?? 0, top: inst.ui.y ?? 0 }}><h2 className="module-label">{inst.name}</h2><p>Unknown module type “{inst.type}” (not ported yet).</p></section>
-          return <ModuleView key={inst.id} inst={inst} manifest={manifest} connected={connected(inst.id)} onGrab={onGrab} onRemove={props.onRemove} onInput={props.onInput} onParam={props.onParam} onJackDown={onJackDown} />
+          return <ModuleView key={inst.id} inst={inst} manifest={manifest} face={faces.get(inst.type)!} connected={connected(inst.id)} onGrab={onGrab} onRemove={props.onRemove} onInput={props.onInput} onParam={props.onParam} onJackDown={onJackDown} />
         })}
         <svg className="cables">
           {patch.connections.map((c) => {
