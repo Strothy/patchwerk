@@ -1,5 +1,5 @@
 [workspace]
-members = ["crates/engine"]
+members = ["crates/engine", "src-tauri"]
 resolver = "2"
 
 # The engine ticks every module 60 times a second; unoptimised it would eat the budget. Dependencies stay at opt-level 0
