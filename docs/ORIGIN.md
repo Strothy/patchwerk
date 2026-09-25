@@ -25,7 +25,7 @@ Patchwerk replaces a Python/PySide6 prototype ("SYB Live Cable", internally also
 - **Signals:** plain floats, conventionally 0–100. Port kinds are `signal`, `gate` and `trigger`. A gate or trigger counts as high at **≥ 0.5**.
 - **Evaluation:** modules run in topological order once per tick. Feedback cycles read the previous tick's output.
 - **Time:** a fixed `dt` and one simulation clock (`sim_time`) shared by all modules. Pausing sets `dt = 0`. No module may read the wall clock.
-- **Cable into a control input:** the cable value is scaled into that control's `ui.control_ranges[key]` range, times `ui.control_mod_depths[key]`. If a knob's range goes below zero, the cable acts as a bipolar offset around the knob's base value.
+- **Cable into an input-backed knob:** it moves the knob around its base value by `raw / 100 × depth × (hi − lo)`, clamped to the range. The range is `ui.control_ranges[key]` (else the manifest's), and `depth` is `ui.control_mod_depths[key]` / 100 (default 100). If the range dips below 0, the cable is an offset in the knob's own units, `base + raw × depth`, so a bipolar LFO swings it both ways. Gate-like knobs, and 2-option input selectors, snap the cable to 0/1. Anything that is not an input-backed control takes the cable value as it is.
 - **Several cables on one port:**
   - Gate and trigger ports take the max.
   - Signal ports: the first cable replaces the base value, and each later cable adds `(mapped − base)`.

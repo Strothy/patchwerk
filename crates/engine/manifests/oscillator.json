@@ -1,0 +1,226 @@
+{
+  "module_type": "oscillator",
+  "category": "Generator",
+  "input_ports": [
+    {
+      "name": "rate",
+      "signal_kind": "signal",
+      "default": 0.2
+    },
+    {
+      "name": "amp",
+      "signal_kind": "signal",
+      "default": 30.0
+    },
+    {
+      "name": "offset",
+      "signal_kind": "signal",
+      "default": 50.0
+    },
+    {
+      "name": "phase",
+      "signal_kind": "signal",
+      "default": 0.0
+    },
+    {
+      "name": "reset",
+      "signal_kind": "trigger",
+      "default": 0.0
+    }
+  ],
+  "output_ports": [
+    {
+      "name": "out",
+      "signal_kind": "signal",
+      "default": 0.0
+    }
+  ],
+  "param_defaults": {
+    "shape": "sine",
+    "polarity": "bipolar"
+  },
+  "controls": [
+    {
+      "key": "shape",
+      "label": "shape",
+      "control_type": "selector",
+      "value_source": "param",
+      "default": "sine",
+      "minimum": 0.0,
+      "maximum": 100.0,
+      "decimals": 2,
+      "options": [
+        "sine",
+        "triangle",
+        "saw",
+        "square"
+      ],
+      "units_key": null,
+      "units_options": [],
+      "show_on_node": true,
+      "advanced_only": false,
+      "secondary_key": null,
+      "position_port": null,
+      "row": null,
+      "col": null,
+      "momentary": false
+    },
+    {
+      "key": "polarity",
+      "label": "polarity",
+      "control_type": "selector",
+      "value_source": "param",
+      "default": "bipolar",
+      "minimum": 0.0,
+      "maximum": 100.0,
+      "decimals": 2,
+      "options": [
+        "bipolar",
+        "unipolar"
+      ],
+      "units_key": null,
+      "units_options": [],
+      "show_on_node": true,
+      "advanced_only": false,
+      "secondary_key": null,
+      "position_port": null,
+      "row": null,
+      "col": null,
+      "momentary": false
+    },
+    {
+      "key": "rate",
+      "label": "rate",
+      "control_type": "knob",
+      "value_source": "input",
+      "default": 0.2,
+      "minimum": 0.01,
+      "maximum": 20.0,
+      "decimals": 3,
+      "options": [],
+      "units_key": "rate_unit",
+      "units_options": [
+        "hz",
+        "seconds"
+      ],
+      "show_on_node": true,
+      "advanced_only": false,
+      "secondary_key": null,
+      "position_port": null,
+      "row": null,
+      "col": null,
+      "momentary": false
+    },
+    {
+      "key": "amp",
+      "label": "amp",
+      "control_type": "knob",
+      "value_source": "input",
+      "default": 30.0,
+      "minimum": 0.0,
+      "maximum": 100.0,
+      "decimals": 2,
+      "options": [],
+      "units_key": null,
+      "units_options": [],
+      "show_on_node": true,
+      "advanced_only": false,
+      "secondary_key": null,
+      "position_port": null,
+      "row": null,
+      "col": null,
+      "momentary": false
+    },
+    {
+      "key": "offset",
+      "label": "offset",
+      "control_type": "knob",
+      "value_source": "input",
+      "default": 50.0,
+      "minimum": 0.0,
+      "maximum": 100.0,
+      "decimals": 2,
+      "options": [],
+      "units_key": null,
+      "units_options": [],
+      "show_on_node": true,
+      "advanced_only": false,
+      "secondary_key": null,
+      "position_port": null,
+      "row": null,
+      "col": null,
+      "momentary": false
+    },
+    {
+      "key": "phase",
+      "label": "phase",
+      "control_type": "knob",
+      "value_source": "input",
+      "default": 0.0,
+      "minimum": 0.0,
+      "maximum": 360.0,
+      "decimals": 1,
+      "options": [],
+      "units_key": null,
+      "units_options": [],
+      "show_on_node": true,
+      "advanced_only": false,
+      "secondary_key": null,
+      "position_port": null,
+      "row": null,
+      "col": null,
+      "momentary": false
+    }
+  ],
+  "port_groups": [
+    {
+      "name": "IN",
+      "ports": [],
+      "layout": "vertical",
+      "rows": [
+        {
+          "left": [
+            "rate"
+          ],
+          "right": [
+            "amp"
+          ]
+        },
+        {
+          "left": [
+            "offset"
+          ],
+          "right": [
+            "phase"
+          ]
+        },
+        {
+          "left": [
+            "reset"
+          ],
+          "right": []
+        }
+      ]
+    },
+    {
+      "name": "OUT",
+      "ports": [],
+      "layout": "vertical",
+      "rows": [
+        {
+          "left": [
+            "out"
+          ],
+          "right": []
+        }
+      ]
+    }
+  ],
+  "state_only_params": [],
+  "internal_outputs": [],
+  "layout": {
+    "Uw": 2,
+    "Ur": 1,
+    "profile": "unknown"
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "module_type": "constant",
+  "category": "Utility",
+  "input_ports": [],
+  "output_ports": [
+    {
+      "name": "out",
+      "signal_kind": "signal",
+      "default": 0.0
+    }
+  ],
+  "param_defaults": {
+    "value": 0.0
+  },
+  "controls": [
+    {
+      "key": "value",
+      "label": "value",
+      "control_type": "knob",
+      "value_source": "param",
+      "default": 0.0,
+      "minimum": 0.0,
+      "maximum": 100.0,
+      "decimals": 2,
+      "options": [],
+      "units_key": null,
+      "units_options": [],
+      "show_on_node": true,
+      "advanced_only": false,
+      "secondary_key": null,
+      "position_port": null,
+      "row": null,
+      "col": null,
+      "momentary": false
+    }
+  ],
+  "port_groups": [],
+  "state_only_params": [],
+  "internal_outputs": [],
+  "layout": {
+    "Uw": 2,
+    "Ur": 1,
+    "profile": "unknown"
+  }
+}

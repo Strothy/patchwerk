@@ -1,0 +1,9 @@
+[workspace]
+members = ["crates/engine"]
+resolver = "2"
+
+# The engine ticks every module 60 times a second; unoptimised it would eat the budget. Dependencies stay at opt-level 0
+# so dev rebuilds remain fast (the Cylix approach).
+[profile.dev.package.patchwerk-engine]
+opt-level = 3
+incremental = false # MSVC link errors with incremental + opt-level on one crate (seen in Cylix)

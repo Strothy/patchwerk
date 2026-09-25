@@ -26,7 +26,7 @@ Each module's `process(inputs, dt)` was run on scripted inputs at a fixed `dt = 
 ```
 
 - The inputs are exactly what the module saw. Cable mapping and range scaling had already been applied, so replay them straight into the module.
-- Floats are rounded to 12 significant digits. Compare with a relative tolerance of about `1e-9`.
+- Floats are rounded to 12 significant digits, the inputs too, so modules that integrate (phase accumulators) drift slightly from the trace. Compare with `|a - b| <= 1e-6 * max(1, |a|, |b|)`.
 - `funscript_recorder` has an extra `record_and_export` scenario that includes the `.funscript` files it wrote (`exported_files`).
 - The modules fed by the host (MIDI, hotkey, manual trigger, status lights, scopes) produce flat traces here. Their behaviour needs hand-written specs.
 
