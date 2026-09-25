@@ -4,3 +4,6 @@ dist/
 fixtures/_tmp_exports/
 .DS_Store
 Thumbs.db
+/lab/
+.claude/settings.local.json
+.claude/worktrees/
